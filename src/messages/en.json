@@ -14,27 +14,27 @@
       "location": "Location"
     },
     "solutions": {
-      "title": "Step by step to get your solutions",
+      "title": "From Booking to Care — The Simple Process",
       "complaints": {
-        "title": "Check health complaints",
-        "description": "Check the disease so you can easily choose the right specialist"
+        "title": "Check Your Symptoms",
+        "description": "Describe your health concerns so we can help you find the right specialist."
       },
       "doctor": {
-        "title": "Choose doctor Specialist",
-        "description": "Choose a specialist according to your disease complaints"
+        "title": "Choose the Right Doctor",
+        "description": "Select a trusted specialist based on your needs and symptoms."
       },
       "schedule": {
-        "title": "Make a Schedule",
-        "description": "Make a schedule with the doctor concerned so you can start the examination"
+        "title": "Book Your Appointment",
+        "description": "Schedule a convenient time with your chosen doctor — online and hassle-free."
       },
       "solutions": {
-        "title": "Get your Solutions",
-        "description": "After conducting an examination with a specialist we can help find the right healing method"
+        "title": "Get Expert Care",
+        "description": "Consult your doctor and receive the right treatment and guidance."
       }
     },
     "resultNumbers": {
-      "title": "We're employee benefit at  7500+ hospital",
-      "description": "Effective progress tracking and milestone setting are critical components of any successful project or personal goal. By systematically monitoring our achievements."
+      "title": "We have One Mission Better Healthcare for All",
+      "description": "Connecting thousands of patients with trusted doctors, ensuring every step of the journey brings confidence and care."
     },
     "scheduleInAdvance": {
       "title": "Make a schedule in advance with the available doctor",
@@ -42,20 +42,18 @@
     },
     "blog": {
       "title": "Blog",
-      "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
+      "description": "Our blog is more than just news — it’s a space for learning and connection. Find out how Medvisit is making healthcare simpler, smarter, and more human."
     },
     "mobileApps": {
       "title": "Download App Now",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
+      "description": "Take control of your health anytime, anywhere. With the Medvisit app, quality care is just one tap away."
     },
     "footer": {
-      "description": "Explore the wonders of travel with AdventureSeekers Expeditions. Unleash your wanderlust with AdventureSeekers Expeditions.",
+      "description": "bridging the gap between patients and specialists",
       "links": {
-        "wishlist": "Wishlist",
-        "specialOffers": "Special Offers",
-        "lookbook": "Lookbook",
-        "bestsellers": "Bestsellers",
-        "mega": "Mega"
+        "saved": "Saved",
+        "wishList": "Wishlist",
+        "specialOffers": "Special Offers"
       },
       "copyright": "Copyright @ 2024 DockBook, All rights reserved.",
       "customerService": "Customer Service",
