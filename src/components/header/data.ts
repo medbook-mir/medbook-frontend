@@ -1,13 +1,33 @@
 export const homePageNavItems = [
   {
-    title: 'Blogs',
+    title: 'How it works',
     href: '#'
   },
-]
-
-export const otherPagesNavItems = [
+  {
+    title: 'Medicals',
+    href: '#'
+  },
   {
     title: 'Blogs',
     href: '#'
   },
+  {
+    title: 'Healthy training',
+    href: '#'
+  }
+]
+
+export const otherPagesNavItems = [
+  {
+    title: 'How it works',
+    href: '#'
+  },
+  {
+    title: 'Medicals',
+    href: '#'
+  },
+  {
+    title: 'Partners',
+    href: '#'
+  }
 ]
