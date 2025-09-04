@@ -32,17 +32,18 @@ export default function Navbar() {
             <MainLogoWhite />
           </Link>
 
-          <div className="hidden items-center gap-8 md:flex">
-            <nav className="hidden gap-[60px] text-[18px] font-medium text-white md:flex">
+          <nav className="hidden gap-[60px] text-[18px] font-medium text-white md:flex">
             {navItems.map((item, index) => (
               <Link href={item.href} key={index}>
                 <p className="text-white">{item.title}</p>
               </Link>
             ))}
           </nav>
+
+          <div className="hidden items-center gap-4 md:flex">
             <LangSelect />
             <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800">
-              I am Doctor
+              For doctors
             </button>
             <button
               onClick={handleLogin}
