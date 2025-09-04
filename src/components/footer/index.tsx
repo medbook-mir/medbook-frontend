@@ -27,11 +27,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="flex flex-col gap-4">
-              {footerLinks.map((item, index) => (
-                <Link key={index} href={item.href} className="text-[16px] leading-6 font-normal text-[#808080]">
-                  {t(item.title)}
-                </Link>
-              ))}
+              
             </div>
           </div>
           <div className="flex items-center gap-3.5">
