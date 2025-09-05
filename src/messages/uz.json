@@ -48,13 +48,20 @@
       "title": "Ilovani yuklab oling",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
     },
+    "doctorPromo": {
+      "title": "Siz shifokormisiz?",
+      "subtitle": "Yaxshiroq parvarish uchun aqlli vositalar",
+      "description": "Biz sizning ish kuningizni osonlashtirish uchun bu yerdamiz. Bizning shifokor paneli sizga tartibli bo'lish, vaqtni boshqarish, ekspertizangizni namoyish etish va bemorlar bilan bog'lanishga yordam beradi - hammasi bir joyda.",
+      "ctaButton": "Men shifokorman",
+      "trustStatement": "Etakchi klinikalardan shifokorlar ishonadi:"
+    },
     "footer": {
-      "description": "AdventureSeekers Expeditions bilan sayohat mo'jizalarini kashf eting. AdventureSeekers Expeditions bilan sayohatga bo‘lgan ishtiyoqingizni uyg‘oting.",
+      "description": "AdventureSeekers Expeditions bilan sayohat mo'jizalarini kashf eting. AdventureSeekers Expeditions bilan sayohatga bo'lgan ishtiyoqingizni uyg'oting.",
       "links": {
         "wishlist": "Tanlanganlar ro'yxati",
         "specialOffers": "Maxsus takliflar",
         "lookbook": "Lookbook",
-        "bestsellers": "Eng ko‘p sotilganlar",
+        "bestsellers": "Eng ko'p sotilganlar",
         "mega": "Mega"
       },
       "copyright": "Mualliflik huquqi © 2024 DockBook, Barcha huquqlar himoyalangan.",

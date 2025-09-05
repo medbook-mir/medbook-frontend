@@ -48,6 +48,13 @@
       "title": "Download App Now",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
     },
+    "doctorPromo": {
+      "title": "Are You a Doctor?",
+      "subtitle": "Smarter tools for better care",
+      "description": "We are here to make your workday easier. Our doctor dashboard helps you stay organized, manage your time, showcase your expertise, and connect with patients - all in one place.",
+      "ctaButton": "I am Doctor",
+      "trustStatement": "Trusted by doctors from leading clinics:"
+    },
     "footer": {
       "description": "Explore the wonders of travel with AdventureSeekers Expeditions. Unleash your wanderlust with AdventureSeekers Expeditions.",
       "links": {
