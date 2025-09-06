@@ -40,6 +40,10 @@
       "title": "Make a schedule in advance with the available doctor",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
     },
+      "testimonialsSection": {
+      "title": "What Our Patients Are Saying",
+      "description": "Our mission is to provide medical care, focusing on personalized treatment and  well-being of every patient"
+    },
     "blog": {
       "title": "Blog",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
