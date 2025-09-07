@@ -44,6 +44,28 @@
       "title": "Blog",
       "description": "Our blog is more than just news — it’s a space for learning and connection. Find out how Medvisit is making healthcare simpler, smarter, and more human."
     },
+    "faqsSection": {
+    "title": "Frequently asked questions",
+    "description": "From using the platform to booking appointments, we’re here to guide you. Check out the answers to the most common questions from our community.",
+    "items": [
+      {
+        "title": "How do I book, reschedule, or cancel an appointment?",
+        "content": "You can easily manage your appointments directly in the app—just choose a time slot that works for you, or go to your dashboard to reschedule or cancel. You'll receive automatic reminders to help you stay organized."
+      },
+      {
+        "title": "What happens if I need urgent medical attention?",
+        "content": "If you require urgent medical care, please call emergency services immediately. The app should not be used for emergencies."
+      },
+      {
+        "title": "Are my personal and medical details safe with Medvisit?",
+        "content": "Yes, all your information is encrypted and securely stored in compliance with healthcare data regulations."
+      },
+      {
+        "title": "Can I get a prescription or referral through the app?",
+        "content": "Yes, licensed professionals on the platform can provide prescriptions or referrals when appropriate."
+      }
+    ]
+  },
     "mobileApps": {
       "title": "Download App Now",
       "description": "Take control of your health anytime, anywhere. With the Medvisit app, quality care is just one tap away."
