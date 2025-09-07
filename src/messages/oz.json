@@ -72,6 +72,13 @@
       "title": "Ilovani yuklab oling",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
     },
+    "doctorPromo": {
+      "title": "Сиз шифокормисиз?",
+      "subtitle": "Яхширок парвариш учун ақлли воситалар",
+      "description": "Биз сизнинг иш кунингизни осонлаштириш учун бу ердамиз. Бизнинг шифокор панели сизга тартибли бўлиш, вақтни бошқариш, экспертизангизни намойиш этиш ва беморлар билан боғланишга ёрдам беради - ҳаммаси бир жойда.",
+      "ctaButton": "Мен шифокорман",
+      "trustStatement": "Этакчи клиникалардан шифокорлар ишонади:"
+    },
     "footer": {
       "description": "AdventureSeekers Expeditions билан саёҳат мўъжизаларини кашф этинг. AdventureSeekers Expeditions билан саёҳатга бўлган иштиёқингизни уйғотинг.",
       "links": {

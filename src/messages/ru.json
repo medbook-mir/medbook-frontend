@@ -70,6 +70,13 @@
       "title": "Скачайте приложение сейчас",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
     },
+    "doctorPromo": {
+      "title": "Вы врач?",
+      "subtitle": "Умные инструменты для лучшего ухода",
+      "description": "Мы здесь, чтобы облегчить ваш рабочий день. Наша панель врача помогает вам оставаться организованным, управлять временем, демонстрировать свою экспертизу и общаться с пациентами - все в одном месте.",
+      "ctaButton": "Я врач",
+      "trustStatement": "Доверяют врачи из ведущих клиник:"
+    },
     "footer": {
       "description": "Исследуйте чудеса путешествий с AdventureSeekers Expeditions. Освободите свою страсть к странствиям с AdventureSeekers Expeditions.",
       "links": {
