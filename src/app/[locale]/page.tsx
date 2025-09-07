@@ -6,6 +6,7 @@ import { SolutionsSection } from '@/components/home/solutions'
 import TestimonialsSection from '@/components/home/testimonials-section'
 import ResultNumbers from '@/components/home/result-numbers'
 import { FindDoctor } from '@/components/home/find-doctor'
+import FAQSection from '@/components/home/faq-section'
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <ScheduleInAdvance />
       <HomeBlog />
       <TestimonialsSection />
+      <FAQSection />
       <MobileApps />
     </>
   )
