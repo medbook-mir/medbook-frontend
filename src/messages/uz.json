@@ -44,6 +44,28 @@
       "title": "Blog",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
     },
+    "faqsSection": {
+    "title": "Ko‘p beriladigan savollar",
+    "description": "Platformadan foydalanishdan tortib uchrashuvlarni bron qilishgacha, biz yordam berishga tayyormiz. Hamjamiyatimiz tomonidan eng ko‘p beriladigan savollarga javoblarni ko‘rib chiqing.",
+    "items": [
+      {
+        "title": "Qanday qilib uchrashuvni bron qilish, ko‘chirish yoki bekor qilish mumkin?",
+        "content": "Siz uchrashuvlaringizni ilova orqali oson boshqarishingiz mumkin — faqat sizga qulay vaqtni tanlang yoki boshqaruv paneliga o‘tib, uchrashuvni ko‘chiring yoki bekor qiling. Sizga eslatmalar avtomatik yuboriladi."
+      },
+      {
+        "title": "Agar menga shoshilinch tibbiy yordam kerak bo‘lsa-chi?",
+        "content": "Agar sizga shoshilinch tibbiy yordam kerak bo‘lsa, darhol tez yordam xizmatiga qo‘ng‘iroq qiling. Ilova favqulodda holatlar uchun mo‘ljallanmagan."
+      },
+      {
+        "title": "Shaxsiy va tibbiy ma’lumotlarim Medvisit bilan xavfsizmi?",
+        "content": "Ha, barcha ma’lumotlaringiz shifrlanadi va sog‘liqni saqlash ma’lumotlari qoidalariga muvofiq xavfsiz saqlanadi."
+      },
+      {
+        "title": "Ilova orqali retsept yoki yo‘llanma olishim mumkinmi?",
+        "content": "Ha, platformadagi litsenziyaga ega mutaxassislar zarurat tug‘ilganda retsept yoki yo‘llanma bera oladilar."
+      }
+    ]
+  },
     "mobileApps": {
       "title": "Ilovani yuklab oling",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
@@ -63,6 +85,7 @@
         "lookbook": "Lookbook",
         "bestsellers": "Eng ko'p sotilganlar",
         "mega": "Mega"
+        "saved": "Saqlangan",
       },
       "copyright": "Mualliflik huquqi © 2024 DockBook, Barcha huquqlar himoyalangan.",
       "customerService": "Mijozlarga xizmat",

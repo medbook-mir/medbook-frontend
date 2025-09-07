@@ -1,5 +1,22 @@
 @import 'tailwindcss';
 
+/* Custom styles for Marquee-carousel */
+@layer utilities {
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .animate-marquee {
+    animation: marquee linear infinite;
+  }
+
+  .pause-marquee:hover {
+    animation-play-state: paused;
+  }
+}
+
+
 /* Global styles */
 button {
   cursor: pointer;
