@@ -21,11 +21,11 @@ export const FindDoctor = () => {
           <div>
             <div className="mb-[16px] flex items-center gap-[12px] text-[#121212]">
               <CheckIcon />
-              <p>100% free app designed to help you find the right doctor for you.</p>
+              <p className='font-bold'>100% free app designed to help you find the right doctor for you.</p>
             </div>
             <div className="flex items-center gap-[12px] text-[#121212]">
               <CheckIcon />
-              <p>Available 900 doctors specialist</p>
+              <p className='font-bold'>Available 900 doctors specialist</p>
             </div>
           </div>
           <button className="mx-auto rounded-[10px] bg-[#046D5F] px-[36px] py-[16px] text-[16px] font-[500] text-white transition hover:bg-gray-200 md:mx-0">
