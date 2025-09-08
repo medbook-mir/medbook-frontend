@@ -1,36 +1,99 @@
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Container } from '@/theme/container'
-import { cardData } from './data'
-import AnimatedInView from '@/components/shared/animated-in-view'
+import { images } from '@/assets'
 
-const ScheduleInAdvance = () => {
-  const t = useTranslations('homePage.scheduleInAdvance')
+const DoctorPromoSection = () => {
+  const t = useTranslations('homePage.doctorPromo')
 
   return (
-    <section className="py-[132px]">
+    <section className="py-4 lg:py-24 bg-white ">
       <Container>
-        <div className="mx-auto mb-[60px] flex max-w-[750px] flex-col gap-4 text-center">
-          <h1 className="text-[46px] leading-[100%] font-bold text-[#0D0D0D]">{t('title')}</h1>
-          <p className="text-[20px] leading-7 font-normal text-[#565656]">{t('description')}</p>
-        </div>
-        <div className="flex flex-wrap items-center justify-center gap-8">
-          {cardData.map((item, index) => (
-            <AnimatedInView direction="right" key={index} variant="slide" delay={index * 0.2}>
-              <div
-                className={`flex w-[352px] gap-8 rounded-[25px] border-[2px] border-[#046D5F80] p-6 ${index === 1 ? 'flex-col-reverse' : 'flex-col'}`}
-              >
-                <Image src={item.img} alt="Schedule" width={304} height={300} />
-                <div className="flex flex-col gap-3">
-                  <h3 className="text-[26px] leading-9 font-semibold text-[#0D0D0D]">{item.title}</h3>
-                  <p className="text-[16px] leading-6 font-normal text-[#808080]">{item.description}</p>
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 min-h-[500px] lg:min-h-[934px]">
+          {/* Left Side - Doctor with Laptop */}
+          <div className="relative lg:h-[500px] lg:w-[1080px]">
+            <Image 
+              src={images.portraitDoctor} 
+              alt="Confident male doctor in uniform" 
+              
+              className="object-center object-contain lg:ml-[-150px] lg:mt-[120px] "
+              priority
+            />
+          </div>
+          {/* Right Side - Content */}
+          <div className="space-y-4 sm:space-y-6 lg:space-y-8 order-1 lg:order-2 lg:pl-8 md:text-center ">
+            {/* Main Headline */}
+            <div className="space-y-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1]">
+                {t('title')}
+              </h1>
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-800 leading-[1.1]">
+                {t('subtitle')}
+              </h2>
+            </div>
+
+            {/* Description */}
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-2xl w-full md:mx-auto">
+              {t('description')}
+            </p>
+
+            {/* CTA Button */}
+            <div className="pt-2">
+              <button className="w-full bg-[#44A08D] hover:bg-[#3a8a7a] text-white font-medium py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                {t('ctaButton')}
+              </button>
+            </div>
+
+            {/* Trust Statement and Partner Logos */}
+            <div className="pt-4 lg:pt-6">
+              <p className="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6 font-medium text-center">
+                {t('trustStatement')}
+              </p>
+              
+              {/* Partner Logos */}
+              <div className="flex justify-center items-center gap-4 sm:gap-6 lg:gap-8">
+                {/* Partner 1 - AKFA MEDLINE */}
+                <div className="w-[100px]  h-auto">
+                  <Image 
+                    src={images.image198} 
+                    alt="AKFA MEDLINE" 
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+
+                {/* Partner 2 - HAYAT Medical Centre */}
+                <div className="w-[100px] h-auto">
+                  <Image 
+                    src={images.image203} 
+                    alt="HAYAT Medical Centre" 
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+
+                {/* Partner 3 - DARMON SERVIS */}
+                <div className="w-[100px]  h-auto">
+                  <Image 
+                    src={images.image204} 
+                    alt="DARMON SERVIS" 
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+
+                {/* Partner 4 - Hi Tech Lab */}
+                <div className="w-[100px] h-auto">
+                  <Image 
+                    src={images.image205}
+                    alt="Hi Tech Lab Diagnostic Centre" 
+                    className="w-full h-auto object-contain"
+                  />
                 </div>
               </div>
-            </AnimatedInView>
-          ))}
+            </div>
+          </div>
         </div>
       </Container>
     </section>
   )
 }
-export default ScheduleInAdvance
+
+export default DoctorPromoSection

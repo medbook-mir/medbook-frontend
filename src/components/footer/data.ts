@@ -2,23 +2,15 @@ import { FacebookIcon, InstagramIcon, TwitterIcon } from '@/utils/icons/social-m
 
 export const footerLinks = [
   {
-    title: 'links.wishlist',
+    title: 'links.saved',
+    href: '#'
+  },
+  {
+    title: 'links.wishList',
     href: '#'
   },
   {
     title: 'links.specialOffers',
-    href: '#'
-  },
-  {
-    title: 'links.lookbook',
-    href: '#'
-  },
-  {
-    title: 'links.bestsellers',
-    href: '#'
-  },
-  {
-    title: 'links.mega',
     href: '#'
   }
 ]

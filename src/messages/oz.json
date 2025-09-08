@@ -44,18 +44,47 @@
       "title": "Блог",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
     },
+
+    "faqsSection": {
+    "title": "Кўп бериладиган саволлар",
+    "description": "Платформадан фойдаланишдан тортиб учрашувларни брон қилишгача, биз ёрдам беришга тайёрмиз. Ҳамжамиятимиз томонидан энг кўп бериладиган саволларга жавобларни кўриб чиқинг.",
+    "items": [
+      {
+        "title": "Қандай қилиб учрашувни брон қилиш, кўчириш ёки бекор қилиш мумкин?",
+        "content": "Сиз учрашувларингизни иловада осон бошқаришингиз мумкин — фақат сизга қулай вақтни танланг ёки бошқарув панелига ўтиб, учрашувни кўчиринг ёки бекор қилинг. Эслатмалар автоматик юборилади."
+      },
+      {
+        "title": "Агар менга шошилинч тиббий ёрдам керак бўлса-чи?",
+        "content": "Агар сизга шошилинч тиббий ёрдам керак бўлса, дарҳол тез ёрдам хизматларига қўнғироқ қилинг. Иловани фавқулодда ҳолатлар учун ишлатманг."
+      },
+      {
+        "title": "Шахсий ва тиббий маълумотларим Medvisit билан хавфсизми?",
+        "content": "Ҳа, барча маълумотларингиз шифрланади ва соғлиқни сақлаш маълумотлари қоидаларига мувофиқ хавфсиз сақланади."
+      },
+      {
+        "title": "Илова орқали рецепт ёки йўлланма олишим мумкинми?",
+        "content": "Ҳа, платформадги лицензияга эга мутахассислар зарурат туғилганда рецепт ёки йўлланма беришлари мумкин."
+      }
+    ]
+  },
+    
     "mobileApps": {
       "title": "Ilovani yuklab oling",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
     },
+    "doctorPromo": {
+      "title": "Сиз шифокормисиз?",
+      "subtitle": "Яхширок парвариш учун ақлли воситалар",
+      "description": "Биз сизнинг иш кунингизни осонлаштириш учун бу ердамиз. Бизнинг шифокор панели сизга тартибли бўлиш, вақтни бошқариш, экспертизангизни намойиш этиш ва беморлар билан боғланишга ёрдам беради - ҳаммаси бир жойда.",
+      "ctaButton": "Мен шифокорман",
+      "trustStatement": "Этакчи клиникалардан шифокорлар ишонади:"
+    },
     "footer": {
       "description": "AdventureSeekers Expeditions билан саёҳат мўъжизаларини кашф этинг. AdventureSeekers Expeditions билан саёҳатга бўлган иштиёқингизни уйғотинг.",
       "links": {
-        "wishlist": "Танланганлар рўйхати",
-        "specialOffers": "Махсус таклифлар",
-        "lookbook": "Лукбук",
-        "bestsellers": "Энг кўп сотилганлар",
-        "mega": "Мега"
+        "saved": "Сақланган",
+        "wishList": "Иcтаклар рўйхати",
+        "specialOffers": "Махсус таклифлар"
       },
       "copyright": "Муаллифлик ҳуқуқи © 2024 DockBook, Барча ҳуқуқлар ҳимояланган.",
       "customerService": "Мижозларга хизмат",

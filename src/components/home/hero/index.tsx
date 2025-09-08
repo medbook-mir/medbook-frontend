@@ -15,11 +15,11 @@ export default function HeroSection() {
       <Container>
         <div className="relative flex-col-reverse items-center justify-between gap-10 text-white lg:flex-row">
           <div className="relative">
-            <h1 className="mb-6 w-full text-center text-[32px] leading-[120%] font-bold md:w-[450px] md:text-left md:text-[56px]">
-              Online booking — the first step towards your health
+            <h1 className="mb-6 w-full text-center text-[32px] leading-[120%] font-bold md:w-[550px] md:text-left md:text-[56px]">
+              Better Health Starts with a Click
             </h1>
-            <p className="mb-[28px] w-full text-center text-[16px] leading-[34px] text-white md:mb-[100px] md:w-[400px] md:text-left">
-              Hold incredible events, share knowledge, build and grow your product, create opportunity
+            <p className="mb-[28px] w-full text-center text-[24px] leading-[34px] text-white md:mb-[100px] md:w-[550px] md:text-left">
+              Find Trusted Doctors. Book Appointments. Manage Your Health — All in One Place.
             </p>
 
             <div className="flex h-[56px] w-full max-w-[500px] items-center justify-between overflow-hidden rounded-[16px] bg-white px-[4px] shadow-md sm:max-w-[100%] md:max-w-[500px] xl:max-w-[790px]">
