@@ -4,14 +4,24 @@ import { PersonIcon, LikeIcon, LocationIcon } from '@/utils/icons/doctor-icons'
 import { FilledButton } from '../ui/filled-button'
 import { useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import { log } from 'console'
+import { DoctorType } from '@/types/doctor-type'
 
-const ImportantThings = () => {
+interface ImportantThingsProps {
+  doctor: DoctorType
+}
+
+const ImportantThings = ({ doctor }: ImportantThingsProps) => {
   const [isLiked, setIsLiked] = useState(false)
   const router = useRouter()
   const params = useParams()
 
-  console.log('query', params)
+  const locationText = doctor.location 
+    ? `${doctor.location.city}, ${doctor.location.address}`
+    : 'Location not specified'
+
+  const consultationFee = doctor.user.consultation_fee 
+    ? `$${doctor.user.consultation_fee}`
+    : 'Fee not specified'
 
   return (
     <section className="flex max-w-[350px] flex-col gap-4 rounded-[12px] bg-[#F2F7F6] p-5">
@@ -21,7 +31,7 @@ const ImportantThings = () => {
           <LocationIcon />
         </div>
         <span className="text-[14px] leading-[100%] font-normal">
-          Tashkent, Chilanzar, Bunyodkor street 12/4 home 2A
+          {locationText}
         </span>
       </div>
       <div className="flex items-center gap-3">
@@ -29,7 +39,7 @@ const ImportantThings = () => {
           <PersonIcon />
         </div>
         <span className="text-[14px] leading-[100%] font-normal">
-          Contact your facility for simple inquiries outside of an appointment.
+          Consultation fee: {consultationFee}
         </span>
       </div>
       <div className="flex items-center gap-3">

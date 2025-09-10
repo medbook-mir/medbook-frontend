@@ -2,9 +2,8 @@ import Axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse, In
 import { buildParams } from './helpers'
 import { TokenService } from '@/utils/storage'
 import { env } from '@/utils/env'
-import { getLocale } from 'next-intl/server'
 
-const API_URL = env.NEXT_API_URL
+const API_URL = env.NEXT_API_URL || ''
 
 declare module 'axios' {
   export interface AxiosRequestConfig {
@@ -57,9 +56,17 @@ export class BaseClient {
       req.headers['Authorization'] = `Bearer ${token}`
     }
 
-    // Automatically get current locale and set it in Lang header
-    const locale = await getLocale()
-    req.headers['Lang'] = locale
+    // Set language header - try to get from URL or default to 'en'
+    const getLocaleFromClient = () => {
+      if (typeof window !== 'undefined') {
+        const pathname = window.location.pathname
+        const localeMatch = pathname.match(/^\/([a-z]{2})\//)
+        return localeMatch ? localeMatch[1] : 'en'
+      }
+      return 'en'
+    }
+    
+    req.headers['Lang'] = getLocaleFromClient()
 
     return req
   }

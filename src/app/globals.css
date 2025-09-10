@@ -32,3 +32,37 @@ button {
 .ymaps-2-1-79-map-copyrights-promo {
   display: none !important;
 }
+
+/* Doctor tabs custom styles */
+.doctor-tabs .ant-tabs-tab {
+  padding: 12px 12px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500 !important;
+  color: #515B6F !important;
+  border: none !important;
+  background: none !important;
+}
+
+.doctor-tabs .ant-tabs-tab-active {
+  color: #2D7D70 !important;
+  font-weight: 600 !important;
+}
+
+.doctor-tabs .ant-tabs-tab:hover {
+  color: #2D7D70 ;
+}
+
+.doctor-tabs .ant-tabs-ink-bar {
+  background: #2D7D70 !important;
+  height: 3px !important;
+  border-radius: 2px !important;
+}
+
+.doctor-tabs .ant-tabs-nav::before {
+  border-bottom: 1px solid #EBEBEB !important;
+}
+
+.doctor-tabs .ant-tabs-content-holder {
+  display: none !important;
+}
