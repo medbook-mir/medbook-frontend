@@ -1,5 +1,5 @@
-import { AddressIcon, EmailIcon, ExperienceIcon, PhoneIcon } from '@/utils/icons/doctor-icons'
-import { DoctorType } from '@/types/doctor-type'
+import { AddressIcon, EmailIcon, ExperienceIcon, PhoneIcon, WebsiteIcon, SocialIcon } from '@/utils/icons/doctor-icons'
+import { DoctorType, DoctorSchedule, DoctorEducation } from '@/types/doctor-type'
 
 interface ProfileProps {
   doctor: DoctorType

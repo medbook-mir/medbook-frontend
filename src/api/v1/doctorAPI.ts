@@ -11,11 +11,11 @@ const urls = {
   getDoctorEducation: (id: string) => `/api/doctors/${id}/education/`,
   getDoctorExperience: (id: string) => `/api/doctors/${id}/experience/`,
   getDoctorCertificates: (id: string) => `/api/doctors/${id}/certificates/`,
-  getDoctorServices: (id: string) => `/api/doctors/${id}/services/`,
-  getDoctorLocation: (id: string) => `/api/doctors/${id}/location/`,
-  getDoctorSchedule: (id: string) => `/api/doctors/${id}/schedule/`,
-  getDoctorReviews: (id: string) => `/api/doctors/${id}/reviews/`,
-  getDoctorBlogPosts: (id: string) => `/api/doctors/${id}/blog-posts/`,
+  getDoctorServices: (id: string) => `/api/doctors/services/${id}`,
+  // getDoctorLocation: (id: string) => `/api/doctors/location/${id}`,
+  getDoctorSchedule: (id: string) => `/api/doctors/schedule/${id}`,
+  getDoctorReviews: (id: string) => `/api/doctors/reviews/${id}`,
+  getDoctorBlogPosts: (id: string) => `/api/doctors/blog-posts/${id}`,
 }
 
 export class DoctorAPI {
@@ -61,10 +61,10 @@ export class DoctorAPI {
     return result
   }
 
-  getDoctorLocation = async (id: string) => {
-    const result: AxiosResponse<ApiResponseWithContent<DoctorLocation>> = await this.api.get(urls.getDoctorLocation(id))
-    return result
-  }
+  // getDoctorLocation = async (id: string) => {
+  //   const result: AxiosResponse<ApiResponseWithContent<DoctorLocation>> = await this.api.get(urls.getDoctorLocation(id))
+  //   return result
+  // }
 
   getDoctorSchedule = async (id: string) => {
     const result: AxiosResponse<ApiResponseWithContent<DoctorSchedule[]>> = await this.api.get(urls.getDoctorSchedule(id))
@@ -84,8 +84,7 @@ export class DoctorAPI {
   // Get complete doctor data with all related information
   getCompleteDoctorData = async (id: string) => {
     try {
-      // Since most endpoints don't exist, we'll work with the basic doctor data
-      // and add mock/placeholder data for the missing fields
+      // Fetch basic doctor data
       const doctorResponse = await this.getDoctor(id)
       const doctor = doctorResponse.data.data
       
@@ -93,7 +92,110 @@ export class DoctorAPI {
         throw new Error('Doctor not found')
       }
 
-      // Create a complete doctor object with the available data and placeholders
+      // Try to fetch location data from API
+      let locationData: DoctorLocation | undefined
+      try {
+        // const locationResponse = await this.getDoctorLocation(id)
+        // locationData = locationResponse.data.data
+      } catch (locationError) {
+        console.warn('Location API not available, using fallback data:', locationError)
+        // Fallback to mock data if API fails
+        locationData = {
+          id: '1',
+          address: '123 Medical Street',
+          city: 'Tashkent',
+          country: 'Uzbekistan',
+          latitude: 41.3118066546201,
+          longitude: 69.25474741848696,
+          phone: doctor.user.phone_number,
+          email: doctor.user.email
+        }
+      }
+
+      // Try to fetch other data from API endpoints
+      let servicesData: DoctorService[] = []
+      let scheduleData: DoctorSchedule[] = []
+      let educationData: DoctorEducation[] = []
+      let experienceData: DoctorExperience[] = []
+      let certificatesData: DoctorCertificate[] = []
+
+      try {
+        const servicesResponse = await this.getDoctorServices(id)
+        servicesData = servicesResponse.data.data || []
+      } catch (error) {
+        console.warn('Services API not available, using fallback data')
+        servicesData = [
+          { id: '1', name: 'General Consultation', description: 'General medical consultation', price: 50, duration: 30 },
+          { id: '2', name: 'Follow-up Visit', description: 'Follow-up medical visit', price: 30, duration: 15 }
+        ]
+      }
+
+      try {
+        const scheduleResponse = await this.getDoctorSchedule(id)
+        scheduleData = scheduleResponse.data.data || []
+      } catch (error) {
+        console.warn('Schedule API not available, using fallback data')
+        scheduleData = [
+          { id: '1', day_of_week: 1, start_time: '09:00', end_time: '17:00', is_available: true },
+          { id: '2', day_of_week: 2, start_time: '09:00', end_time: '17:00', is_available: true },
+          { id: '3', day_of_week: 3, start_time: '09:00', end_time: '17:00', is_available: true },
+          { id: '4', day_of_week: 4, start_time: '09:00', end_time: '17:00', is_available: true },
+          { id: '5', day_of_week: 5, start_time: '09:00', end_time: '17:00', is_available: true }
+        ]
+      }
+
+      try {
+        const educationResponse = await this.getDoctorEducation(id)
+        educationData = educationResponse.data.data || []
+      } catch (error) {
+        console.warn('Education API not available, using fallback data')
+        educationData = [
+          {
+            id: '1',
+            institution: 'Medical University',
+            degree: 'MD',
+            field_of_study: doctor.specialty?.name || 'Medicine',
+            start_date: '2015-09-01',
+            end_date: '2020-06-30',
+            description: 'Medical degree in ' + (doctor.specialty?.name || 'Medicine')
+          }
+        ]
+      }
+
+      try {
+        const experienceResponse = await this.getDoctorExperience(id)
+        experienceData = experienceResponse.data.data || []
+      } catch (error) {
+        console.warn('Experience API not available, using fallback data')
+        experienceData = [
+          {
+            id: '1',
+            position: doctor.specialty?.name || 'Doctor',
+            hospital: 'General Hospital',
+            start_date: '2020-07-01',
+            end_date: undefined,
+            description: 'Working as a ' + (doctor.specialty?.name || 'doctor') + ' specialist'
+          }
+        ]
+      }
+
+      try {
+        const certificatesResponse = await this.getDoctorCertificates(id)
+        certificatesData = certificatesResponse.data.data || []
+      } catch (error) {
+        console.warn('Certificates API not available, using fallback data')
+        certificatesData = [
+          {
+            id: '1',
+            name: doctor.specialty?.name + ' Certification' || 'Medical Certification',
+            issuing_organization: 'Medical Board',
+            issue_date: '2020-07-01',
+            expiry_date: '2025-07-01'
+          }
+        ]
+      }
+
+      // Create a complete doctor object with the available data
       const completeDoctor: DoctorType = {
         ...doctor,
         // Add placeholder data for fields that don't have endpoints yet
@@ -107,57 +209,12 @@ export class DoctorAPI {
           name: doctor.specialty.name,
           description: doctor.specialty.description
         }] : [],
-        education: [
-          {
-            id: '1',
-            institution: 'Medical University',
-            degree: 'MD',
-            field_of_study: doctor.specialty?.name || 'Medicine',
-            start_date: '2015-09-01',
-            end_date: '2020-06-30',
-            description: 'Medical degree in ' + (doctor.specialty?.name || 'Medicine')
-          }
-        ],
-        experience: [
-          {
-            id: '1',
-            position: doctor.specialty?.name || 'Doctor',
-            hospital: 'General Hospital',
-            start_date: '2020-07-01',
-            end_date: undefined,
-            description: 'Working as a ' + (doctor.specialty?.name || 'doctor') + ' specialist'
-          }
-        ],
-        certificates: [
-          {
-            id: '1',
-            name: doctor.specialty?.name + ' Certification' || 'Medical Certification',
-            issuing_organization: 'Medical Board',
-            issue_date: '2020-07-01',
-            expiry_date: '2025-07-01'
-          }
-        ],
-        services: [
-          { id: '1', name: 'General Consultation', description: 'General medical consultation', price: 50, duration: 30 },
-          { id: '2', name: 'Follow-up Visit', description: 'Follow-up medical visit', price: 30, duration: 15 }
-        ],
-        location: {
-          id: '1',
-          address: '123 Medical Street',
-          city: 'Tashkent',
-          country: 'Uzbekistan',
-          latitude: 41.3118066546201,
-          longitude: 69.25474741848696,
-          phone: doctor.user.phone_number,
-          email: doctor.user.email
-        },
-        schedule: [
-          { id: '1', day_of_week: 1, start_time: '09:00', end_time: '17:00', is_available: true },
-          { id: '2', day_of_week: 2, start_time: '09:00', end_time: '17:00', is_available: true },
-          { id: '3', day_of_week: 3, start_time: '09:00', end_time: '17:00', is_available: true },
-          { id: '4', day_of_week: 4, start_time: '09:00', end_time: '17:00', is_available: true },
-          { id: '5', day_of_week: 5, start_time: '09:00', end_time: '17:00', is_available: true }
-        ],
+        education: educationData,
+        experience: experienceData,
+        certificates: certificatesData,
+        services: servicesData,
+        location: locationData,
+        schedule: scheduleData,
         reviews: [
           {
             id: '1',

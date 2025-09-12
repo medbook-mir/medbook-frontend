@@ -14,6 +14,8 @@ export type DoctorType = {
     experience_years?: number
     rating?: number
     consultation_fee?: number
+    website?: string
+    social_media?: string
   }
   specialty: {
     id: number

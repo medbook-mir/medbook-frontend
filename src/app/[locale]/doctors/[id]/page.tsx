@@ -5,11 +5,7 @@ import { Container } from '@/theme/container'
 import { CustomBreadcrumb } from '@/components/ui/breadcrumb'
 import HeadSection from '@/components/doctor/head-section'
 import DoctorTabs from '@/components/doctor/doctor-tabs'
-import Services from '@/components/doctor/services'
 import ImportantThings from '@/components/doctor/important-things'
-import Profile from '@/components/doctor/profile'
-import JobExperience from '@/components/doctor/job-experience'
-import Certificates from '@/components/doctor/certificates'
 import Location from '@/components/doctor/location'
 import { useCompleteDoctorData } from '@/hooks/useDoctor'
 import { Skeleton } from 'antd'
@@ -62,15 +58,9 @@ const DoctorsProfile = ({ params }: { params: Promise<{ id: string }> }) => {
       <Container>
         <CustomBreadcrumb pages={[{ title: "Doctor's profile", href: `/doctors/${doctorId}/` }]} />
         <HeadSection doctor={doctor} />
-        <DoctorTabs />
+        <DoctorTabs doctor={doctor} />
         <div className="flex flex-col gap-14 pt-[22px] pb-2.5 md:flex-row md:justify-between">
           <div className="flex flex-1 flex-col gap-8 py-2.5">
-            <Services services={doctor.services} />
-            <Profile doctor={doctor} />
-            <JobExperience experience={doctor.experience} />
-            <Certificates certificates={doctor.certificates} />
-          </div>
-          <div className="flex flex-col gap-4 py-2.5">
             <ImportantThings doctor={doctor} />
             <Location location={doctor.location} />
           </div>
