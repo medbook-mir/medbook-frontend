@@ -326,7 +326,7 @@ const TermsConditions = () => {
                 <div className="flex sm:flex-row gap-4 sm:justify-end">
                   <button
                     onClick={handleCancel}
-                    className="order-2 sm:order-1 rounded-lg border border-[#046D5F] bg-white px-6 py-3 text-[#046D5F] font-medium transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#046D5F] focus:ring-offset-2"
+                    className="order-2 sm:order-1 rounded-lg  border-[#046D5F] bg-white px-6 py-3 text-[#046D5F] font-medium transition hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#046D5F] focus:ring-offset-2"
                   >
                     {t('cancelButton')}
                   </button>
