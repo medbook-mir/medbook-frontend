@@ -186,10 +186,6 @@ export default function ContactUsPage() {
 
             {/* Contact Information Section */}
             <div className="space-y-8">
-              <h2 className="text-2xl font-bold text-[#0D0D0D]">
-                {t('contactInfo.title')}
-              </h2>
-
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start gap-4">
