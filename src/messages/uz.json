@@ -187,5 +187,63 @@
       "emailPlaceholder": "Elektron pochtangizni kiriting",
       "save": "Saqlash"
     }
+  },
+  "termsConditions": {
+    "title": "Shartlar va sharoitlar",
+    "subtitle": "Sizning kelishuvingiz",
+    "lastRevised": "Oxirgi yangilanish",
+    "lastRevisedDate": "16-dekabr, 2013",
+    "introduction": "www.lorem-ipsum.info-ga xush kelibsiz. Ushbu sayt bizning tashrif buyuruvchilarimizga xizmat sifatida taqdim etiladi va faqat ma'lumot berish maqsadida ishlatilishi mumkin. Shartlar va sharoitlar huquqiy majburiyatlarni o'z ichiga olgani uchun, ularni diqqat bilan o'qing.",
+    "section1": {
+      "title": "1. SIZNING KELISHUVINGIZ",
+      "content": "Ushbu Saytdan foydalanish orqali siz ushbu Shartlar va sharoitlarga bo'ysunishga va ularga rioya qilishga rozilik bildirasiz. Agar siz ushbu Shartlar va sharoitlarga rozi bo'lmasangiz, iltimos, ushbu saytdan foydalanmang. DIQQAT: Biz o'z zimmasiga olamiz, o'z ixtiyorimiz bilan ushbu Shartlar va sharoitlarni istalgan vaqtda o'zgartirish, modifikatsiya qilish yoki boshqacha o'zgartirish huquqini. Boshqacha ko'rsatilmagan taqdirda, o'zgartirishlar darhol kuchga kiradi. Iltimos, ushbu Shartlar va sharoitlarni muntazam ravishda ko'rib chiqing. O'zgartirishlar va/yoki modifikatsiyalarni joylashtirishdan keyin Saytdan davom etadigan foydalanishingiz qayta ko'rib chiqilgan Shartlar va sharoitlarni qabul qilishingiz va o'zgartirishlar haqida xabar berish uchun ushbu standartlarning o'zaro muvofiqlikini anglatadi. Ma'lumotingiz uchun, ushbu sahifa ushbu shartlar va sharoitlarning yuqori qismidagi sanaga ko'ra oxirgi marta yangilangan."
+    },
+    "section2": {
+      "title": "2. MAXFIYLIK",
+      "content": "Iltimos, ushbu Saytga tashrifingizni ham tartibga soluvchi Maxfiylik siyosatimizni ko'rib chiqing va bizning amaliyotlarimizni tushunish uchun."
+    },
+    "section3": {
+      "title": "3. BOG'LANMA SAYTLAR",
+      "content": "Ushbu Sayt boshqa mustaqil uchinchi tomon veb-saytlariga havolalarni o'z ichiga olishi mumkin (\"Bog'langan saytlar\"). Ushbu Bog'langan saytlar faqat bizning tashrif buyuruvchilarimizning qulayligi uchun taqdim etiladi. Bunday Bog'langan saytlar bizning nazoratimizda emas va biz ularning mazmuni yoki bunday Bog'langan saytlarda joylashgan har qanday ma'lumot yoki materiallarni o'z ichiga olgan holda, bunday Bog'langan saytlarning mazmunini qo'llab-quvvatlamaymiz va qo'llab-quvvatlamaymiz. Siz ushbu Bog'langan saytlar bilan o'zaro munosabatlaringiz bo'yicha mustaqil qaror qabul qilishingiz kerak bo'ladi."
+    },
+    "section4": {
+      "title": "4. OLDINDAN AYTILGAN BAYONOTLAR",
+      "content": "Ushbu saytda qayta ishlangan barcha materiallar ularning dastlabki nashr etilgan yoki topshirilgan sanasida aytilgan. Hujjat ushbu saytda mavjud bo'lishi, bunday hujjatda joylashgan ma'lumotlar voqealar yoki keyingi hujjat yoki topshirish orqali o'zgartirilmagan yoki almashtirilmaganligini anglatmaydi. Biz ushbu saytda joylashgan har qanday ma'lumot yoki bayonotlarni yangilash majburiyati yoki siyosatiga ega emasmiz va, shuning uchun, bunday ma'lumot yoki bayonotlarga ushbu saytga kirish sanangizda joriy bo'lgani kabi ishonmaslik kerak."
+    },
+    "section5": {
+      "title": "5. KAFOLATLARDAN BO'SHASH VA JAVOBGARLIKNI CHEKLASH",
+      "content": "A. USHBU SAYT NOTO'G'RILIKLAR VA TIPOGRAFIK XATOLARNI O'Z ICHIGA OLISHI MUMKIN. BIZ MATERIALLARNING TO'G'RILIGI YOKI TO'LIQLIGINI YOKI SAYT ORQALI KO'RSATILGAN YOKI TARQATILGAN HAR QANDAY MASLAHAT, FIKR, BAYONOT YOKI BOSHQА MA'LUMOTLARNING ISHONCHLILIGINI KAFOLATLAMAYMIZ. SIZ ANIQ TUSHUNASIZ VA ROZI BO'LASIZ: (i) SAYTDAN FOYDALANISHINGIZ, BU YERDA JOYLASHGAN HAR QANDAY FIKR, MASLAHAT, BAYONOT, MEMORANDUM YOKI MA'LUMOTGA HAR QANDAY TAVAKKAL QILISHNI O'Z ICHIGA OLGAN HOLDA, TO'LIQ RISKINGIZDA BO'LADI; (ii) SAYT \"BO'LGANI KABI\" VA \"MAVJUD BO'LGANI KABI\" ASOSIDA TAQDIМ ETILADI; (iii) BU YERDA ANIQ KO'RSATILGANLARDAN TASHQARI, BIZ HAR QANDAY TURDAGI, ANIQ YOKI TUSHUNARLI, SOTISHGA YAROQLILIK, MUAYYAN MAQSAD UCHUN YAROQLILIK, ISHCHI KUCHI, HUQUQ VA ZARAR KO'RMASTLIK KAFOLATLARINI O'Z ICHIGA OLGAN HOLDA, BARCHA KAFOLATLARDAN BO'SHASHAMIZ; (iv) BIZ USHBU SAYTDAN, REKLAMA QILINGAN YOKI TAKLIF QILINGAN MAHSULOTLAR YOKI XIZMATLAR YOKI ISHTIROK ETUVCHI SAVDOCHILAR BILAN O'ZARO MUNOSABATLARDA OLINISHI MUMKIN BO'LGAN NATIJALARGA NISBATAN HEЧ QANDAY KAFOLAT BERMAYMIZ; (v) SAYT ORQALI YUKLANGAN YOKI BOSHQA TARZDA OLINGAN HAR QANDAY MATERIAL O'Z IХTIYORINGIZ VA RISKINGIZDA AMALGA OSHIRILADI; va (vi) SIZ HAR QANDAY BUNYOD MATERIALNI YUKLASH NATIJASIDA KOMPYUTER TIZIMINGIZGA YETKADIGAN ZARAR YOKI MA'LUMOTLAR YO'QOLISHI UCHUN TO'LIQ JAVOBGAR BO'LASIZ. B. SIZ TUSHUNASIZ VA ROZI BO'LASIZ, HEЧ QANDAY HOLATDA, HAMMASI BO'LGAN HOLATLAR, NEGLIGENTLIKNI O'Z ICHIGA OLGAN HOLDA, BIZ FOYDALANISH YOKI FOYDALANA OLMASTLIK NATIJASIDA YUZAGA KELADIGAN HAR QANDAY TO'G'RIDAN-TO'G'RI, BILVOSITA, TASODIFIY, MAXSUS, JAZOLASH YOKI KEYINGI ZARARLAR UCHUN JAVOBGAR BO'LMAYMIZ. HAR QANDAY BUNYOD SAYT YOKI MATERIALLAR YOKI FUNKSIYALAR, HATTO BIZ BUNYOD ZARARLAR IMKONIYATI HAQIDA XABARDOR QILINGAN BO'LSA HAM. YUQORIDAGI CHEKLASH HAR QANDAY CHEKLANGAN YECHIMNING ASOSIY MAQSADINING MUVAFFAQIYATSIZLIGIGA QARAMAY QO'LLANILADI."
+    },
+    "section6": {
+      "title": "6. ISTISNOLAR VA CHEKLASH",
+      "content": "BA'ZI YURISDIKSIYALAR MUAYYAN KAFOLATLARNI ISTISNO QILISH YOKI TASODIFIY YOKI KEYINGI ZARARLAR UCHUN JAVOBGARLIKNI CHEKLASH YOKI ISTISNO QILISHNI RUXSAT BERMAYDI. SHUNING UCHUN, BUNYOD YURISDIKSIYADAGI JAVOBGARLIGIMIZ QONUN TOMONIDAN RUXSAT ETILGAN MAKSIMAL DARAJADA CHEKLANGAN BO'LISHI KERAK."
+    },
+    "section7": {
+      "title": "7. BIZNING MULKIY HUQUQLARIMIZ",
+      "content": "Ushbu Sayt va uning barcha Mazmuni faqat shaxsiy, tijorat bo'lmagan maqsadlarda foydalanish uchun mo'ljallangan. Aniq ko'rsatilganlardan tashqari, Sayt ichidagi hech narsa bizning yoki har qanday uchinchi tomonning intellektual mulk huquqlari ostida har qanday litsenziya berish sifatida talqin qilinmasligi kerak, estoppel, nazarda tutilgan, voz kechish yoki boshqa tarzda bo'lsa ham. Yuqoridagilarning umumiy qoidalarini cheklamasdan, siz tan olasiz va rozi bo'lasiz, Sayt va uning xizmatlarini boshqarish uchun foydalaniladigan va orqali mavjud bo'lgan barcha kontent mualliflik huquqi, savdo belgisi, patent yoki boshqa mulkiy huquqlar bilan himoyalangan. Siz rozi bo'lasiz: (a) biz tomonidan Sayt bilan bog'liq holda taqdim etilgan har qanday savdo belgilarini, xizmat belgilarini, savdo libosini (birgalikda \"Savdo belgilari\") yoki boshqa intellektual mulkni o'zgartirish, o'zgartirish yoki buzish; (b) o'zingizni biz tomonidan, yoki bizning har qanday filiallarimiz yoki xizmat ko'rsatuvchilarimiz tomonidan homiylik qilingan, bog'langan yoki qo'llab-quvvatlangan deb ko'rsatish; (c) Savdo belgilaridan yoki Sayt orqali mavjud bo'lgan boshqa kontentdan biz uni sizga mavjud qilgan maqsaddan boshqa har qanday maqsad uchun foydalanish; (d) bizni, bizning Savdo belgilarimizni yoki Saytning har qanday jihatini bo'xta qilish yoki kamsitish; va (e) Saytni yoki uning mahsulotlari va xizmatlari bilan bog'liq ishlatiladigan har qanday dasturiy ta'minot yoki dasturlarni moslashtirish, tarjima qilish, o'zgartirish, dekompilyatsiya qilish, ajratish yoki teskari muhandislik qilish. Sayt yoki uning har qanday mazmunini har qanday shakl va usul bilan ramkaga olish, ko'zgu qilish, qirqish yoki ma'lumotlarni qazib olish qat'iyan taqiqlangan."
+    },
+    "section8": {
+      "title": "8. QAYTARISH",
+      "content": "Sayt veb-saytlaridan foydalanish orqali siz bizni va bog'langan tashkilotlarni (birgalikda \"Qaytaruvchilar\") qaytarishga va ularni har qanday va barcha da'volar va xarajatlardan, jumladan (cheklanmagan holda) advokat haqlaridan, Sayt veb-saytlaridan foydalanishingiz, Mahsulotlar va Xizmatlardan foydalanishingiz yoki bizga g'oyalar va/yoki tegishli materiallarni topshirishingiz yoki har qanday shaxsning har qanday ID, a'zolik yoki parolni ishlatishidan kelib chiqadigan har qanday va barcha da'volar va xarajatlardan himoya qilishga rozi bo'lasiz. Siz Saytning har qanday qismi bilan saqlaysiz, bunday foydalanish siz tomonidan ruxsat etilgan bo'lsa ham."
+    },
+    "section9": {
+      "title": "9. MUALLIFLIK HUQUQI VA SAVDO BELGISI E'LONI",
+      "content": "Shaxsiy va tijorat foydalanish uchun bepul foydalanish mumkin bo'lgan bizning yaratilgan soxta nusxadan tashqari, boshqa barcha matn mualliflik huquqi bilan himoyalangan. generator.lorem-ipsum.info © 2013, barcha huquqlar himoyalangan"
+    },
+    "section10": {
+      "title": "10. INTELLEKTUAL MULK BUZILISHI HAQIDAGI DA'VOLAR",
+      "content": "Intellektual mulk buzilishi haqidagi da'volarga tezda javob berish bizning siyosatimizdir. Biz buzilish haqidagi da'volarni tezda qayta ishlaymiz va tekshiramiz va Raqamli Ming Yillik Mualliflik Huquqi Qonuni (\"DMCA\") va boshqa qo'llaniladigan intellektual mulk qonunlari ostida tegishli choralarni ko'ramiz. Buzilish haqidagi da'volar quyidagilarga yo'naltirilishi kerak: generator.lorem-ipsum.info 126 Electricov St. Kiev, Kiev 04176 Ukraina contact@lorem-ipsum.info"
+    },
+    "section11": {
+      "title": "11. BAJARISH JOYI",
+      "content": "Ushbu Sayt bizning Kiev, Ukraina ofisimizdan nazorat qilinadi, boshqariladi va boshqariladi. Biz ushbu saytdagi materiallar Ukrainadan tashqari boshqa joylarda foydalanish uchun mos yoki mavjud ekanligini tasdiqlamaymiz va ularning mazmuni noqonuniy bo'lgan hududlardan ularga kirish taqiqlangan. Agar siz Ukrainadan tashqari joydan ushbu Saytga kirishsangiz, siz barcha mahalliy qonunlarga rioya qilish uchun javobgarsiz."
+    },
+    "section12": {
+      "title": "12. UMUMIY",
+      "content": "A. Agar ushbu Shartlar va sharoitlarning har qanday qoidasi noto'g'ri yoki amal qilmas deb topilsa, qoida olib tashlanishi (yoki iloji bo'lsa, amal qilish uchun tarzda talqin qilinishi) kerak va qolgan qoidalar amal qilinishi kerak. Sarlavhalar faqat ma'lumot uchun va hech qanday tarzda bunday bo'limning qamrovi yoki kengligini aniqlamaydi, cheklamaydi, talqin qilmaydi yoki tasvirlamaydi. Siz yoki boshqalar tomonidan buzilishga nisbatan harakat qilmasligimiz keyingi yoki o'xshash buzilishlarga nisbatan harakat qilish huquqimizdan voz kechishni anglatmaydi. Ushbu Shartlar va sharoitlar bu yerda joylashgan mavzu bo'yicha biz o'rtamizdagi to'liq tushuncha va kelishuvni belgilaydi va bizning vakillarimiz va siz o'rtasidagi ushbu mavzu bo'yicha har qanday boshqa kelishuv, taklif va aloqalarni, yozma yoki og'zaki, jumladan mijozlarning har qanday hujjatlarida yoki xarid buyurtmalarida har qanday shartlar va sharoitlarni bekor qiladi. B. Hech qanday qo'shma korxona yo'q, huquqlarni buzish yo'q. Siz rozi bo'lasiz, ushbu Shartlar va sharoitlar yoki Saytdan foydalanishingiz natijasida siz va biz o'rtasida hech qanday qo'shma korxona, sheriklik, ish bilan band bo'lish yoki agentlik munosabatlari mavjud emas. Ushbu Shartlar va sharoitlarni bajarish mavjud qonunlar va huquqiy jarayonlarga bog'liq va bu yerda joylashgan hech narsa Saytdan foydalanishingiz yoki bunday foydalanishga nisbatan bizga taqdim etilgan yoki biz tomonidan to'plangan ma'lumotlarga nisbatan hukumat, sud va qonun bajaruvchi organlarning so'rovlari yoki talablariga rioya qilish huquqimizni buzishni anglatmaydi."
+    },
+    "acceptanceText": "Men shartlar va sharoitlar va maxfiylik siyosatini o'qigan va qabul qilganimni tasdiqlayman.",
+    "cancelButton": "Bekor qilish",
+    "acceptButton": "Qabul qilish"
   }
 }
