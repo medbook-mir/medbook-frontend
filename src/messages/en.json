@@ -94,6 +94,36 @@
       "privacyPolicy": "Privacy Policy"
     }
   },
+  "contactPage": {
+    "title": "Contact Us",
+    "description": "Send us a message and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Full Name",
+      "email": "Email",
+      "emailPlaceholder": "e.g. name@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this regarding?",
+      "message": "Your message",
+      "messagePlaceholder": "Tell us how we can help you",
+      "sendButton": "Send message"
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Our address",
+        "value": "S-5, Second Floor, Krishna Mall, Laxmi Mandir Tiraha, Tonk Phatak, Tonk Road, Jaipur - 302015"
+      },
+      "email": {
+        "title": "Email",
+        "value": "supportmdvisit@gmail.com"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "value": "+998 99 999 99 99"
+      }
+    }
+  },
   "loginPage": {
     "title": "Online healthcare – Always by your side",
     "description": "Welcome to your personal digital clinic. With just a few clicks, you can connect to certified doctors, get professional medical advice, and receive prescriptions – all from the comfort of your home. Fast, secure, and available 24/7.\"",

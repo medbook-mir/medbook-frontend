@@ -93,6 +93,36 @@
       "privacyPolicy": "Maxfiylik siyosati"
     }
   },
+  "contactPage": {
+    "title": "Biz bilan bog'laning",
+    "description": "Bizga xabar yuboring va biz sizga imkon qadar tezroq javob beramiz.",
+    "form": {
+      "name": "Ism",
+      "namePlaceholder": "To'liq ismingiz",
+      "email": "Elektron pochta",
+      "emailPlaceholder": "masalan, name@example.com",
+      "subject": "Mavzu",
+      "subjectPlaceholder": "Bu nima haqida?",
+      "message": "Xabaringiz",
+      "messagePlaceholder": "Biz sizga qanday yordam bera olishimizni ayting",
+      "sendButton": "Xabar yuborish"
+    },
+    "contactInfo": {
+      "title": "Aloqa ma'lumotlari",
+      "address": {
+        "title": "Bizning manzilimiz",
+        "value": "S-5, Ikkinchi qavat, Krishna Mall, Laxmi Mandir Tiraha, Tonk Phatak, Tonk Road, Jaipur - 302015"
+      },
+      "email": {
+        "title": "Elektron pochta",
+        "value": "supportmdvisit@gmail.com"
+      },
+      "phone": {
+        "title": "Telefon raqami",
+        "value": "+998 99 999 99 99"
+      }
+    }
+  },
   "loginPage": {
     "title": "Onlayn tibbiyot – har doim yoningizda",
     "description": "Shaxsiy raqamli klinikaga xush kelibsiz. Bor-yo‘g‘i bir nechta bosqichda tasdiqlangan shifokorlarga ulanish, professional tibbiy maslahat olish va retseptlarni qabul qilishingiz mumkin – uyingizda o‘tirgan holda. Tezkor, xavfsiz va 24/7 xizmatingizda.",
