@@ -105,7 +105,26 @@
       "subjectPlaceholder": "Bu nima haqida?",
       "message": "Xabaringiz",
       "messagePlaceholder": "Biz sizga qanday yordam bera olishimizni ayting",
-      "sendButton": "Xabar yuborish"
+      "sendButton": "Xabar yuborish",
+      "sending": "Yuborilmoqda...",
+      "errors": {
+        "nameRequired": "Ism majburiy",
+        "nameMinLength": "Ism kamida 2 ta belgidan iborat bo'lishi kerak",
+        "nameMaxLength": "Ism 50 ta belgidan oshmasligi kerak",
+        "emailRequired": "Elektron pochta majburiy",
+        "emailInvalid": "Iltimos, to'g'ri elektron pochta manzilini kiriting",
+        "subjectRequired": "Mavzu majburiy",
+        "subjectMinLength": "Mavzu kamida 5 ta belgidan iborat bo'lishi kerak",
+        "subjectMaxLength": "Mavzu 100 ta belgidan oshmasligi kerak",
+        "messageRequired": "Xabar majburiy",
+        "messageMinLength": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak",
+        "messageMaxLength": "Xabar 1000 ta belgidan oshmasligi kerak"
+      },
+      "notifications": {
+        "fixErrors": "Iltimos, formadagi xatolarni tuzating",
+        "success": "Xabar muvaffaqiyatli yuborildi! Biz sizga tez orada javob beramiz.",
+        "error": "Xabarni yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
+      }
     },
     "contactInfo": {
       "title": "Aloqa ma'lumotlari",

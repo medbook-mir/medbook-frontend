@@ -6,9 +6,11 @@ import { CustomBreadcrumb } from '@/components/ui/breadcrumb'
 import { Container } from '@/theme/container'
 import { FilledButton } from '@/components/ui/filled-button'
 import DefaultInput from '@/components/ui/default-input'
-import { Input, message } from 'antd'
+import { Input} from 'antd'
 import { MailOutlined, PhoneOutlined, EnvironmentOutlined } from '@ant-design/icons'
-import { contactSchema } from '@/schema/contact-schema'
+import { createContactSchema } from '@/schema/contact-schema'
+import { log } from 'console'
+import { useCustomNotification } from '@/hooks/useNotification'
 
 const { TextArea } = Input
 
@@ -29,7 +31,8 @@ export default function ContactUsPage() {
   })
   const [errors, setErrors] = useState<Partial<FormData>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
-
+  const { openNotification } = useCustomNotification();
+  
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
     // Clear error when user starts typing
@@ -40,12 +43,14 @@ export default function ContactUsPage() {
 
   const validateForm = async (): Promise<boolean> => {
     try {
+      const contactSchema = createContactSchema(t)
       await contactSchema.validate(formData, { abortEarly: false })
       setErrors({})
       return true
     } catch (error: any) {
       const validationErrors: Partial<FormData> = {}
       error.inner.forEach((err: any) => {
+        // The err.message already contains the translated text from the schema
         validationErrors[err.path as keyof FormData] = err.message
       })
       setErrors(validationErrors)
@@ -58,7 +63,7 @@ export default function ContactUsPage() {
     
     const isValid = await validateForm()
     if (!isValid) {
-      message.error('Please fix the errors in the form')
+      openNotification('error', t('form.notifications.fixErrors'), '')
       return
     }
 
@@ -67,10 +72,10 @@ export default function ContactUsPage() {
     try {
       
       await new Promise(resolve => setTimeout(resolve, 1000))
-      message.success('Message sent successfully! We will get back to you soon.')
+      openNotification('success', t('form.notifications.success'), '')
       setFormData({ name: '', email: '', subject: '', message: '' })
     } catch (error) {
-      message.error('Failed to send message. Please try again.')
+      openNotification('error', t('form.notifications.error'), '')
     } finally {
       setIsSubmitting(false)
     }
@@ -83,7 +88,7 @@ export default function ContactUsPage() {
           <CustomBreadcrumb
             pages={[
               {
-                title: <span className="font-bold">{t('title')}</span>,
+                title: t('title'),
                 href: '/contact-us'
               }
             ]}
@@ -173,12 +178,12 @@ export default function ContactUsPage() {
 
                 <div className="flex justify-center">
                   <FilledButton
-                    type="submit"
+                    htmlType="submit"
                     className="px-12 !py-5 text-base font-medium !rounded-[20px]"
                     loading={isSubmitting}
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? 'Sending...' : t('form.sendButton')}
+                    {isSubmitting ? t('form.sending') : t('form.sendButton')}
                   </FilledButton>
                 </div>
               </form>
