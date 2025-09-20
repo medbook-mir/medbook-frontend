@@ -199,7 +199,30 @@
       "title": "Referrals"
     },
     "profileSettingsPage": {
-      "title": "Settings"
+      "title": "Settings",
+      "loginSecurity": {
+        "title": "Login and security",
+        "password": "Password",
+        "loggedDevices": "Logged devices"
+      },
+      "dataPrivacy": {
+        "title": "Data privacy",
+        "privacyPolicies": "Privacy Policies",
+        "cookiesPolicy": "Cookies Policy"
+      },
+      "paymentSettings": {
+        "title": "Payment settings",
+        "creditCard": "Credit Card information",
+        "method": "Payment method"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "push": "Push notifications"
+      },
+      "generalSettings": {
+        "title": "General settings",
+        "language": "Content language"
+      }
     },
     "customerSupportPage": {
       "title": "Customer Support"

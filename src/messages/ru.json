@@ -199,7 +199,30 @@
       "title": "Рефералы"
     },
     "profileSettingsPage": {
-      "title": "Настройки"
+      "title": "Настройки",
+      "loginSecurity": {
+        "title": "Вход и безопасность",
+        "password": "Пароль",
+        "loggedDevices": "Авторизованные устройства"
+      },
+      "dataPrivacy": {
+        "title": "Конфиденциальность данных",
+        "privacyPolicies": "Политика конфиденциальности",
+        "cookiesPolicy": "Политика файлов cookie"
+      },
+      "paymentSettings": {
+        "title": "Настройки платежей",
+        "creditCard": "Информация о кредитной карте",
+        "method": "Способ оплаты"
+      },
+      "notifications": {
+        "title": "Уведомления",
+        "push": "Push-уведомления"
+      },
+      "generalSettings": {
+        "title": "Общие настройки",
+        "language": "Язык контента"
+      }
     },
     "customerSupportPage": {
       "title": "Служба поддержки"

@@ -199,7 +199,30 @@
       "title": "Йўлланмалар"
     },
     "profileSettingsPage": {
-      "title": "Созламалар"
+      "title": "Созламалар",
+      "loginSecurity": {
+        "title": "Кириш ва хавфсизлик",
+        "password": "Пароль",
+        "loggedDevices": "Тизимга кирган қурилмалар"
+      },
+      "dataPrivacy": {
+        "title": "Маълумотлар махфийлиги",
+        "privacyPolicies": "Махфийлик сиёсати",
+        "cookiesPolicy": "Cookie сиёсати"
+      },
+      "paymentSettings": {
+        "title": "Тўлов созламалари",
+        "creditCard": "Кредит карта маълумотлари",
+        "method": "Тўлов усули"
+      },
+      "notifications": {
+        "title": "Билдиришномалар",
+        "push": "Push билдиришномалар"
+      },
+      "generalSettings": {
+        "title": "Умумий созламалар",
+        "language": "Контент тили"
+      }
     },
     "customerSupportPage": {
       "title": "Мижозларга ёрдам"

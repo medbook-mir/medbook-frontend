@@ -199,7 +199,30 @@
       "title": "Tavsiyalar"
     },
     "profileSettingsPage": {
-      "title": "Sozlamalar"
+      "title": "Sozlamalar",
+      "loginSecurity": {
+        "title": "Kirish va xavfsizlik",
+        "password": "Parol",
+        "loggedDevices": "Tizimga kirgan qurilmalar"
+      },
+      "dataPrivacy": {
+        "title": "Ma'lumotlar maxfiyligi",
+        "privacyPolicies": "Maxfiylik siyosati",
+        "cookiesPolicy": "Cookie siyosati"
+      },
+      "paymentSettings": {
+        "title": "To'lov sozlamalari",
+        "creditCard": "Kredit karta ma'lumotlari",
+        "method": "To'lov usuli"
+      },
+      "notifications": {
+        "title": "Bildirishnomalar",
+        "push": "Push bildirishnomalar"
+      },
+      "generalSettings": {
+        "title": "Umumiy sozlamalar",
+        "language": "Kontent tili"
+      }
     },
     "customerSupportPage": {
       "title": "Mijozlarni qo'llab-quvvatlash"
