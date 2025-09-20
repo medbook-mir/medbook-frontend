@@ -152,6 +152,12 @@
     "referrals": "Рефералы",
     "customerSupport": "Поддержка",
     "logout": "Выйти",
+    "logoutModal": {
+      "title": "Готовы выйти?",
+      "description": "Вы можете войти обратно в любое время",
+      "confirmButton": "Выйти",
+      "cancelButton": "Отмена"
+    },
     "myDataPage": {
       "customer": "Пациент",
       "editProfile": "Редактировать профиль",

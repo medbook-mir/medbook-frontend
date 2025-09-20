@@ -152,6 +152,12 @@
     "referrals": "Tavsiya",
     "customerSupport": "Mijozlarni qo'llab-quvvatlash",
     "logout": "Chiqish",
+    "logoutModal": {
+      "title": "Chiqishga tayyormisiz?",
+      "description": "Istalgan vaqtda qaytib kirishingiz mumkin",
+      "confirmButton": "Chiqish",
+      "cancelButton": "Bekor qilish"
+    },
     "myDataPage": {
       "customer": "Mijoz",
       "editProfile": "Profilni tahrirlash",

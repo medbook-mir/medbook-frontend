@@ -152,6 +152,12 @@
     "referrals": "Йўлланмалар",
     "customerSupport": "Мижозларга ёрдам",
     "logout": "Чиқиш",
+    "logoutModal": {
+      "title": "Чиқишга тайёрмисиз?",
+      "description": "Истаган вақтда қайтиб киришингиз мумкин",
+      "confirmButton": "Чиқиш",
+      "cancelButton": "Бекор қилиш"
+    },
     "myDataPage": {
       "customer": "Мижоз",
       "editProfile": "Профилни таҳрир қилиш",

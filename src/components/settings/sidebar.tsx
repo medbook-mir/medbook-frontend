@@ -1,16 +1,43 @@
 'use client'
 
+import { useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { Link, usePathname } from '@/i18n/navigation'
 import { sidebarData } from './sidebar-data'
 import { sidebarIcons, LogoutIcon, type SidebarIconType } from '@/utils/icons'
+import ConfirmationModal from '@/components/ui/confirmation-modal'
 
 const Sidebar = () => {
   const pathname = usePathname()
   const t = useTranslations('settingsLayout')
+  const [isLogoutModalOpen, setIsLogoutModalOpen] = useState(false)
+  const [isLoggingOut, setIsLoggingOut] = useState(false)
 
-  const handleLogout = () => {
-    console.log('logout')
+  const handleLogoutClick = () => {
+    setIsLogoutModalOpen(true)
+  }
+
+  const handleLogoutConfirm = async () => {
+    setIsLoggingOut(true)
+    try {
+      // Add your logout logic here
+      console.log('Logging out...')
+      // Example: await logout()
+      // Example: router.push('/login')
+      
+      // Simulate logout delay
+      await new Promise(resolve => setTimeout(resolve, 1000))
+      
+      setIsLogoutModalOpen(false)
+    } catch (error) {
+      console.error('Logout failed:', error)
+    } finally {
+      setIsLoggingOut(false)
+    }
+  }
+
+  const handleLogoutCancel = () => {
+    setIsLogoutModalOpen(false)
   }
 
   const getIcon = (iconName: string, isActive: boolean) => {
@@ -49,11 +76,23 @@ const Sidebar = () => {
       
       <button 
         className="flex items-center gap-3 px-6 py-4 text-start text-[#6B7280] hover:bg-gray-50 transition-colors font-normal"
-        onClick={handleLogout}
+        onClick={handleLogoutClick}
       >
         <LogoutIcon className="text-[#6B7280]" color="#6B7280" />
         {t('logout')}
       </button>
+
+      {/* Logout Confirmation Modal */}
+      <ConfirmationModal
+        isOpen={isLogoutModalOpen}
+        onClose={handleLogoutCancel}
+        onConfirm={handleLogoutConfirm}
+        title={t('logoutModal.title')}
+        description={t('logoutModal.description')}
+        confirmText={t('logoutModal.confirmButton')}
+        cancelText={t('logoutModal.cancelButton')}
+        isLoading={isLoggingOut}
+      />
     </aside>
   )
 }

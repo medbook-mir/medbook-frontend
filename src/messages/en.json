@@ -152,6 +152,12 @@
     "referrals": "Referrals",
     "customerSupport": "Customer support",
     "logout": "Log out",
+    "logoutModal": {
+      "title": "Ready to log out?",
+      "description": "You can log back in at any time",
+      "confirmButton": "Log out",
+      "cancelButton": "Cancel"
+    },
     "myDataPage": {
       "customer": "Customer",
       "editProfile": "Edit Profile",
