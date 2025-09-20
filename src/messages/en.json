@@ -143,11 +143,15 @@
   },
   "settingsLayout": {
     "settings": "Settings",
+    "personalDetail": "Personal detail",
     "myData": "My Data",
+    "myBookings": "My bookings",
+    "chat": "Chat",
+    "myRecords": "My records",
     "payment": "Payment",
-    "myBookings": "My Bookings",
-    "myRecords": "My Records",
-    "logout": "Logout",
+    "referrals": "Referrals",
+    "customerSupport": "Customer support",
+    "logout": "Log out",
     "myDataPage": {
       "customer": "Customer",
       "editProfile": "Edit Profile",
@@ -156,21 +160,6 @@
       "phone": "Phone Number (Mobile)",
       "gender": "Gender",
       "email": "Email"
-    },
-    "paymentPage": {
-      "title": "Payment"
-    },
-    "myBookingsPage": {
-      "active": "Active",
-      "history": "History",
-      "orderNumber": "Order Number",
-      "date": "Date",
-      "appointmentType": "Appointment Type",
-      "status": "Status",
-      "doctor": "Doctor"
-    },
-    "myRecordsPage": {
-      "title": "My Records"
     },
     "myDataEditingPage": {
       "title": "My Data",
@@ -187,6 +176,33 @@
       "email": "Email",
       "emailPlaceholder": "Enter email",
       "save": "Save"
+    },
+    "myBookingsPage": {
+      "active": "Active",
+      "history": "History",
+      "orderNumber": "Order Number",
+      "date": "Date",
+      "appointmentType": "Appointment Type",
+      "status": "Status",
+      "doctor": "Doctor"
+    },
+    "chatPage": {
+      "title": "Chat"
+    },
+    "myRecordsPage": {
+      "title": "My Records"
+    },
+    "paymentPage": {
+      "title": "Payment"
+    },
+    "referralsPage": {
+      "title": "Referrals"
+    },
+    "profileSettingsPage": {
+      "title": "Settings"
+    },
+    "customerSupportPage": {
+      "title": "Customer Support"
     }
   }
 }

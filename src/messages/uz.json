@@ -1,191 +1,208 @@
 {
   "basic": {
     "errorsMsg": {
-      "wrongSomething": "Nimadir noto‘g‘ri ketdi",
-      "tryAgain": "Iltimos, yana bir bor urinib ko‘ring"
+      "wrongSomething": "Nimadir xato ketdi",
+      "tryAgain": "Iltimos, qayta urinib ko'ring"
     }
   },
   "homePage": {
     "home": "Bosh sahifa",
     "hero": {
-      "title": "Onlayn qabulga yozilish — salomatlik sari birinchi qadam",
-      "description": "Ajoyib tadbirlar o‘tkazing, bilim ulashing, mahsulotingizni rivojlantiring va imkoniyatlar yarating",
-      "search_placeholder": "Shifokor, klinika yoki xizmat turini qidiring",
-      "location": "Manzil"
+      "title": "Onlayn navbat olish — sog'lig'ingiz sari birinchi qadam",
+      "description": "Ajoyib tadbirlar o'tkazing, bilim ulashing, mahsulotingizni rivojlantiring va yangi imkoniyatlar yarating",
+      "search_placeholder": "Shifokor, klinika yoki xizmat qidiring",
+      "location": "Joylashuv"
     },
     "solutions": {
-      "title": "Qadam-baqadam yechimlaringizga erishing",
+      "title": "Navbatdan davolanishgacha — Oddiy jarayon",
       "complaints": {
-        "title": "Sog'liq muammolarini tekshiring",
-        "description": "Kasallikni tekshirib, mos mutaxassisni oson tanlashingiz mumkin"
+        "title": "Alomatlaringizni tekshiring",
+        "description": "Sog'liq muammolaringizni tavsiflang va biz sizga mos mutaxassisni topishda yordam beramiz."
       },
       "doctor": {
-        "title": "Mutaxassis shifokorni tanlang",
-        "description": "Kasallik muammolaringizga mos mutaxassisni tanlang"
+        "title": "To'g'ri shifokorni tanlang",
+        "description": "Ehtiyojlaringiz va alomatlaringizga qarab ishonchli mutaxassisni tanlang."
       },
       "schedule": {
-        "title": "Jadval tuzing",
-        "description": "Kerakli shifokor bilan uchrashuv jadvalini tuzing va tekshiruvni boshlang"
+        "title": "Qabulga yoziling",
+        "description": "Tanlangan shifokoringiz bilan qulay vaqtni belgilang — onlayn va ortiqcha qiyinchiliksiz."
       },
       "solutions": {
-        "title": "Yechimlaringizni oling",
-        "description": "Mutaxassis bilan tekshiruvdan so'ng to'g'ri davolash usulini topishga yordam beramiz"
+        "title": "Mutaxassis yordamini oling",
+        "description": "Shifokoringiz bilan maslahat qiling va to'g'ri davolanish hamda yo'l-yo'riqlarni oling."
       }
     },
     "resultNumbers": {
-      "title": "Biz 7500+ shifoxonada xodimlarga imtiyozlar taqdim etamiz",
-      "description": "Samarali rivojlanishni kuzatish va bosqichlarni belgilash har qanday muvaffaqiyatli loyiha yoki shaxsiy maqsadning muhim qismi hisoblanadi. Yutuqlarimizni tizimli ravishda nazorat qilib boramiz."
+      "title": "Bizning yagona maqsadimiz — Barchaga yaxshiroq tibbiy xizmat",
+      "description": "Minglab bemorlarni ishonchli shifokorlar bilan bog'laymiz va har bir qadamda ishonch hamda g'amxo'rlikni ta'minlaymiz."
     },
     "scheduleInAdvance": {
-      "title": "Shifokor bilan oldindan rejalashtirish",
+      "title": "Oldindan shifokor bilan uchrashuvni rejalashtiring",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
+    },
+    "testimonialsSection": {
+      "title": "Bemorlarimiz nima deyishmoqda",
+      "description": "Bizning vazifamiz — har bir bemorga shaxsiy davolanish va sog'lig'ini asrashga qaratilgan tibbiy yordam ko'rsatish"
     },
     "blog": {
       "title": "Blog",
-      "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
+      "description": "Bizning blog shunchaki yangilik emas — bu o'rganish va muloqot maydoni. Medvisit qanday qilib tibbiy xizmatni oddiyroq, aqlliroq va insoniyroq qilayotganini bilib oling."
     },
     "faqsSection": {
-      "title": "Ko‘p beriladigan savollar",
-      "description": "Platformadan foydalanishdan tortib uchrashuvlarni bron qilishgacha, biz yordam berishga tayyormiz. Hamjamiyatimiz tomonidan eng ko‘p beriladigan savollarga javoblarni ko‘rib chiqing.",
+      "title": "Tez-tez beriladigan savollar",
+      "description": "Platformadan foydalanishdan tortib qabulga yozilishgacha — biz yordam berishga tayyormiz. Jamiyatimizdagi eng ko'p berilgan savollarga javoblarni ko'rib chiqing.",
       "items": [
         {
-          "title": "Qanday qilib uchrashuvni bron qilish, ko‘chirish yoki bekor qilish mumkin?",
-          "content": "Siz uchrashuvlaringizni ilova orqali oson boshqarishingiz mumkin — faqat sizga qulay vaqtni tanlang yoki boshqaruv paneliga o‘tib, uchrashuvni ko‘chiring yoki bekor qiling. Sizga eslatmalar avtomatik yuboriladi."
+          "title": "Qanday qilib qabulga yozilaman, vaqtini o'zgartiraman yoki bekor qilaman?",
+          "content": "Qabulingizni ilova orqali oson boshqarishingiz mumkin — sizga qulay vaqtni tanlang yoki shaxsiy kabinetga o'tib, qabulni o'zgartiring yoki bekor qiling. Sizga eslatmalar avtomatik tarzda yuboriladi."
         },
         {
-          "title": "Agar menga shoshilinch tibbiy yordam kerak bo‘lsa-chi?",
-          "content": "Agar sizga shoshilinch tibbiy yordam kerak bo‘lsa, darhol tez yordam xizmatiga qo‘ng‘iroq qiling. Ilova favqulodda holatlar uchun mo‘ljallanmagan."
+          "title": "Agar menga tez tibbiy yordam kerak bo'lsa, nima qilaman?",
+          "content": "Agar sizga tez tibbiy yordam kerak bo'lsa, darhol tez yordam xizmatiga qo'ng'iroq qiling. Ilova shoshilinch holatlar uchun mo'ljallanmagan."
         },
         {
-          "title": "Shaxsiy va tibbiy ma’lumotlarim Medvisit bilan xavfsizmi?",
-          "content": "Ha, barcha ma’lumotlaringiz shifrlanadi va sog‘liqni saqlash ma’lumotlari qoidalariga muvofiq xavfsiz saqlanadi."
+          "title": "Mening shaxsiy va tibbiy ma'lumotlarim Medvisitda xavfsizmi?",
+          "content": "Ha, barcha ma'lumotlaringiz shifrlanadi va sog'liqni saqlash ma'lumotlari qoidalariga muvofiq xavfsiz tarzda saqlanadi."
         },
         {
-          "title": "Ilova orqali retsept yoki yo‘llanma olishim mumkinmi?",
-          "content": "Ha, platformadagi litsenziyaga ega mutaxassislar zarurat tug‘ilganda retsept yoki yo‘llanma bera oladilar."
+          "title": "Ilova orqali retsept yoki yo'llanma olishim mumkinmi?",
+          "content": "Ha, platformadagi litsenziyaga ega mutaxassislar kerak bo'lganda retsept yoki yo'llanma berishi mumkin."
         }
       ]
     },
     "mobileApps": {
-      "title": "Ilovani yuklab oling",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
+      "title": "Ilovani hoziroq yuklab oling",
+      "description": "Sog'lig'ingizni istalgan paytda va joyda nazorat qiling. Medvisit ilovasi bilan sifatli yordam faqat bir marta bosishda."
     },
     "doctorPromo": {
       "title": "Siz shifokormisiz?",
-      "subtitle": "Yaxshiroq parvarish uchun aqlli vositalar",
-      "description": "Biz sizning ish kuningizni osonlashtirish uchun bu yerdamiz. Bizning shifokor paneli sizga tartibli bo'lish, vaqtni boshqarish, ekspertizangizni namoyish etish va bemorlar bilan bog'lanishga yordam beradi - hammasi bir joyda.",
+      "subtitle": "Yaxshiroq yordam uchun aqlli vositalar",
+      "description": "Biz sizning ish kuningizni yengillashtirish uchun shu yerdamiz. Shifokor paneli sizga tartibli bo'lish, vaqtingizni boshqarish, tajribangizni namoyish etish va bemorlar bilan bog'lanishda yordam beradi — barchasi bir joyda.",
       "ctaButton": "Men shifokorman",
-      "trustStatement": "Etakchi klinikalardan shifokorlar ishonadi:"
+      "trustStatement": "Yetakchi klinikalardagi shifokorlar ishonadi:"
     },
     "footer": {
-      "description": "AdventureSeekers Expeditions bilan sayohat mo'jizalarini kashf eting. AdventureSeekers Expeditions bilan sayohatga bo'lgan ishtiyoqingizni uyg'oting.",
+      "description": "bemorlar va mutaxassislarni bog'laymiz",
       "links": {
-        "wishlist": "Tanlanganlar ro'yxati",
-        "specialOffers": "Maxsus takliflar",
-        "lookbook": "Lookbook",
-        "bestsellers": "Eng ko'p sotilganlar",
-        "mega": "Mega",
-        "saved": "Saqlangan"
+        "saved": "Saqlanganlar",
+        "wishList": "Sevimlilar",
+        "specialOffers": "Maxsus takliflar"
       },
-      "copyright": "Mualliflik huquqi © 2024 DockBook, Barcha huquqlar himoyalangan.",
-      "customerService": "Mijozlarga xizmat",
+      "copyright": "Copyright @ 2024 DockBook, Barcha huquqlar himoyalangan.",
+      "customerService": "Mijozlarga xizmat ko'rsatish",
       "termsConditions": "Foydalanish shartlari",
       "privacyPolicy": "Maxfiylik siyosati"
     }
   },
   "loginPage": {
-    "title": "Onlayn tibbiyot – har doim yoningizda",
-    "description": "Shaxsiy raqamli klinikaga xush kelibsiz. Bor-yo‘g‘i bir nechta bosqichda tasdiqlangan shifokorlarga ulanish, professional tibbiy maslahat olish va retseptlarni qabul qilishingiz mumkin – uyingizda o‘tirgan holda. Tezkor, xavfsiz va 24/7 xizmatingizda.",
+    "title": "Onlayn tibbiyot – Har doim yoningizda",
+    "description": "Shaxsiy raqamli klinikangizga xush kelibsiz. Faqat bir necha bosqichda sertifikatlangan shifokorlarga ulanib, professional maslahat oling va uyda o'tirib retseptga ega bo'ling. Tez, xavfsiz va 24/7 mavjud.",
     "formTitle": "Kirish",
-    "username": "Elektron pocha",
+    "username": "Foydalanuvchi nomi",
     "password": "Parol",
-    "usernamePlaceholder": "Elektron pocha kiriting",
-    "rememberMe": "Eslab qolish",
+    "usernamePlaceholder": "Email kiriting",
+    "rememberMe": "Meni eslab qol",
     "passwordPlaceholder": "Parolni kiriting",
     "forgotPassword": "Parolni unutdingizmi?",
     "signIn": "Kirish",
-    "withGoogle": "Yoki Google orqali kirish",
-    "dontHaveAccount": "Akkauntingiz yo‘qmi?",
-    "signUpNow": "Hozir ro‘yxatdan o‘ting"
+    "withGoogle": "Yoki Google orqali kiring",
+    "dontHaveAccount": "Hisobingiz yo'qmi?",
+    "signUpNow": "Ro'yxatdan o'ting"
   },
   "registerPage": {
-    "title": "Ro‘yxatdan o‘ting va ishonchli tibbiy mutaxassislar bilan aloqa o‘rnating",
-    "description": "Akkaunt yaratish orqali siz mutaxassis tibbiy xizmatlar, 24/7 maslahatlar va salomatligingizni har yerdan nazorat qilish imkoniyatiga ega bo‘lasiz – xavfsiz, qulay va ishonchli.",
-    "formTitle": "Ro‘yxatdan o‘tish",
-    "username": "Elektron pocha yoki telefon raqami",
-    "usernamePlaceholder": "Elektron pocha yoki telefon raqamini kiriting",
-    "firstName": "To‘liq ism",
-    "firstNamePlaceholder": "To‘liq ismingizni kiriting",
+    "title": "Ro'yxatdan o'ting va ishonchli tibbiy mutaxassislar bilan bog'laning",
+    "description": "Hisob yaratish orqali siz tibbiy yordam dunyosiga kirib, 24/7 maslahat olasiz va sog'lig'ingizni xavfsiz, ishonchli va qulay tarzda nazorat qilishingiz mumkin.",
+    "formTitle": "Ro'yxatdan o'tish",
+    "username": "Foydalanuvchi nomi",
+    "usernamePlaceholder": "Foydalanuvchi nomini kiriting",
+    "firstName": "Ism",
+    "firstNamePlaceholder": "Ismingizni kiriting",
     "lastName": "Familiya",
     "lastNamePlaceholder": "Familiyangizni kiriting",
-    "birthday": "Tug‘ilgan sana",
-    "birthdayPlaceholder": "Tug‘ilgan sanangizni kiriting",
+    "birthday": "Tug'ilgan kun",
+    "birthdayPlaceholder": "Tug'ilgan kuningizni kiriting",
     "password": "Parol yarating",
     "passwordPlaceholder": "Parol yarating",
     "confirmPassword": "Parolni takrorlang",
-    "confirmPasswordPlaceholder": "Parolni takror kiriting",
-    "signUp": "Ro‘yxatdan o‘tish",
-    "withGoogle": "Yoki Google orqali kirish",
-    "alreadyHaveAnAccount": "Akkauntingiz allaqachon bormi?",
-    "signInNow": "Hozir kirish"
+    "confirmPasswordPlaceholder": "Parolni takrorlang",
+    "signUp": "Ro'yxatdan o'tish",
+    "withGoogle": "Yoki Google orqali kiring",
+    "alreadyHaveAnAccount": "Allaqachon hisobingiz bormi?",
+    "signInNow": "Kiring"
   },
   "verifyPage": {
-    "title": "Elektron pochangizni tasdiqlang",
-    "description": "Akkauntingizni tasdiqlash uchun elektron pochangizga kod yuborildi. Kodingizni kiriting.",
+    "title": "E-pochtangizni tasdiqlang",
+    "description": "Hisobingizni tasdiqlash uchun emailingizga yuborilgan kodni kiriting",
     "formTitle": "Tasdiqlash",
-    "emailCode": "Elektron pocha kodi",
-    "emailCodePlaceholder": "Kodni kiriting",
+    "emailCode": "Email kodi",
+    "emailCodePlaceholder": "Kod kiriting",
     "verify": "Tasdiqlash",
     "resendCode": "Kodni qayta yuborish",
-    "alreadyHaveAnAccount": "Akkauntingiz allaqachon bormi?",
-    "signInNow": "Hozir kirish"
+    "alreadyHaveAnAccount": "Allaqachon hisobingiz bormi?",
+    "signInNow": "Kiring"
   },
   "settingsLayout": {
     "settings": "Sozlamalar",
+    "personalDetail": "Shaxsiy ma'lumot",
     "myData": "Mening ma'lumotlarim",
-    "payment": "To'lovlar",
-    "myBookings": "Mening buyurtmalarim",
-    "myRecords": "Mening hisobotlarim",
+    "myBookings": "Mening yozuvlarim",
+    "chat": "Chat",
+    "myRecords": "Mening qaydlarim",
+    "payment": "To'lov",
+    "referrals": "Tavsiya",
+    "customerSupport": "Mijozlarni qo'llab-quvvatlash",
     "logout": "Chiqish",
     "myDataPage": {
       "customer": "Mijoz",
       "editProfile": "Profilni tahrirlash",
       "name": "To'liq ism",
-      "birthday": "Tug‘ilgan kun",
+      "birthday": "Tug'ilgan sana",
       "phone": "Telefon raqami (mobil)",
       "gender": "Jins",
-      "email": "Elektron pochta"
-    },
-    "paymentPage": {
-      "title": "To'lov"
-    },
-    "myBookingsPage": {
-      "active": "Faollari",
-      "history": "Tarix",
-      "orderNumber": "Buyurtma raqami",
-      "date": "Sana",
-      "appointmentType": "Buyurtma turi",
-      "status": "Holati",
-      "doctor": "Shifokor"
-    },
-    "myRecordsPage": {
-      "title": "Mening hisobotlarim"
+      "email": "Email"
     },
     "myDataEditingPage": {
       "title": "Mening ma'lumotlarim",
       "customer": "Mijoz",
       "cancel": "Bekor qilish",
       "firstName": "Ism",
-      "firstNamePlaceholder": "Ismingizni kiriting",
+      "firstNamePlaceholder": "Ismni kiriting",
       "lastName": "Familiya",
-      "lastNamePlaceholder": "Familiyangizni kiriting",
-      "birthday": "Tug'ilgan kun",
-      "birthdayPlaceholder": "Tug'ilgan kuningizni kiriting",
+      "lastNamePlaceholder": "Familiyani kiriting",
+      "birthday": "Tug'ilgan sana",
+      "birthdayPlaceholder": "Tug'ilgan sanani kiriting",
       "phone": "Telefon raqami (mobil)",
-      "phonePlaceholder": "Telefon raqamingizni kiriting",
-      "email": "Elektron pochta",
-      "emailPlaceholder": "Elektron pochtangizni kiriting",
+      "phonePlaceholder": "Telefon raqamini kiriting",
+      "email": "Email",
+      "emailPlaceholder": "Emailni kiriting",
       "save": "Saqlash"
+    },
+    "myBookingsPage": {
+      "active": "Faol",
+      "history": "Tarix",
+      "orderNumber": "Buyurtma raqami",
+      "date": "Sana",
+      "appointmentType": "Qabul turi",
+      "status": "Holati",
+      "doctor": "Shifokor"
+    },
+    "chatPage": {
+      "title": "Chat"
+    },
+    "myRecordsPage": {
+      "title": "Mening qaydlarim"
+    },
+    "paymentPage": {
+      "title": "To'lov"
+    },
+    "referralsPage": {
+      "title": "Tavsiyalar"
+    },
+    "profileSettingsPage": {
+      "title": "Sozlamalar"
+    },
+    "customerSupportPage": {
+      "title": "Mijozlarni qo'llab-quvvatlash"
     }
   }
 }
