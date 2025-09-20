@@ -16,11 +16,11 @@ import DatepickerInput from '@/components/ui/date-picker'
 import dayjs from 'dayjs'
 
 const mockMyData = {
-  name: 'Shohrux Rahmatov',
+  firstName: 'Shohrux',
+  lastName: 'Rahmatov',
   birthday: '27/08/2000',
   email: 'shohrux.rahmatov@gmail.com',
   phone: '+99890 002 6655',
-  username: 'shohrux.rahmatov@gmail.com',
   photo: ''
 }
 
@@ -29,7 +29,14 @@ const MyDataEditing = () => {
   const t = useTranslations('settingsLayout.myDataEditingPage')
   const { control, handleSubmit } = useForm<MyDataType>({
     resolver: yupResolver(myDataSchema),
-    defaultValues: mockMyData,
+    defaultValues: {
+      firstName: mockMyData.firstName,
+      lastName: mockMyData.lastName,
+      birthday: mockMyData.birthday,
+      email: mockMyData.email,
+      phone: mockMyData.phone,
+      photo: mockMyData.photo
+    },
     mode: 'onBlur'
   })
 
@@ -75,10 +82,12 @@ const MyDataEditing = () => {
   }
 
   return (
-    <Form layout="vertical" onFinish={handleSubmit(onSubmit)}>
-      <div className="flex flex-col p-10">
-        <div className="flex items-center justify-between border-b-2 border-[#E9ECF4] pb-5">
-          <div className="flex items-center gap-8">
+    <div className="bg-white rounded-lg shadow-sm">
+      <Form layout="vertical" onFinish={handleSubmit(onSubmit)}>
+        <div className="p-6 md:p-8">
+          {/* Profile Header Card */}
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+            {/* Circular Profile Picture */}
             <Upload
               name="avatar"
               showUploadList={false}
@@ -89,117 +98,172 @@ const MyDataEditing = () => {
               <button
                 type="button"
                 aria-label="Change profile picture"
-                style={{ position: 'relative', cursor: 'pointer' }}
+                className="relative cursor-pointer group"
                 disabled={loading}
               >
                 {imageUrl || mockMyData?.photo ? (
                   <Image
                     src={imageUrl || mockMyData?.photo}
                     alt="profile photo"
-                    width={120}
-                    height={120}
-                    className="!h-[120px] !w-[120px] rounded-full object-contain"
+                    width={80}
+                    height={80}
+                    className="!h-20 !w-20 rounded-full object-cover border-2 border-gray-200"
                   />
                 ) : (
-                  <ProfileAvatarIcon />
+                  <div className="h-20 w-20 rounded-full bg-gray-100 border-2 border-gray-200 flex items-center justify-center">
+                    <ProfileAvatarIcon />
+                  </div>
                 )}
-                <div className="absolute inset-0 right-0 bottom-0 flex h-full w-full items-center justify-center rounded-full bg-black/40 transition-all duration-300 hover:bg-black/60">
+                <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {loading ? (
                     <div className="h-6 w-6 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
                   ) : (
                     <CameraIcon />
                   )}
                 </div>
-                {loading && (
-                  <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/60">
-                    <div className="h-8 w-8 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
-                  </div>
-                )}
               </button>
             </Upload>
 
-            <div className="flex flex-col gap-1">
-              <h1 className="text-[24px] leading-8 font-semibold">{mockMyData?.name}</h1>
-              <p className="text-[16px] leading-[18px] font-normal text-[#797979]">{t('customer')}</p>
+            {/* User Info */}
+            <div className="flex flex-col">
+              <h1 className="text-xl font-bold text-gray-900">
+                {mockMyData?.firstName} {mockMyData?.lastName}
+              </h1>
+              <p className="text-sm text-gray-500">{mockMyData?.email}</p>
             </div>
           </div>
-          <FilledButton
-            className="!w-auto !rounded-2xl !bg-[#F4F6F9] !px-16 !py-6 !leading-[18px] font-normal !text-[#264796]"
-            onClick={() => router.back()}
-          >
-            {t('cancel')}
-          </FilledButton>
+
+          {/* Horizontal Separator */}
+          <div className="border-t border-gray-200 mb-6"></div>
+
+          {/* Form Fields - Two Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+            <Controller
+              name="firstName"
+              control={control}
+              render={({ field, fieldState: { error } }) => (
+                <Form.Item 
+                  label={t('firstName')} 
+                  required 
+                  validateStatus={error ? 'error' : ''} 
+                  help={error?.message}
+                  className="mb-4"
+                >
+                  <DefaultInput 
+                    {...field} 
+                    autoComplete="given-name" 
+                    placeholder={t('firstNamePlaceholder')} 
+                  />
+                </Form.Item>
+              )}
+            />
+
+            <Controller
+              name="lastName"
+              control={control}
+              render={({ field, fieldState: { error } }) => (
+                <Form.Item 
+                  label={t('lastName')} 
+                  required 
+                  validateStatus={error ? 'error' : ''} 
+                  help={error?.message}
+                  className="mb-4"
+                >
+                  <DefaultInput 
+                    {...field} 
+                    autoComplete="family-name" 
+                    placeholder={t('lastNamePlaceholder')} 
+                  />
+                </Form.Item>
+              )}
+            />
+
+            <Controller
+              name="phone"
+              control={control}
+              render={({ field, fieldState: { error } }) => (
+                <Form.Item 
+                  label={t('phone')} 
+                  required 
+                  validateStatus={error ? 'error' : ''} 
+                  help={error?.message}
+                  className="mb-4"
+                >
+                  <DefaultInput 
+                    {...field} 
+                    autoComplete="tel" 
+                    placeholder={t('phonePlaceholder')} 
+                  />
+                </Form.Item>
+              )}
+            />
+
+            <Controller
+              name="birthday"
+              control={control}
+              render={({ field, fieldState: { error } }) => (
+                <Form.Item 
+                  label={t('birthday')} 
+                  required 
+                  validateStatus={error ? 'error' : ''} 
+                  help={error?.message}
+                  className="mb-4"
+                >
+                  <DatepickerInput
+                    placeholder={t('birthdayPlaceholder')}
+                    className="w-full"
+                    format="DD/MM/YYYY"
+                    value={field.value ? dayjs(field.value, 'DD/MM/YYYY') : null}
+                    onChange={(date) => field.onChange(date?.format('DD/MM/YYYY'))}
+                    status={error ? 'error' : ''}
+                    required
+                  />
+                </Form.Item>
+              )}
+            />
+
+            <Controller
+              name="email"
+              control={control}
+              render={({ field, fieldState: { error } }) => (
+                <Form.Item 
+                  label={t('email')} 
+                  required 
+                  validateStatus={error ? 'error' : ''} 
+                  help={error?.message}
+                  className="mb-4"
+                >
+                  <DefaultInput 
+                    {...field} 
+                    autoComplete="email" 
+                    placeholder={t('emailPlaceholder')} 
+                  />
+                </Form.Item>
+              )}
+            />
+            
+            
+          </div>
+
+          {/* Buttons - Bottom Right */}
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 sm:justify-end">
+            <FilledButton
+              className="!w-full sm:!w-auto !bg-[#F4F6F9] !text-black hover:!bg-[#E9ECF4] !px-6 !py-3 !rounded-md !font-normal !text-sm !h-12"
+              onClick={() => router.back()}
+            >
+              {t('cancel')}
+            </FilledButton>
+            <FilledButton
+              htmlType="submit"
+              className="!w-full sm:!w-auto !bg-[#046d5f] hover:!bg-[#035a4d] !text-white !px-6 !py-3 !rounded-md !font-normal !text-sm !h-12"
+            >
+              {t('save')}
+            </FilledButton>
+          </div>
         </div>
-        <div className="grid grid-cols-2 items-center gap-x-16 gap-y-2 pt-6">
-          <Controller
-            name="name"
-            control={control}
-            render={({ field, fieldState: { error } }) => (
-              <Form.Item label={t('name')} required validateStatus={error ? 'error' : ''} help={error?.message}>
-                <DefaultInput {...field} autoComplete="name" placeholder={t('namePlaceholder')} />
-              </Form.Item>
-            )}
-          />
-
-          <Controller
-            name="birthday"
-            control={control}
-            render={({ field, fieldState: { error } }) => (
-              <Form.Item label={t('birthday')} required validateStatus={error ? 'error' : ''} help={error?.message}>
-                <DatepickerInput
-                  placeholder={t('birthdayPlaceholder')}
-                  className="w-full"
-                  format="DD/MM/YYYY"
-                  value={field.value ? dayjs(field.value, 'DD/MM/YYYY') : null}
-                  onChange={(date) => field.onChange(date?.format('DD/MM/YYYY'))}
-                  status={error ? 'error' : ''}
-                  required
-                />
-              </Form.Item>
-            )}
-          />
-
-          <Controller
-            name="phone"
-            control={control}
-            render={({ field, fieldState: { error } }) => (
-              <Form.Item label={t('phone')} required validateStatus={error ? 'error' : ''} help={error?.message}>
-                <DefaultInput {...field} autoComplete="phone" placeholder={t('phonePlaceholder')} />
-              </Form.Item>
-            )}
-          />
-
-          <Controller
-            name="username"
-            control={control}
-            render={({ field, fieldState: { error } }) => (
-              <Form.Item label={t('login')} required help={error?.message}>
-                <DefaultInput
-                  {...field}
-                  autoComplete="username"
-                  status={error ? 'error' : ''}
-                  placeholder={t('usernamePlaceholder')}
-                />
-              </Form.Item>
-            )}
-          />
-
-          <Controller
-            name="email"
-            control={control}
-            render={({ field, fieldState: { error } }) => (
-              <Form.Item label={t('email')} required validateStatus={error ? 'error' : ''} help={error?.message}>
-                <DefaultInput {...field} autoComplete="email" placeholder={t('emailPlaceholder')} />
-              </Form.Item>
-            )}
-          />
-
-          <FilledButton className="!py-5" htmlType="submit">
-            {t('save')}
-          </FilledButton>
-        </div>
-      </div>
-    </Form>
+      </Form>
+    </div>
   )
 }
+
 export default MyDataEditing
