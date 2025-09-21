@@ -202,7 +202,45 @@
       "title": "Payment"
     },
     "referralsPage": {
-      "title": "Referrals"
+      "title": "Referrals",
+      "header": {
+        "title": "Care for Your Friends, Rewards For You",
+        "description": "Invite your friends to MedVisit and earn rewards when they book their first consultation."
+      },
+      "referralCode": {
+        "title": "Referral code",
+        "code": "ABC123",
+        "telegram": "Telegram",
+        "progress": "2/5 referrals completed to get a free consultation"
+      },
+      "howItWorks": {
+        "title": "How it works?",
+        "steps": {
+          "copy": {
+            "title": "Copy your referral code",
+            "description": "Share your unique code with friends"
+          },
+          "share": {
+            "title": "Share with friends",
+            "description": "Send via social media or messaging"
+          },
+          "signup": {
+            "title": "Your Friends Signs up",
+            "description": "They create an account using your code"
+          },
+          "book": {
+            "title": "Friends books first consultation",
+            "description": "They schedule their first appointment"
+          },
+          "earn": {
+            "title": "Earn your free consultation",
+            "description": "Get rewards for successful referrals"
+          }
+        }
+      },
+      "yourFriends": {
+        "title": "Your Friends"
+      }
     },
     "profileSettingsPage": {
       "title": "Settings",
