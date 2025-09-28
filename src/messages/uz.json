@@ -140,6 +140,37 @@
     "alreadyHaveAnAccount": "Akkauntingiz allaqachon bormi?",
     "signInNow": "Hozir kirish"
   },
+  "bookingPage": {
+    "chooseDateAndTime": "Sana va vaqtni tanlang",
+    "selectMonth": "Oyni tanlang",
+    "book": "Yozilish",
+    "noAvailableSlots": "Afsuski! Shifokor {date} kuni mavjud emas. Iltimos, uchrashuvga yozilish uchun boshqa sanani tanlang."
+  },
+  "consultationModal": {
+    "title": "Konsultatsiya turi",
+    "subtitle": "Iltimos, qanday qilib uchrashuvga yozilishni tanlang:",
+    "onlineConsultation": "Onlayn konsultatsiya",
+    "onlineDescription": "Video qo'ng'iroq yoki telefon suhbati - uyingizda o'tirgan holda!",
+    "inPersonConsultation": "Shaxsiy konsultatsiya",
+    "inPersonDescription": "Shifokor bilan shaxsan uchrashib, yuzma-yuz konsultatsiya oling.",
+    "appointmentDetails": "Uchrashuvning tafsilotlari:",
+    "doctor": "Shifokor",
+    "date": "Sana",
+    "time": "Vaqt",
+    "cancel": "Bekor qilish",
+    "confirm": "Tasdiqlash"
+  },
+  "appointmentConfirmation": {
+    "title": "Uchrashuvga muvaffaqiyatli yozildingiz",
+    "subtitle": "Siz tasdiqlash xatini olasiz!",
+    "chatWithDoctor": "Shifokor bilan suhbat",
+    "chatWithDoctorContent": "Tezkor tibbiy maslahat oling, hisobotlarni ulashing - hammasi bir joyda",
+    "needHelp": "Bizning yordamimiz kerakmi?",
+    "needHelpContent": "Agar uchrashuvga yozilishda muammolarga duch kelsangiz, biz bilan bog'laning",
+    "breadcrumb": {
+      "appointmentBooking": "Uchrashuvga yozilish"
+    }
+  },
   "settingsLayout": {
     "settings": "Sozlamalar",
     "myData": "Mening ma'lumotlarim",

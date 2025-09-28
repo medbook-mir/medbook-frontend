@@ -139,6 +139,37 @@
     "alreadyHaveAnAccount": "Аккаунтингиз аллақачон борми?",
     "signInNow": "Ҳозир кириш"
   },
+  "bookingPage": {
+    "chooseDateAndTime": "Сана ва вақтни танланг",
+    "selectMonth": "Ойни танланг",
+    "book": "Ёзилиш",
+    "noAvailableSlots": "Афсуски! Шифокор {date} куни мавжуд эмас. Илтимос, учрашувга ёзилиш учун бошқа санани танланг."
+  },
+  "consultationModal": {
+    "title": "Консультация тури",
+    "subtitle": "Илтимос, қандай қилиб учрашувга ёзилишни танланг:",
+    "onlineConsultation": "Онлайн консультация",
+    "onlineDescription": "Видео қўнғироқ ёки телефон сухбати - уйингизда ўтирган ҳолда!",
+    "inPersonConsultation": "Шахсий консультация",
+    "inPersonDescription": "Шифокор билан шахсан учрашиб, юзма-юз консультация олинг.",
+    "appointmentDetails": "Учрашувнинг тафсилотлари:",
+    "doctor": "Шифокор",
+    "date": "Сана",
+    "time": "Вақт",
+    "cancel": "Бекор қилиш",
+    "confirm": "Тасдиқлаш"
+  },
+  "appointmentConfirmation": {
+    "title": "Учрашувга муваффақиятли ёзилдингиз",
+    "subtitle": "Сиз тасдиқлаш хатини оласиз!",
+    "chatWithDoctor": "Шифокор билан сухбат",
+    "chatWithDoctorContent": "Тезкор тиббий маслаҳат олинг, ҳисоботларни улашинг - ҳаммаси бир жойда",
+    "needHelp": "Бизнинг ёрдамимиз керакми?",
+    "needHelpContent": "Агар учрашувга ёзилишда муаммоларга дуч келсангиз, биз билан боғланинг",
+    "breadcrumb": {
+      "appointmentBooking": "Учрашувга ёзилиш"
+    }
+  },
   "settingsLayout": {
     "settings": "Созламалар",
     "myData": "Менинг маълумотларим",

@@ -141,6 +141,37 @@
     "alreadyHaveAnAccount": "Already have an account?",
     "signInNow": "Sign in now"
   },
+  "bookingPage": {
+    "chooseDateAndTime": "Choose date and time",
+    "selectMonth": "Select Month",
+    "book": "Book",
+    "noAvailableSlots": "Oops! It seems like the doctor is not available on {date}. Please choose another date to book your appointment."
+  },
+  "consultationModal": {
+    "title": "Consultation Type",
+    "subtitle": "Please select how you'd like to book your appointment:",
+    "onlineConsultation": "Online consultation",
+    "onlineDescription": "Video call or phone chat - from the comfort of your home!",
+    "inPersonConsultation": "In-Person Consultation",
+    "inPersonDescription": "Meet the doctor in person for a face-to-face consultation.",
+    "appointmentDetails": "Appointment Details:",
+    "doctor": "Doctor",
+    "date": "Date",
+    "time": "Time",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "appointmentConfirmation": {
+    "title": "Appointment Booked successfully",
+    "subtitle": "You'll get a confirmation mail!",
+    "chatWithDoctor": "Chat with your doctor",
+    "chatWithDoctorContent": "Get quick medical advice, share reports - all in one",
+    "needHelp": "Need our Help?",
+    "needHelpContent": "Contact us if you face any problems with booking appointment",
+    "breadcrumb": {
+      "appointmentBooking": "Appointment Booking"
+    }
+  },
   "settingsLayout": {
     "settings": "Settings",
     "myData": "My Data",

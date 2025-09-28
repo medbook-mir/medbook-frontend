@@ -10,13 +10,13 @@ const generateMockData = (): Record<string, string[]> => {
     ['10:30', '17:30'],
     ['11:30', '18:00'],
     ['12:30'],
-    ['13:30'],
+    [], // Empty array for no available slots
     ['14:30']
   ]
 
   const mock: Record<string, string[]> = {}
 
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 14; i++) { // Generate for 2 weeks
     const date = addDays(new Date(), i)
     const key = format(date, 'yyyy-MM-dd')
     mock[key] = times[i % times.length]
