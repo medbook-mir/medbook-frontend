@@ -2,7 +2,7 @@ import Axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse, In
 import { buildParams } from './helpers'
 import { TokenService } from '@/utils/storage'
 import { env } from '@/utils/env'
-import { getLocale } from 'next-intl/server'
+// import { getLocale } from 'next-intl/server'
 
 const API_URL = env.NEXT_API_URL
 
@@ -58,8 +58,8 @@ export class BaseClient {
     }
 
     // Automatically get current locale and set it in Lang header
-    const locale = await getLocale()
-    req.headers['Lang'] = locale
+    // const locale = await getLocale()
+    // req.headers['Lang'] = locale
 
     return req
   }

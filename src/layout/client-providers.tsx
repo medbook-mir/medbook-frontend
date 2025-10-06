@@ -1,6 +1,7 @@
 'use client'
 
-import { useMemo } from 'react'
+import '@ant-design/v5-patch-for-react-19'
+import { useEffect, useMemo } from 'react'
 import { NextIntlClientProvider } from 'next-intl'
 import { Provider } from 'react-redux'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -26,6 +27,9 @@ interface ClientProvidersProps {
 export function ClientProviders({ children, locale, messages }: ClientProvidersProps) {
   const queryClient = useMemo(() => new QueryClient(), [])
 
+  useEffect(() => {
+    localStorage.setItem('locale', locale)
+  }, [locale])
   return (
     <NextIntlClientProvider locale={locale} messages={messages} timeZone="Asia/Tashkent">
       <AntdProvider>
