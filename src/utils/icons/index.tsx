@@ -1,3 +1,5 @@
+import { EditIconProps } from "@/types"
+
 export const WorldIcon = () => (
   <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -22,11 +24,11 @@ export const ProfileAvatarIcon = () => (
   </svg>
 )
 
-export const EditIcon = () => (
+export const EditIcon = ({colour = "#264796"}: EditIconProps) => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
       d="M4.41999 22.579C4.13948 22.5785 3.87206 22.4603 3.68299 22.253C3.49044 22.0475 3.39476 21.7695 3.41999 21.489L3.66499 18.795L14.983 7.48103L18.52 11.017L7.20499 22.33L4.51099 22.575C4.47999 22.578 4.44899 22.579 4.41999 22.579ZM19.226 10.31L15.69 6.77403L17.811 4.65303C17.9986 4.46525 18.2531 4.35974 18.5185 4.35974C18.7839 4.35974 19.0384 4.46525 19.226 4.65303L21.347 6.77403C21.5348 6.9616 21.6403 7.21612 21.6403 7.48153C21.6403 7.74694 21.5348 8.00146 21.347 8.18903L19.227 10.309L19.226 10.31Z"
-      fill="#264796"
+      fill={colour}
     />
   </svg>
 )

@@ -40,6 +40,10 @@
       "title": "Запишитесь на приём вперед с доступным врачом",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
     },
+    "testimonialsSection": {
+      "title": "Что говорят наши пациенты",
+      "description": "Наша миссия — предоставлять медицинскую помощь, уделяя внимание персонализированному лечению и благополучию каждого пациента"
+    },
     "blog": {
       "title": "Блог",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
@@ -221,16 +225,16 @@
       "title": "Мои данные",
       "customer": "Клиент",
       "cancel": "Отменить",
-      "name": "Имя",
-      "namePlaceholder": "Введите ваше имя",
+      "firstName": "Имя",
+      "firstNamePlaceholder": "Введите имя",
+      "lastName": "Фамилия",
+      "lastNamePlaceholder": "Введите фамилию",
       "birthday": "Дата рождения",
       "birthdayPlaceholder": "Введите дату рождения",
-      "phone": "Телефон",
-      "phonePlaceholder": "Введите ваш номер телефона",
-      "login": "Логин",
-      "usernamePlaceholder": "Введите имя пользователя",
+      "phone": "Номер телефона (мобильный)",
+      "phonePlaceholder": "Введите номер телефона",
       "email": "Электронная почта",
-      "emailPlaceholder": "Введите вашу электронную почту",
+      "emailPlaceholder": "Введите электронную почту",
       "save": "Сохранить"
     }
   },
