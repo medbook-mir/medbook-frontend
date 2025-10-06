@@ -94,6 +94,55 @@
       "privacyPolicy": "Privacy Policy"
     }
   },
+  "contactPage": {
+    "title": "Contact Us",
+    "description": "Send us a message and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Full Name",
+      "email": "Email",
+      "emailPlaceholder": "e.g. name@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this regarding?",
+      "message": "Your message",
+      "messagePlaceholder": "Tell us how we can help you",
+      "sendButton": "Send message",
+      "sending": "Sending...",
+      "errors": {
+        "nameRequired": "Name is required",
+        "nameMinLength": "Name must be at least 2 characters",
+        "nameMaxLength": "Name must not exceed 50 characters",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "subjectMinLength": "Subject must be at least 5 characters",
+        "subjectMaxLength": "Subject must not exceed 100 characters",
+        "messageRequired": "Message is required",
+        "messageMinLength": "Message must be at least 10 characters",
+        "messageMaxLength": "Message must not exceed 1000 characters"
+      },
+      "notifications": {
+        "fixErrors": "Please fix the errors in the form",
+        "success": "Message sent successfully! We will get back to you soon.",
+        "error": "Failed to send message. Please try again."
+      }
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Our address",
+        "value": "S-5, Second Floor, Krishna Mall, Laxmi Mandir Tiraha, Tonk Phatak, Tonk Road, Jaipur - 302015"
+      },
+      "email": {
+        "title": "Email",
+        "value": "supportmdvisit@gmail.com"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "value": "+998 99 999 99 99"
+      }
+    }
+  },
   "loginPage": {
     "title": "Online healthcare – Always by your side",
     "description": "Welcome to your personal digital clinic. With just a few clicks, you can connect to certified doctors, get professional medical advice, and receive prescriptions – all from the comfort of your home. Fast, secure, and available 24/7.\"",
