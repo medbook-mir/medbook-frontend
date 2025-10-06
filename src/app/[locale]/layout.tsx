@@ -11,6 +11,7 @@ export const metadata: Metadata = {
     default: 'MedVisit',
     template: '%s | MedVisit'
   },
+  
   description: 'MedVisit - Your Health Partner'
 }
 

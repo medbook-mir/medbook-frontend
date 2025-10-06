@@ -17,6 +17,7 @@ import Footer from '@/components/footer'
 import LoginModal from '@/modals/login-modal'
 import RegisterModal from '@/modals/register-modal'
 import VerifyModal from '@/modals/verify-modal'
+import { baseApiClient } from '@/api/baseClient'
 
 interface ClientProvidersProps {
   children: React.ReactNode
@@ -24,8 +25,24 @@ interface ClientProvidersProps {
   messages: any
 }
 
+// Comminting these lines to overcome the use client issue when loging
+// Component to set up the locale provider for the API client
+// function LocaleProvider({ children }: { children: React.ReactNode }) {
+//  const locale = useLocale()
+
+// useEffect(() => {
+// Set up the locale provider for the API client
+// baseApiClient.setLocaleProvider(() => locale)
+// }, [locale])
+
+// return <>{children}</>
+// }
+
 export function ClientProviders({ children, locale, messages }: ClientProvidersProps) {
   const queryClient = useMemo(() => new QueryClient(), [])
+  useEffect(() => {
+    localStorage.setItem('locale', locale)
+  }, [locale])
 
   useEffect(() => {
     localStorage.setItem('locale', locale)
