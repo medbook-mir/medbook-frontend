@@ -190,6 +190,37 @@
     "alreadyHaveAnAccount": "Уже есть аккаунт?",
     "signInNow": "Войти"
   },
+  "bookingPage": {
+    "chooseDateAndTime": "Выберите дату и время",
+    "selectMonth": "Выбрать месяц",
+    "book": "Забронировать",
+    "noAvailableSlots": "Упс! Кажется, доктор недоступен {date}. Пожалуйста, выберите другую дату для записи на прием."
+  },
+  "consultationModal": {
+    "title": "Тип консультации",
+    "subtitle": "Пожалуйста, выберите, как вы хотите записаться на приём:",
+    "onlineConsultation": "Онлайн консультация",
+    "onlineDescription": "Видеозвонок или телефонный чат - не выходя из дома!",
+    "inPersonConsultation": "Очная консультация",
+    "inPersonDescription": "Встретьтесь с врачом лично для очной консультации.",
+    "appointmentDetails": "Детали приёма:",
+    "doctor": "Врач",
+    "date": "Дата",
+    "time": "Время",
+    "cancel": "Отменить",
+    "confirm": "Подтвердить"
+  },
+  "appointmentConfirmation": {
+    "title": "Запись успешно забронирована",
+    "subtitle": "Вы получите письмо с подтверждением!",
+    "chatWithDoctor": "Чат с вашим врачом",
+    "chatWithDoctorContent": "Получите быструю медицинскую консультацию, поделитесь результатами анализов - всё в одном месте",
+    "needHelp": "Нужна наша помощь?",
+    "needHelpContent": "Свяжитесь с нами, если у вас возникли проблемы с записью на приём",
+    "breadcrumb": {
+      "appointmentBooking": "Запись на приём"
+    }
+  },
   "settingsLayout": {
     "settings": "Настройки",
     "personalDetail": "Личные данные",
