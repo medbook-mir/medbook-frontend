@@ -1,94 +1,95 @@
 {
   "basic": {
     "errorsMsg": {
-      "wrongSomething": "Nimadir noto‘g‘ri ketdi",
-      "tryAgain": "Iltimos, yana bir bor urinib ko‘ring"
+      "wrongSomething": "Nimadir xato ketdi",
+      "tryAgain": "Iltimos, qayta urinib ko'ring"
     }
   },
   "homePage": {
     "home": "Bosh sahifa",
     "hero": {
-      "title": "Onlayn qabulga yozilish — salomatlik sari birinchi qadam",
-      "description": "Ajoyib tadbirlar o‘tkazing, bilim ulashing, mahsulotingizni rivojlantiring va imkoniyatlar yarating",
-      "search_placeholder": "Shifokor, klinika yoki xizmat turini qidiring",
-      "location": "Manzil"
+      "title": "Onlayn navbat olish — sog'lig'ingiz sari birinchi qadam",
+      "description": "Ajoyib tadbirlar o'tkazing, bilim ulashing, mahsulotingizni rivojlantiring va yangi imkoniyatlar yarating",
+      "search_placeholder": "Shifokor, klinika yoki xizmat qidiring",
+      "location": "Joylashuv"
     },
     "solutions": {
-      "title": "Qadam-baqadam yechimlaringizga erishing",
+      "title": "Navbatdan davolanishgacha — Oddiy jarayon",
       "complaints": {
-        "title": "Sog'liq muammolarini tekshiring",
-        "description": "Kasallikni tekshirib, mos mutaxassisni oson tanlashingiz mumkin"
+        "title": "Alomatlaringizni tekshiring",
+        "description": "Sog'liq muammolaringizni tavsiflang va biz sizga mos mutaxassisni topishda yordam beramiz."
       },
       "doctor": {
-        "title": "Mutaxassis shifokorni tanlang",
-        "description": "Kasallik muammolaringizga mos mutaxassisni tanlang"
+        "title": "To'g'ri shifokorni tanlang",
+        "description": "Ehtiyojlaringiz va alomatlaringizga qarab ishonchli mutaxassisni tanlang."
       },
       "schedule": {
-        "title": "Jadval tuzing",
-        "description": "Kerakli shifokor bilan uchrashuv jadvalini tuzing va tekshiruvni boshlang"
+        "title": "Qabulga yoziling",
+        "description": "Tanlangan shifokoringiz bilan qulay vaqtni belgilang — onlayn va ortiqcha qiyinchiliksiz."
       },
       "solutions": {
-        "title": "Yechimlaringizni oling",
-        "description": "Mutaxassis bilan tekshiruvdan so'ng to'g'ri davolash usulini topishga yordam beramiz"
+        "title": "Mutaxassis yordamini oling",
+        "description": "Shifokoringiz bilan maslahat qiling va to'g'ri davolanish hamda yo'l-yo'riqlarni oling."
       }
     },
     "resultNumbers": {
-      "title": "Biz 7500+ shifoxonada xodimlarga imtiyozlar taqdim etamiz",
-      "description": "Samarali rivojlanishni kuzatish va bosqichlarni belgilash har qanday muvaffaqiyatli loyiha yoki shaxsiy maqsadning muhim qismi hisoblanadi. Yutuqlarimizni tizimli ravishda nazorat qilib boramiz."
+      "title": "Bizning yagona maqsadimiz — Barchaga yaxshiroq tibbiy xizmat",
+      "description": "Minglab bemorlarni ishonchli shifokorlar bilan bog'laymiz va har bir qadamda ishonch hamda g'amxo'rlikni ta'minlaymiz."
     },
     "scheduleInAdvance": {
-      "title": "Shifokor bilan oldindan rejalashtirish",
+      "title": "Oldindan shifokor bilan uchrashuvni rejalashtiring",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
+    },
+    "testimonialsSection": {
+      "title": "Bemorlarimiz nima deyishmoqda",
+      "description": "Bizning vazifamiz — har bir bemorga shaxsiy davolanish va sog'lig'ini asrashga qaratilgan tibbiy yordam ko'rsatish"
     },
     "blog": {
       "title": "Blog",
-      "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
+      "description": "Bizning blog shunchaki yangilik emas — bu o'rganish va muloqot maydoni. Medvisit qanday qilib tibbiy xizmatni oddiyroq, aqlliroq va insoniyroq qilayotganini bilib oling."
     },
     "faqsSection": {
-      "title": "Ko‘p beriladigan savollar",
-      "description": "Platformadan foydalanishdan tortib uchrashuvlarni bron qilishgacha, biz yordam berishga tayyormiz. Hamjamiyatimiz tomonidan eng ko‘p beriladigan savollarga javoblarni ko‘rib chiqing.",
+      "title": "Tez-tez beriladigan savollar",
+      "description": "Platformadan foydalanishdan tortib qabulga yozilishgacha — biz yordam berishga tayyormiz. Jamiyatimizdagi eng ko'p berilgan savollarga javoblarni ko'rib chiqing.",
       "items": [
         {
-          "title": "Qanday qilib uchrashuvni bron qilish, ko‘chirish yoki bekor qilish mumkin?",
-          "content": "Siz uchrashuvlaringizni ilova orqali oson boshqarishingiz mumkin — faqat sizga qulay vaqtni tanlang yoki boshqaruv paneliga o‘tib, uchrashuvni ko‘chiring yoki bekor qiling. Sizga eslatmalar avtomatik yuboriladi."
+          "title": "Qanday qilib qabulga yozilaman, vaqtini o'zgartiraman yoki bekor qilaman?",
+          "content": "Qabulingizni ilova orqali oson boshqarishingiz mumkin — sizga qulay vaqtni tanlang yoki shaxsiy kabinetga o'tib, qabulni o'zgartiring yoki bekor qiling. Sizga eslatmalar avtomatik tarzda yuboriladi."
         },
         {
-          "title": "Agar menga shoshilinch tibbiy yordam kerak bo‘lsa-chi?",
-          "content": "Agar sizga shoshilinch tibbiy yordam kerak bo‘lsa, darhol tez yordam xizmatiga qo‘ng‘iroq qiling. Ilova favqulodda holatlar uchun mo‘ljallanmagan."
+          "title": "Agar menga tez tibbiy yordam kerak bo'lsa, nima qilaman?",
+          "content": "Agar sizga tez tibbiy yordam kerak bo'lsa, darhol tez yordam xizmatiga qo'ng'iroq qiling. Ilova shoshilinch holatlar uchun mo'ljallanmagan."
         },
         {
-          "title": "Shaxsiy va tibbiy ma’lumotlarim Medvisit bilan xavfsizmi?",
-          "content": "Ha, barcha ma’lumotlaringiz shifrlanadi va sog‘liqni saqlash ma’lumotlari qoidalariga muvofiq xavfsiz saqlanadi."
+          "title": "Mening shaxsiy va tibbiy ma'lumotlarim Medvisitda xavfsizmi?",
+          "content": "Ha, barcha ma'lumotlaringiz shifrlanadi va sog'liqni saqlash ma'lumotlari qoidalariga muvofiq xavfsiz tarzda saqlanadi."
         },
         {
-          "title": "Ilova orqali retsept yoki yo‘llanma olishim mumkinmi?",
-          "content": "Ha, platformadagi litsenziyaga ega mutaxassislar zarurat tug‘ilganda retsept yoki yo‘llanma bera oladilar."
+          "title": "Ilova orqali retsept yoki yo'llanma olishim mumkinmi?",
+          "content": "Ha, platformadagi litsenziyaga ega mutaxassislar kerak bo'lganda retsept yoki yo'llanma berishi mumkin."
         }
       ]
     },
     "mobileApps": {
-      "title": "Ilovani yuklab oling",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit. Ullamcorper risus tempor, ac nunc libero urna, feugiat."
+      "title": "Ilovani hoziroq yuklab oling",
+      "description": "Sog'lig'ingizni istalgan paytda va joyda nazorat qiling. Medvisit ilovasi bilan sifatli yordam faqat bir marta bosishda."
     },
     "doctorPromo": {
       "title": "Siz shifokormisiz?",
-      "subtitle": "Yaxshiroq parvarish uchun aqlli vositalar",
-      "description": "Biz sizning ish kuningizni osonlashtirish uchun bu yerdamiz. Bizning shifokor paneli sizga tartibli bo'lish, vaqtni boshqarish, ekspertizangizni namoyish etish va bemorlar bilan bog'lanishga yordam beradi - hammasi bir joyda.",
+      "subtitle": "Yaxshiroq yordam uchun aqlli vositalar",
+      "description": "Biz sizning ish kuningizni yengillashtirish uchun shu yerdamiz. Shifokor paneli sizga tartibli bo'lish, vaqtingizni boshqarish, tajribangizni namoyish etish va bemorlar bilan bog'lanishda yordam beradi — barchasi bir joyda.",
       "ctaButton": "Men shifokorman",
-      "trustStatement": "Etakchi klinikalardan shifokorlar ishonadi:"
+      "trustStatement": "Yetakchi klinikalardagi shifokorlar ishonadi:"
     },
     "footer": {
-      "description": "AdventureSeekers Expeditions bilan sayohat mo'jizalarini kashf eting. AdventureSeekers Expeditions bilan sayohatga bo'lgan ishtiyoqingizni uyg'oting.",
+      "description": "bemorlar va mutaxassislarni bog'laymiz",
       "links": {
-        "wishlist": "Tanlanganlar ro'yxati",
-        "specialOffers": "Maxsus takliflar",
-        "lookbook": "Lookbook",
-        "bestsellers": "Eng ko'p sotilganlar",
-        "mega": "Mega",
-        "saved": "Saqlangan"
+        "saved": "Saqlanganlar",
+        "wishList": "Sevimlilar",
+        "specialOffers": "Maxsus takliflar"
       },
-      "copyright": "Mualliflik huquqi © 2024 DockBook, Barcha huquqlar himoyalangan.",
-      "customerService": "Mijozlarga xizmat",
+      "copyright": "Copyright @ 2024 DockBook, Barcha huquqlar himoyalangan.",
+      "customerService": "Mijozlarga xizmat ko'rsatish",
       "termsConditions": "Foydalanish shartlari",
       "privacyPolicy": "Maxfiylik siyosati"
     }
@@ -143,98 +144,272 @@
     }
   },
   "loginPage": {
-    "title": "Onlayn tibbiyot – har doim yoningizda",
-    "description": "Shaxsiy raqamli klinikaga xush kelibsiz. Bor-yo‘g‘i bir nechta bosqichda tasdiqlangan shifokorlarga ulanish, professional tibbiy maslahat olish va retseptlarni qabul qilishingiz mumkin – uyingizda o‘tirgan holda. Tezkor, xavfsiz va 24/7 xizmatingizda.",
+    "title": "Onlayn tibbiyot – Har doim yoningizda",
+    "description": "Shaxsiy raqamli klinikangizga xush kelibsiz. Faqat bir necha bosqichda sertifikatlangan shifokorlarga ulanib, professional maslahat oling va uyda o'tirib retseptga ega bo'ling. Tez, xavfsiz va 24/7 mavjud.",
     "formTitle": "Kirish",
-    "username": "Elektron pocha",
+    "username": "Foydalanuvchi nomi",
     "password": "Parol",
-    "usernamePlaceholder": "Elektron pocha kiriting",
-    "rememberMe": "Eslab qolish",
+    "usernamePlaceholder": "Email kiriting",
+    "rememberMe": "Meni eslab qol",
     "passwordPlaceholder": "Parolni kiriting",
     "forgotPassword": "Parolni unutdingizmi?",
     "signIn": "Kirish",
-    "withGoogle": "Yoki Google orqali kirish",
-    "dontHaveAccount": "Akkauntingiz yo‘qmi?",
-    "signUpNow": "Hozir ro‘yxatdan o‘ting"
+    "withGoogle": "Yoki Google orqali kiring",
+    "dontHaveAccount": "Hisobingiz yo'qmi?",
+    "signUpNow": "Ro'yxatdan o'ting"
   },
   "registerPage": {
-    "title": "Ro‘yxatdan o‘ting va ishonchli tibbiy mutaxassislar bilan aloqa o‘rnating",
-    "description": "Akkaunt yaratish orqali siz mutaxassis tibbiy xizmatlar, 24/7 maslahatlar va salomatligingizni har yerdan nazorat qilish imkoniyatiga ega bo‘lasiz – xavfsiz, qulay va ishonchli.",
-    "formTitle": "Ro‘yxatdan o‘tish",
-    "username": "Elektron pocha yoki telefon raqami",
-    "usernamePlaceholder": "Elektron pocha yoki telefon raqamini kiriting",
-    "firstName": "To‘liq ism",
-    "firstNamePlaceholder": "To‘liq ismingizni kiriting",
+    "title": "Ro'yxatdan o'ting va ishonchli tibbiy mutaxassislar bilan bog'laning",
+    "description": "Hisob yaratish orqali siz tibbiy yordam dunyosiga kirib, 24/7 maslahat olasiz va sog'lig'ingizni xavfsiz, ishonchli va qulay tarzda nazorat qilishingiz mumkin.",
+    "formTitle": "Ro'yxatdan o'tish",
+    "username": "Foydalanuvchi nomi",
+    "usernamePlaceholder": "Foydalanuvchi nomini kiriting",
+    "firstName": "Ism",
+    "firstNamePlaceholder": "Ismingizni kiriting",
     "lastName": "Familiya",
     "lastNamePlaceholder": "Familiyangizni kiriting",
-    "birthday": "Tug‘ilgan sana",
-    "birthdayPlaceholder": "Tug‘ilgan sanangizni kiriting",
+    "birthday": "Tug'ilgan kun",
+    "birthdayPlaceholder": "Tug'ilgan kuningizni kiriting",
     "password": "Parol yarating",
     "passwordPlaceholder": "Parol yarating",
     "confirmPassword": "Parolni takrorlang",
-    "confirmPasswordPlaceholder": "Parolni takror kiriting",
-    "signUp": "Ro‘yxatdan o‘tish",
-    "withGoogle": "Yoki Google orqali kirish",
-    "alreadyHaveAnAccount": "Akkauntingiz allaqachon bormi?",
-    "signInNow": "Hozir kirish"
+    "confirmPasswordPlaceholder": "Parolni takrorlang",
+    "signUp": "Ro'yxatdan o'tish",
+    "withGoogle": "Yoki Google orqali kiring",
+    "alreadyHaveAnAccount": "Allaqachon hisobingiz bormi?",
+    "signInNow": "Kiring"
   },
   "verifyPage": {
-    "title": "Elektron pochangizni tasdiqlang",
-    "description": "Akkauntingizni tasdiqlash uchun elektron pochangizga kod yuborildi. Kodingizni kiriting.",
+    "title": "E-pochtangizni tasdiqlang",
+    "description": "Hisobingizni tasdiqlash uchun emailingizga yuborilgan kodni kiriting",
     "formTitle": "Tasdiqlash",
-    "emailCode": "Elektron pocha kodi",
-    "emailCodePlaceholder": "Kodni kiriting",
+    "emailCode": "Email kodi",
+    "emailCodePlaceholder": "Kod kiriting",
     "verify": "Tasdiqlash",
     "resendCode": "Kodni qayta yuborish",
-    "alreadyHaveAnAccount": "Akkauntingiz allaqachon bormi?",
-    "signInNow": "Hozir kirish"
+    "alreadyHaveAnAccount": "Allaqachon hisobingiz bormi?",
+    "signInNow": "Kiring"
+  },
+  "bookingPage": {
+    "chooseDateAndTime": "Sana va vaqtni tanlang",
+    "selectMonth": "Oyni tanlang",
+    "book": "Yozilish",
+    "noAvailableSlots": "Afsuski! Shifokor {date} kuni mavjud emas. Iltimos, uchrashuvga yozilish uchun boshqa sanani tanlang."
+  },
+  "consultationModal": {
+    "title": "Konsultatsiya turi",
+    "subtitle": "Iltimos, qanday qilib uchrashuvga yozilishni tanlang:",
+    "onlineConsultation": "Onlayn konsultatsiya",
+    "onlineDescription": "Video qo'ng'iroq yoki telefon suhbati - uyingizda o'tirgan holda!",
+    "inPersonConsultation": "Shaxsiy konsultatsiya",
+    "inPersonDescription": "Shifokor bilan shaxsan uchrashib, yuzma-yuz konsultatsiya oling.",
+    "appointmentDetails": "Uchrashuvning tafsilotlari:",
+    "doctor": "Shifokor",
+    "date": "Sana",
+    "time": "Vaqt",
+    "cancel": "Bekor qilish",
+    "confirm": "Tasdiqlash"
+  },
+  "appointmentConfirmation": {
+    "title": "Uchrashuvga muvaffaqiyatli yozildingiz",
+    "subtitle": "Siz tasdiqlash xatini olasiz!",
+    "chatWithDoctor": "Shifokor bilan suhbat",
+    "chatWithDoctorContent": "Tezkor tibbiy maslahat oling, hisobotlarni ulashing - hammasi bir joyda",
+    "needHelp": "Bizning yordamimiz kerakmi?",
+    "needHelpContent": "Agar uchrashuvga yozilishda muammolarga duch kelsangiz, biz bilan bog'laning",
+    "breadcrumb": {
+      "appointmentBooking": "Uchrashuvga yozilish"
+    }
   },
   "settingsLayout": {
     "settings": "Sozlamalar",
+    "personalDetail": "Shaxsiy ma'lumot",
     "myData": "Mening ma'lumotlarim",
-    "payment": "To'lovlar",
-    "myBookings": "Mening buyurtmalarim",
-    "myRecords": "Mening hisobotlarim",
+    "myBookings": "Mening yozuvlarim",
+    "chat": "Chat",
+    "myRecords": "Mening qaydlarim",
+    "payment": "To'lov",
+    "referrals": "Tavsiya",
+    "customerSupport": "Mijozlarni qo'llab-quvvatlash",
     "logout": "Chiqish",
+    "logoutModal": {
+      "title": "Chiqishga tayyormisiz?",
+      "description": "Istalgan vaqtda qaytib kirishingiz mumkin",
+      "confirmButton": "Chiqish",
+      "cancelButton": "Bekor qilish"
+    },
     "myDataPage": {
       "customer": "Mijoz",
       "editProfile": "Profilni tahrirlash",
       "name": "To'liq ism",
-      "birthday": "Tug‘ilgan kun",
+      "birthday": "Tug'ilgan sana",
       "phone": "Telefon raqami (mobil)",
       "gender": "Jins",
-      "email": "Elektron pochta"
-    },
-    "paymentPage": {
-      "title": "To'lov"
-    },
-    "myBookingsPage": {
-      "active": "Faollari",
-      "history": "Tarix",
-      "orderNumber": "Buyurtma raqami",
-      "date": "Sana",
-      "appointmentType": "Buyurtma turi",
-      "status": "Holati",
-      "doctor": "Shifokor"
-    },
-    "myRecordsPage": {
-      "title": "Mening hisobotlarim"
+      "email": "Email"
     },
     "myDataEditingPage": {
       "title": "Mening ma'lumotlarim",
       "customer": "Mijoz",
       "cancel": "Bekor qilish",
       "firstName": "Ism",
-      "firstNamePlaceholder": "Ismingizni kiriting",
+      "firstNamePlaceholder": "Ismni kiriting",
       "lastName": "Familiya",
-      "lastNamePlaceholder": "Familiyangizni kiriting",
+      "lastNamePlaceholder": "Familiyani kiriting",
+      "birthday": "Tug'ilgan sana",
+      "birthdayPlaceholder": "Tug'ilgan sanani kiriting",
+      "phone": "Telefon raqami (mobil)",
+      "phonePlaceholder": "Telefon raqamini kiriting",
+      "email": "Email",
+      "emailPlaceholder": "Emailni kiriting",
+      "save": "Saqlash"
+    },
+    "myBookingsPage": {
+      "active": "Faol",
+      "history": "Tarix",
+      "orderNumber": "Buyurtma raqami",
+      "date": "Sana",
+      "appointmentType": "Qabul turi",
+      "status": "Holati",
+      "doctor": "Shifokor"
+    },
+    "chatPage": {
+      "title": "Chat"
+    },
+    "myRecordsPage": {
+      "title": "Mening qaydlarim"
+    },
+    "myDataEditingPage": {
+      "title": "Mening ma'lumotlarim",
+      "customer": "Mijoz",
+      "cancel": "Bekor qilish",
+      "name": "Ism",
+      "namePlaceholder": "Ismingizni kiriting",
       "birthday": "Tug'ilgan kun",
       "birthdayPlaceholder": "Tug'ilgan kuningizni kiriting",
-      "phone": "Telefon raqami (mobil)",
+      "phone": "Telefon",
       "phonePlaceholder": "Telefon raqamingizni kiriting",
+      "login": "Login",
+      "usernamePlaceholder": "Foydalanuvchi nomini kiriting",
       "email": "Elektron pochta",
       "emailPlaceholder": "Elektron pochtangizni kiriting",
       "save": "Saqlash"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Maxfiylik siyosati",
+    "subtitle": "Sizning kelishingiz",
+    "lastRevised": "Oxirgi yangilanish: 2013 yil 16 dekabr",
+    "breadcrumb": "Shartlar va shartnomalar",
+    "introduction": "www.lorem-ipsum.info saytiga xush kelibsiz. Bu sayt bizning tashrif buyuruvchilarimizga xizmat sifatida taqdim etiladi va faqat ma'lumot olish maqsadida ishlatilishi mumkin. Shartlar va shartnomalar qonuniy majburiyatlarni o'z ichiga olgani uchun, ularni diqqat bilan o'qing.",
+    "sections": {
+      "agreement": {
+        "title": "1. SIZNING KELISHINGIZ",
+        "content": "Bu saytdan foydalanish orqali siz ushbu Shartlar va shartnomalarga rioya qilish va ularga amal qilishga rozi bo'lasiz. Agar siz ushbu Shartlar va shartnomalar bilan rozi bo'lmasangiz, iltimos, bu saytdan foydalanmang.",
+        "note": "DIQQAT: Biz o'z ixtiyorimiz bilan ushbu Shartlar va shartnomalarni istalgan vaqtda o'zgartirish, modifikatsiya qilish yoki boshqacha o'zgartirish huquqini o'z zimmasiga olamiz. Aks holda ko'rsatilmagan taqdirda, o'zgartirishlar darhol kuchga kiradi. Iltimos, ushbu Shartlar va shartnomalarni muntazam ravishda ko'rib chiqing. O'zgartirishlar va/yoki modifikatsiyalarni joylashtirgandan keyin saytdan davom etgan foydalanishingiz qayta ko'rib chiqilgan Shartlar va shartnomalar va o'zgartirishlar haqida xabardorlik standartlarining o'zaro kelishuvini anglatadi. Ma'lumot uchun, bu sahifa ushbu shartlar va shartnomalarning yuqori qismida ko'rsatilgan sanaga ko'ra oxirgi marta yangilangan."
+      },
+      "privacy": {
+        "title": "2. MAXFIYLIK",
+        "content": "Iltimos, bizning amaliyotlarimizni tushunish uchun bu saytga tashrifingizni ham boshqaradigan Maxfiylik siyosatimizni ko'rib chiqing."
+      },
+      "linkedSites": {
+        "title": "3. BOG'LANGAN SAYTLAR",
+        "content": "Bu sayt boshqa mustaqil uchinchi tomon veb-saytlariga (\"Bog'langan saytlar\") havolalarni o'z ichiga olishi mumkin. Ushbu Bog'langan saytlar faqat bizning tashrif buyuruvchilarimiz uchun qulaylik sifatida taqdim etiladi. Bunday Bog'langan saytlar bizning nazoratimizda emas va biz bunday Bog'langan saytlarning mazmuniga, shu jumladan bunday Bog'langan saytlarda joylashgan har qanday ma'lumot yoki materiallarga javobgar emasmiz va ularni qo'llab-quvvatlamaymiz. Siz ushbu Bog'langan saytlar bilan o'zaro munosabatingiz bo'yicha mustaqil qaror qabul qilishingiz kerak."
+      },
+      "forwardLooking": {
+        "title": "4. OLDINGA QARAB BAYONOTLAR",
+        "content": "Bu saytda qayta nashr etilgan barcha materiallar nashr etilgan yoki topshirilgan asl sanada gapiriladi. Hujjatning bu saytda mavjud bo'lishi, bunday hujjatda keltirilgan ma'lumotlar voqealar yoki keyingi hujjat yoki topshirish orqali o'zgartirilmagan yoki almashtirilmaganligini anglatmaydi. Bizda ushbu saytda keltirilgan har qanday ma'lumot yoki bayonotlarni yangilash bo'yicha burch yoki siyosat yo'q va shuning uchun bunday ma'lumot yoki bayonotlarga siz saytga kirgan kunning joriy sanasi sifatida ishonmaslik kerak."
+      },
+      "disclaimer": {
+        "title": "5. KAFOLATLARDAN VOZ KEÇISH VA JAVOBGARLIKNI CHEKLASH",
+        "sectionA": "A. USHBU SAYT NOTO'G'RILIKLAR VA TIPOGRAFIK XATOLARNI O'Z ICHIGA OLISHI MUMKIN. BIZ MATERIALLARNING TO'G'RILIGI YOKI TO'LIQLIGINI YOKI SAYT ORQALI KO'RSATILGAN YOKI TARQATILGAN HAR QANDAY MASLAHAT, FIKR, BAYONOT YOKI BOSHQА MA'LUMOTLARNING ISHONCHLILIGINI KAFOLATLAMAYMIZ. SIZ ANIQ TUSHUNASIZ VA ROZI BO'LASIZ:",
+        "points": [
+          "SAYTNI ISHLATISH, SHU JUMladan BU YERDA KELTIRILGAN HAR QANDAY FIKR, MASLAHAT, BAYONOT, MEMORANDUM YOKI MA'LUMOTGA HAR QANDAY ISHONCH, SIZNING O'Z XAVFINGIZDA BO'LADI",
+          "SAYT \"QANDАY BO'LSA\" VA \"MAVJUD BO'LGANDA\" ASOSIDA TAQDIМ ETILADI",
+          "BU YERDA ANIQ KO'RSATILGANLARDAN TASHQARI, BIZ BARCHA TURDAGI KAFOLATLARDAN VOZ KEÇAMIZ, JUMladan, LEKIN CHEKLANGAN EMAS, SOTISH UCHUN YAROQLILIK, MUAYYAN MAQSAD UCHUN YAROQLILIK, ISHCHI KABI EFFORT, TITL VA HUQUQ BUZILMASLIK KAFOLATLARI",
+          "BU SAYT, REKLAMA QILINGAN YOKI TAKLIF QILINGAN MAHSULOTLAR YOKI XIZMATLAR YOKI ISHTIROK ETGAN SAVDOGARLAR BILAN BOG'LIQ BO'LISHI MUMKIN BO'LGAN NATIJALARGA NISBATAN HEÇ QANDAY KAFOLAT BERMAYMIZ",
+          "SAYT ORQALI YUKLAB OLINGAN YOKI BOSHQA TARZDA OLINGAN HAR QANDAY MATERIAL SIZNING O'Z IXTИYORINGIZDA VA XAVFINGIZDA AMALGA OSHIRILADI",
+          "SIZ HAR QANDAY BOSHQА MATERIALNI YUKLAB OLISH NATIJASIDA KOMPYUTER TIZIMINGIZGA YETKAN ZARAR YOKI MA'LUMOTLAR YO'QOLISHI UCHUN YAGONA JAVOBGAR BO'LASIZ"
+        ],
+        "sectionB": "B. SIZ TUSHUNASIZ VA ROZI BO'LASIZ, HEÇ QANDAY HOLATDA, JUMladan, LEKIN CHEKLANGAN EMAS, EHTIYOTSIZLIK, BIZ HAR QANDAY TO'G'RIDAN-TO'G'RI, TO'G'RIDAN-TO'G'RI EMAS, TASODIFIY, MAXSUS, JAZO YOKI OQIBATLI ZARARLAR UCHUN JAVOBGAR BO'LMAYMIZ, BU SAYT YOKI HAR QANDAY BOSHQА SAYTDAKI MATERIALLAR YOKI FUNKSIYALARDAN FOYDALANISH YOKI FOYDALANISHGA QODIR EMASLIGI NATIJASIDA YUZAGA KELADI, HATTO BIZGA BOSHQА ZARARLAR IMKONIYATI HAQIDA XABAR BERILGAN BO'LSA HAM. YUQORIDAGI CHEKLASH HAR QANDAY CHEKLANGAN YECHIMNING ASOSIY MAQSADINING MUVAFFAQIYATSIZLIGIGA QARAMAY QO'LLANILADI."
+      },
+      "exclusions": {
+        "title": "6. ISTISNOLAR VA CHEKLASH",
+        "content": "BA'ZI YURISDIKSIYALAR MUAYYAN KAFOLATLARNI ISTISNO QILISH YOKI TASODIFIY YOKI OQIBATLI ZARARLAR UCHUN JAVOBGARLIKNI CHEKLASH YOKI ISTISNO QILISHGA RUХSAT BERMAYDИ. SHUNING UCHUN, BIZNING BOSHQА YURISDIKSIYADAGI JAVOBGARLIGIMIZ QONUN TOMONIDAN RUXSAT ETILGAN MAKSIMAL DARAJAGA CHEKLANGAN BO'LISHI KERAK."
+      },
+      "proprietaryRights": {
+        "title": "7. BIZNING MULKIY HUQUQLARIMIZ",
+        "content": "Bu sayt va uning barcha mazmuni faqat shaxsiy, tijorat bo'lmagan maqsadlarda foydalanish uchun mo'ljallangan. Aniq taqdim etilganlardan tashqari, sayt ichidagi hech narsa bizning yoki har qanday uchinchi tomonning intellektual mulk huquqlari bo'yicha litsenziya berish sifatida talqin qilinmasligi kerak, bu estoppel, nazarda tutilgan, voz keçish yoki boshqacha bo'lsa ham. Yuqoridagilarning umumiy qoidalarini cheklamasdan, siz tan olasiz va rozi bo'lasiz, sayt va uning xizmatlarini boshqarish uchun foydalaniladigan barcha mazmun mualliflik huquqi, savdo belgisi, patent yoki boshqa mulkiy huquqlar bilan himoyalangan. Siz rozi bo'lasiz:",
+        "points": [
+          "bizning sayt bilan bog'liq holda taqdim etilgan har qanday savdo belgilarini, xizmat belgilarini, savdo libosini (umumiy \"Savdo belgilari\") yoki boshqa intellektual mulkni o'zgartirish, o'zgartirish yoki buzish",
+          "o'zingizni biz tomonidan homiylik qilingan, bog'langan yoki ma'qullangan deb ko'rsatish yoki bizning har qanday filiallarimiz yoki xizmat ko'rsatuvchilarimiz",
+          "sizga foydalanish uchun mavjud qilgan maqsaddan boshqa maqsad uchun sayt orqali mavjud bo'lgan har qanday savdo belgilarini yoki boshqa mazmunni ishlatish",
+          "bizni, bizning savdo belgilarimizni yoki saytning har qanday jihatini haqorat qilish yoki kamsitish",
+          "sayt yoki uning mahsulotlari va xizmatlari bilan bog'liq ishlatiladigan har qanday dasturiy ta'minot yoki dasturlarni moslashtirish, tarjima qilish, o'zgartirish, dekompilyatsiya qilish, demontaj qilish yoki teskari muhandislik qilish"
+        ],
+        "additional": "Sayt yoki uning har qanday mazmunini har qanday shakl va usulda ramkalash, ko'zgu yoki ma'lumotlar qazib olish qat'iyan taqiqlangan."
+      },
+      "indemnity": {
+        "title": "8. KOMPENSATSIYA",
+        "content": "Sayt veb-saytlaridan foydalanish orqali siz bizni va bog'langan tashkilotlarni (umumiy \"Kompensatsiya qiluvchilar\") har qanday va barcha da'volar va xarajatlardan, shu jumladan (cheklanmagan) advokat to'lovlaridan himoya qilish va ularni himoya qilishga rozi bo'lasiz, bu sizning sayt veb-saytlaridan foydalanishingiz, Mahsulotlar va xizmatlardan foydalanishingiz yoki bizga g'oyalar va/yoki tegishli materiallarni topshirishingiz yoki har qanday shaxsning har qanday ID, a'zolik yoki parolni ishlatishidan kelib chiqadi. siz saytning har qanday qismi bilan saqlaysiz, bunday foydalanish siz tomonidan ruxsat etilgan bo'lsa ham."
+      },
+      "copyright": {
+        "title": "9. MUALLIFLIK HUQUQI VA SAVDO BELGISI XABARNOMASI",
+        "content": "Xususiy va tijorat maqsadlarida foydalanish uchun bepul bo'lgan bizning yaratilgan soxta nusxadan tashqari, boshqa barcha matn mualliflik huquqi bilan himoyalangan. generator.lorem-ipsum.info © 2013, barcha huquqlar himoyalangan"
+      },
+      "intellectualProperty": {
+        "title": "10. INTELLEKTUAL MULK BUZILISHI HAQIDAGI DA'VOLAR",
+        "content": "Intellektual mulk huquqlarini buzish haqidagi da'volarga tezda javob berish bizning siyosatimizdir. Biz buzilish haqidagi da'volar haqida xabarnomalarni darhol ko'rib chiqamiz va tekshiramiz va raqamli ming yillik mualliflik huquqi qonuni (\"DMCA\") va boshqa tegishli intellektual mulk qonunlari bo'yicha tegishli choralarni ko'ramiz. Buzilish haqidagi da'volar quyidagilarga yo'naltirilishi kerak:",
+        "contact": "generator.lorem-ipsum.info\n126 Electricov St.\nKiev, Kiev 04176\nUkraine\ncontact@lorem-ipsum.info"
+      },
+      "placeOfPerformance": {
+        "title": "11. BAJARISH JOYI",
+        "content": "Bu sayt bizning Kiev, Ukraina ofisimizdan boshqariladi, ishlaydi va boshqariladi. Biz ushbu saytdagi materiallar Ukrainadan tashqaridagi boshqa joylarda foydalanish uchun mos yoki mavjud ekanligini ko'rsatmaymiz va ularning mazmuni noqonuniy bo'lgan hududlardan ularga kirish taqiqlangan. Agar siz ushbu saytga Ukrainadan tashqaridagi joydan kirishsangiz, siz barcha mahalliy qonunlarga rioya qilish uchun javobgarsiz."
+      },
+      "general": {
+        "title": "12. UMUMIY",
+        "sectionA": "A. Agar ushbu Shartlar va shartnomalarning har qanday qoidasi noto'g'ri yoki amal qilinmas deb topilsa, qoida olib tashlanishi (yoki iloji bo'lsa, amal qilinadigan tarzda talqin qilinishi) va qolgan qoidalar amal qilinishi kerak. Sarlavhalar faqat ma'lumot uchun va hech qanday tarzda bunday bo'limning qamrovini yoki darajasini belgilamaydi, cheklamaydi, talqin qilmaydi yoki tasvirlamaydi. Siz yoki boshqalar tomonidan buzilishga nisbatan harakat qilmasligimiz keyingi yoki o'xshash buzilishlarga nisbatan harakat qilish huquqimizdan voz keçishni anglatmaydi. Ushbu Shartlar va shartnomalar bu yerda keltirilgan mavzu bo'yicha biz o'rtamizdagi to'liq tushunish va kelishuvni belgilaydi va bizning vakillarimiz va siz o'rtasidagi mavzu bo'yicha har qanday boshqa kelishuv, takliflar va aloqa, yozma yoki og'zaki, shu jumladan mijoz hujjatlarida yoki xarid buyurtmalarida har qanday shartlar va shartnomalarni bekor qiladi.",
+        "sectionB": "B. Hech qanday qo'shma korxona yo'q, huquqlarni buzish yo'q. Siz rozi bo'lasiz, ushbu Shartlar va shartnomalar yoki saytdan foydalanishingiz natijasida siz va biz o'rtamizda hech qanday qo'shma korxona, sheriklik, ish yoki agentlik munosabatlari mavjud emas. Ushbu Shartlar va shartnomalarni bajarish mavjud qonunlar va qonuniy jarayonga bog'liq va bu yerda keltirilgan hech narsa saytdan foydalanishingiz yoki bizga taqdim etilgan yoki biz tomonidan to'plangan ma'lumotlar bilan bog'liq hukumat, sud va qonun bajarish organlarining so'rovlari yoki talablariga rioya qilish huquqimizni buzmaydi."
+      }
+    },
+    "actions": {
+      "checkbox": "Men shartlar va shartnomalar va maxfiylik siyosatini o'qib chiqganim va qabul qilganimni tasdiqlayman.",
+      "cancel": "Bekor qilish",
+      "accept": "Qabul qilish"
+    },
+    "paymentPage": {
+      "title": "To'lov"
+    },
+    "referralsPage": {
+      "title": "Tavsiyalar"
+    },
+    "profileSettingsPage": {
+      "title": "Sozlamalar",
+      "loginSecurity": {
+        "title": "Kirish va xavfsizlik",
+        "password": "Parol",
+        "loggedDevices": "Tizimga kirgan qurilmalar"
+      },
+      "dataPrivacy": {
+        "title": "Ma'lumotlar maxfiyligi",
+        "privacyPolicies": "Maxfiylik siyosati",
+        "cookiesPolicy": "Cookie siyosati"
+      },
+      "paymentSettings": {
+        "title": "To'lov sozlamalari",
+        "creditCard": "Kredit karta ma'lumotlari",
+        "method": "To'lov usuli"
+      },
+      "notifications": {
+        "title": "Bildirishnomalar",
+        "push": "Push bildirishnomalar"
+      },
+      "generalSettings": {
+        "title": "Umumiy sozlamalar",
+        "language": "Kontent tili"
+      }
+    },
+    "customerSupportPage": {
+      "title": "Mijozlarni qo'llab-quvvatlash"
     }
   },
   "termsConditions": {
