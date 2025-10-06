@@ -247,22 +247,6 @@
       "gender": "Jins",
       "email": "Email"
     },
-    "myDataEditingPage": {
-      "title": "Mening ma'lumotlarim",
-      "customer": "Mijoz",
-      "cancel": "Bekor qilish",
-      "firstName": "Ism",
-      "firstNamePlaceholder": "Ismni kiriting",
-      "lastName": "Familiya",
-      "lastNamePlaceholder": "Familiyani kiriting",
-      "birthday": "Tug'ilgan sana",
-      "birthdayPlaceholder": "Tug'ilgan sanani kiriting",
-      "phone": "Telefon raqami (mobil)",
-      "phonePlaceholder": "Telefon raqamini kiriting",
-      "email": "Email",
-      "emailPlaceholder": "Emailni kiriting",
-      "save": "Saqlash"
-    },
     "myBookingsPage": {
       "active": "Faol",
       "history": "Tarix",
