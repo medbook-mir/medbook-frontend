@@ -14,6 +14,10 @@ export const homePageNavItems = [
   {
     title: 'Healthy training',
     href: '#'
+  },
+  {
+    title: 'Terms & Conditions',
+    href: '/terms-conditions'
   }
 ]
 
@@ -29,5 +33,9 @@ export const otherPagesNavItems = [
   {
     title: 'Partners',
     href: '#'
+  },
+  {
+    title: 'Terms & Conditions',
+    href: '/terms-conditions'
   }
 ]

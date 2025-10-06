@@ -41,9 +41,21 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between gap-6 border-t border-t-[#D6D6D6] py-6 text-[16px] leading-7 font-normal text-[#0D0D0D]">
           <p>{t('copyright')}</p>
           <div className="flex flex-wrap gap-x-12 gap-y-2">
-            <Link href="#" className="text-[#0D0D0D] hover:text-[#046D5F]">{t('customerService')}</Link>
-            <Link href="#" className="text-[#0D0D0D] hover:text-[#046D5F]">{t('termsConditions')}</Link>
-            <Link href="/privacy-policy" className="text-[#0D0D0D] hover:text-[#046D5F]">{t('privacyPolicy')}</Link>
+
+            <Link href="#" className="text-[16px] leading-7 font-normal text-[#0D0D0D] hover:text-[#046D5F] transition-colors">
+              {t('customerService')}
+            </Link>
+            <Link href="/terms-conditions" className="text-[16px] leading-7 font-normal text-[#0D0D0D] hover:text-[#046D5F] transition-colors">
+              {t('termsConditions')}
+            </Link>
+            <Link href="#" className="text-[16px] leading-7 font-normal text-[#0D0D0D] hover:text-[#046D5F] transition-colors">
+              {t('privacyPolicy')}
+            </Link>
+            <Link href="/contact-us" className="hover:text-[#046d5f] transition-colors">
+              {t('customerService')}
+            </Link>
+            <p>{t('termsConditions')}</p>
+            <p>{t('privacyPolicy')}</p>
           </div>
         </div>
       </Container>

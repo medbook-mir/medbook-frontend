@@ -22,7 +22,7 @@ export default function SettingsLayout({ children }: { children: React.ReactNode
         <CustomBreadcrumb
           pages={[
             { title: t('settings'), href: `/settings` },
-            { title: t(currentPath?.title ?? ''), href: `/settings/${currentPath?.href}` }
+            { title: currentPath?.title ? t(currentPath.title) : t('settings'), href: `/settings/${currentPath?.href ?? ''}` }
           ]}
         />
         <h1 className="mt-4 mb-8 text-[24px] leading-[127%] font-bold">Settings</h1>

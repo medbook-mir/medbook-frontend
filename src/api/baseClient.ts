@@ -58,8 +58,8 @@ export class BaseClient {
     }
 
     // Automatically get current locale and set it in Lang header
-    const locale = await getLocale()
-    req.headers['Lang'] = locale
+    // const locale = await getLocale()
+    // req.headers['Lang'] = locale
 
     return req
   }
