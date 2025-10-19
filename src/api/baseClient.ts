@@ -1,4 +1,10 @@
-import Axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
+import Axios, {
+  AxiosError,
+  AxiosInstance,
+  AxiosRequestConfig,
+  AxiosResponse,
+  InternalAxiosRequestConfig
+} from 'axios'
 import { buildParams } from './helpers'
 import { TokenService } from '@/utils/storage'
 import { env } from '@/utils/env'
@@ -13,29 +19,40 @@ declare module 'axios' {
 }
 
 export class HTTPError extends Error {
-  constructor(
-    public status: number,
-    public cause: string
-  ) {
+  constructor(public status: number, public cause: string) {
     super(cause)
   }
 }
+
 export class BaseClient {
-  private baseUrl = API_URL
+  private baseUrl: string
   private axios: AxiosInstance
   private isRefreshing = false
   private refreshSubscribers: ((token: string) => void)[] = []
   private static instance: BaseClient | null = null
 
   private constructor() {
+    // ✅ Use relative URL in browser to activate Next.js rewrites
+    this.baseUrl =
+      typeof window !== 'undefined'
+        ? '' // browser → let Next.js handle rewrites
+        : API_URL // server → can directly call API if needed
+
     this.axios = Axios.create({
-      baseURL: this.baseUrl
+      baseURL: this.baseUrl,
+      withCredentials: false,
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json'
+      }
     })
 
-    // Request interceptor for attaching the token
+    // Interceptors
     this.axios.interceptors.request.use(this.attachToken)
-    // Response interceptor for handling errors
-    this.axios.interceptors.response.use((response: AxiosResponse) => response, this.onApiError)
+    this.axios.interceptors.response.use(
+      (response: AxiosResponse) => response,
+      this.onApiError
+    )
   }
 
   public static getInstance(): BaseClient {
@@ -45,7 +62,7 @@ export class BaseClient {
     return BaseClient.instance
   }
 
-  // Request interceptor for attaching token
+  // ✅ Token handler
   private attachToken = async (req: InternalAxiosRequestConfig) => {
     const token = TokenService.getToken()
     const accessTokenExpiry = TokenService.getAccessTokenExpiry()
@@ -56,7 +73,7 @@ export class BaseClient {
       req.headers['Authorization'] = `Bearer ${token}`
     }
 
-    // Set language header - try to get from URL or default to 'en'
+    // ✅ Language header
     const getLocaleFromClient = () => {
       if (typeof window !== 'undefined') {
         const pathname = window.location.pathname
@@ -65,18 +82,16 @@ export class BaseClient {
       }
       return 'en'
     }
-    
-    req.headers['Lang'] = getLocaleFromClient()
 
+    req.headers['Lang'] = getLocaleFromClient()
     return req
   }
 
-  // API Error handler
   private onApiError = async (error: AxiosError) => {
     const originalRequest = error.config
 
     if (originalRequest && !originalRequest._retry) {
-      originalRequest._retry = true // Faqat bir marta urinish uchun
+      originalRequest._retry = true
       switch (error.response?.status) {
         case 401: {
           const success = await this.refreshToken()
@@ -84,7 +99,7 @@ export class BaseClient {
             const newToken = TokenService.getToken()
             if (newToken) {
               originalRequest.headers['Authorization'] = `Bearer ${newToken}`
-              return this.axios(originalRequest) // Faqat 1 marta qayta yuborish
+              return this.axios(originalRequest)
             }
           }
           break
@@ -97,37 +112,42 @@ export class BaseClient {
     return Promise.reject(error)
   }
 
-  // Refresh token method
   private refreshToken = async (): Promise<boolean> => {
     if (this.isRefreshing) {
       return new Promise((resolve) => {
         this.refreshSubscribers.push(() => resolve(true))
       })
     }
-
+  
     this.isRefreshing = true
     try {
       const refreshToken = TokenService.getRefreshToken()
-      const refreshTokenExpiry = TokenService.getRefreshTokenExpiry()
+      const storedRefreshTokenExpiry = TokenService.getRefreshTokenExpiry()
       const currentTime = Date.now() / 1000
-
-      if (!refreshToken || currentTime >= refreshTokenExpiry) {
+  
+      if (!refreshToken || currentTime >= storedRefreshTokenExpiry) {
         TokenService.clearTokens()
         return false
       }
-
+  
       const response = await this.axios.post('/auth/refresh', { refreshToken })
-
-      const newAccessToken = response.data.accessToken
-      const newRefreshToken = response.data.refreshToken
-      const newAccessTokenExpiry = response.data.accessTokenExpiry
-      const newRefreshTokenExpiry = response.data.refreshTokenExpiry
-
-      TokenService.setToken(newAccessToken, newRefreshToken, newAccessTokenExpiry, newRefreshTokenExpiry)
-
-      this.refreshSubscribers.forEach((callback) => callback(newAccessToken))
+      const {
+        accessToken,
+        refreshToken: newRefresh,
+        accessTokenExpiry: newAccessTokenExpiry,
+        refreshTokenExpiry: newRefreshTokenExpiry
+      } = response.data
+  
+      TokenService.setToken(
+        accessToken,
+        newRefresh,
+        newAccessTokenExpiry,
+        newRefreshTokenExpiry
+      )
+  
+      this.refreshSubscribers.forEach((cb) => cb(accessToken))
       this.refreshSubscribers = []
-
+  
       return true
     } catch (error) {
       console.warn('refreshToken error:', error)
@@ -137,14 +157,15 @@ export class BaseClient {
       this.isRefreshing = false
     }
   }
+  
 
   setAccessToken = (token: string) => {
     const newToken = `Bearer ${token}`
     this.axios.defaults.headers.common.Authorization = newToken
-
     return newToken
   }
 
+  // 🔧 Standardized HTTP methods
   get = async <T, K, C>(url: string, params?: K, config?: AxiosRequestConfig<C>): Promise<AxiosResponse<T>> => {
     const queryParams = params ? buildParams(params) : ''
     return this.axios.get(url + queryParams, config)

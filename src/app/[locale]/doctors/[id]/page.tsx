@@ -11,6 +11,7 @@ import { useCompleteDoctorData } from '@/hooks/useDoctor'
 import { Skeleton } from 'antd'
 
 const DoctorsProfile = ({ params }: { params: Promise<{ id: string }> }) => {
+  console.log('pawol')
   const [doctorId, setDoctorId] = React.useState<string>('')
   
   React.useEffect(() => {
