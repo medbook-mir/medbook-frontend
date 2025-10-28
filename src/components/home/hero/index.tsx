@@ -10,8 +10,9 @@ import { Container } from '@/theme/container'
 
 export default function HeroSection() {
   const [searchResult, setSearchResult] = useState('')
+
   return (
-    <section className="rounded-b-[35px] bg-[#046D5F] pt-[67px] pb-[52px]">
+    <section className="rounded-b-[35px] bg-gradient-to-b via-[#046D5F] from-[#093637] to-[#44A08D] pt-[180px] pb-[52px]">
       <Container>
         <div className="relative flex-col-reverse items-center justify-between gap-10 text-white lg:flex-row">
           <div className="relative">
