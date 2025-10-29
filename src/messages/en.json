@@ -58,15 +58,15 @@
         },
         {
           "title": "What happens if I need urgent medical attention?",
-          "content": "If you require urgent medical care, please call emergency services immediately. The app should not be used for emergencies."
+          "content": "Medvisit is designed for standard care and connecting you with verified specialists. In case of an emergency, please contact your local emergency number immediately—our platform is not intended for urgent or emergency medical needs."
         },
         {
           "title": "Are my personal and medical details safe with Medvisit?",
-          "content": "Yes, all your information is encrypted and securely stored in compliance with healthcare data regulations."
+          "content": "Absolutely. We use secure, encrypted methods to protect your sensitive data at all times. Your information is stored safely and shared only with the healthcare professionals you choose to consult."
         },
         {
           "title": "Can I get a prescription or referral through the app?",
-          "content": "Yes, licensed professionals on the platform can provide prescriptions or referrals when appropriate."
+          "content": "Yes — if your doctor determines it's necessary during your consultation, they can issue digital prescriptions or referrals to specialists. You can also securely access and download these documents directly from your Medvisit account."
         }
       ]
     },

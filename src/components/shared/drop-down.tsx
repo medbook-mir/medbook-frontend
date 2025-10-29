@@ -8,6 +8,8 @@ interface DropdownProps {
   content: React.ReactNode | string;
   isOpen?: boolean;            // controlled (from parent)
   onToggle?: () => void;       // controlled (from parent)
+  onMouseEnter?: () => void;   // hover handler
+  onMouseLeave?: () => void;   // hover handler
   defaultOpen?: boolean;       // used only when uncontrolled
 }
 
@@ -16,6 +18,8 @@ export default function Dropdown({
   content,
   isOpen,
   onToggle,
+  onMouseEnter,
+  onMouseLeave,
   defaultOpen = false,
 }: DropdownProps) {
   // Uncontrolled fallback so the component is reusable outside the FAQ too
@@ -29,20 +33,22 @@ export default function Dropdown({
 
   return (
     <div
-      className={`w-full rounded-2xl overflow-hidden transition-colors ${
+      className={`w-full rounded-4xl overflow-hidden transition-colors ${
         open
-          ? "bg-emerald-700 text-white border border-emerald-700"
-          : "bg-white text-black border border-gray-200"
+          ? "bg-[#046D5F] text-white border border-[#046D5F]"
+          : "bg-white text-black border border-[#E5E5E5]"
       }`}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
       <button
         type="button"
         aria-expanded={open}
-        className="flex w-full items-center justify-between px-6 py-5 min-h-[64px] text-left font-medium"
+        className="flex w-full items-center justify-between px-8 py-6 min-h-[72px] text-left text-xl font-medium"
         onClick={handleToggle}
       >
-        <span>{title}</span>
-        {open ? <Minus size={20} /> : <Plus size={20} />}
+        <span className="leading-[140%]">{title}</span>
+        {open ? <Minus size={24} /> : <Plus size={24} />}
       </button>
 
       <AnimatePresence>
@@ -53,7 +59,7 @@ export default function Dropdown({
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="px-6 pb-5 text-sm leading-relaxed text-white">
+            <div className="px-8 pb-6 text-base leading-[140%] text-white">
               {content}
             </div>
           </motion.div>
