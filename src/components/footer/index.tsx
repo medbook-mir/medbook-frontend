@@ -30,6 +30,7 @@ const Footer = () => {
               
             </div>
           </div>
+          <div></div>
           <div className="flex items-center gap-3.5">
             {footerSocials.map((item, index) => (
               <Link key={index} href={item.href} target="_blank" rel="noopener noreferrer">
@@ -51,11 +52,6 @@ const Footer = () => {
             <Link href="#" className="text-[16px] leading-7 font-normal text-[#0D0D0D] hover:text-[#046D5F] transition-colors">
               {t('privacyPolicy')}
             </Link>
-            <Link href="/contact-us" className="hover:text-[#046d5f] transition-colors">
-              {t('customerService')}
-            </Link>
-            <p>{t('termsConditions')}</p>
-            <p>{t('privacyPolicy')}</p>
           </div>
         </div>
       </Container>
