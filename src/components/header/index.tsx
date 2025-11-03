@@ -57,7 +57,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="ml-autohidden items-center gap-4 md:flex">
+          <div className="ml-autohidden items-center gap-4 md:flex ml-5">
             <LangSelect />
             <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800">
               I am a Doctor
