@@ -13,6 +13,35 @@
       "search_placeholder": "Найдите врача, клинику или услугу",
       "location": "Местоположение"
     },
+    "searchResults": {
+      "title": "Результаты поиска:",
+      "resetFilter": "Сбросить фильтр",
+      "filters": {
+        "language": "Язык",
+        "specialty": "Специальность",
+        "gender": "Пол",
+        "locationRadius": "Радиус поиска"
+      },
+      "specialties": {
+        "gynecologist": "Гинеколог",
+        "pediatrician": "Педиатр",
+        "dentist": "Стоматолог",
+        "surgeon": "Хирург",
+        "dermatologist": "Дерматолог"
+      },
+      "languages": {
+        "english": "Английский",
+        "russian": "Русский",
+        "uzbek": "Узбекский"
+      },
+      "genders": {
+        "male": "Мужской",
+        "female": "Женский",
+        "any": "Любой"
+      },
+      "noResults": "Врачи не найдены",
+      "loading": "Загрузка врачей..."
+    },
     "solutions": {
       "title": "От записи до заботы — простой процесс",
       "complaints": {
