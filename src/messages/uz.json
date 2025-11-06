@@ -78,24 +78,24 @@
       "description": "Bizning blog shunchaki yangilik emas — bu o'rganish va muloqot maydoni. Medvisit qanday qilib tibbiy xizmatni oddiyroq, aqlliroq va insoniyroq qilayotganini bilib oling."
     },
     "faqsSection": {
-      "title": "Tez-tez beriladigan savollar",
-      "description": "Platformadan foydalanishdan tortib qabulga yozilishgacha — biz yordam berishga tayyormiz. Jamiyatimizdagi eng ko'p berilgan savollarga javoblarni ko'rib chiqing.",
+      "title": "Ko‘p beriladigan savollar",
+      "description": "Platformadan foydalanishdan tortib uchrashuvlarni bron qilishgacha — biz sizga yordam beramiz. Hamjamiyatimiz tomonidan eng ko‘p berilgan savollarga javoblarni bu yerdan topishingiz mumkin.",
       "items": [
         {
-          "title": "Qanday qilib qabulga yozilaman, vaqtini o'zgartiraman yoki bekor qilaman?",
-          "content": "Qabulingizni ilova orqali oson boshqarishingiz mumkin — sizga qulay vaqtni tanlang yoki shaxsiy kabinetga o'tib, qabulni o'zgartiring yoki bekor qiling. Sizga eslatmalar avtomatik tarzda yuboriladi."
+          "title": "Uchrashuvni qanday bron qilish, o‘zgartirish yoki bekor qilish mumkin?",
+          "content": "Siz uchrashuvlaringizni ilova orqali oson boshqarishingiz mumkin — faqat sizga qulay vaqtni tanlang yoki shaxsiy kabinetingizga kirib, uchrashuvni o‘zgartiring yoki bekor qiling. Shuningdek, sizga eslatmalar avtomatik tarzda yuboriladi."
         },
         {
-          "title": "Agar menga tez tibbiy yordam kerak bo'lsa, nima qilaman?",
-          "content": "Agar sizga tez tibbiy yordam kerak bo'lsa, darhol tez yordam xizmatiga qo'ng'iroq qiling. Ilova shoshilinch holatlar uchun mo'ljallanmagan."
+          "title": "Agar menga shoshilinch tibbiy yordam kerak bo‘lsa, nima qilishim kerak?",
+          "content": "Medvisit odatiy tibbiy xizmatlar va tasdiqlangan mutaxassislar bilan bog‘lanish uchun mo‘ljallangan. Agar favqulodda holat yuz bersa, darhol mahalliy shoshilinch yordam raqamiga qo‘ng‘iroq qiling — bizning platformamiz tez yordam yoki shoshilinch tibbiy ehtiyojlar uchun mo‘ljallanmagan."
         },
         {
-          "title": "Mening shaxsiy va tibbiy ma'lumotlarim Medvisitda xavfsizmi?",
-          "content": "Ha, barcha ma'lumotlaringiz shifrlanadi va sog'liqni saqlash ma'lumotlari qoidalariga muvofiq xavfsiz tarzda saqlanadi."
+          "title": "Mening shaxsiy va tibbiy ma’lumotlarim Medvisitda xavfsizmi?",
+          "content": "Albatta. Biz sizning maxfiy ma’lumotlaringizni himoya qilish uchun xavfsiz va shifrlangan texnologiyalardan foydalanamiz. Ma’lumotlaringiz xavfsiz tarzda saqlanadi va faqat siz tanlagan tibbiyot mutaxassislariga uzatiladi."
         },
         {
-          "title": "Ilova orqali retsept yoki yo'llanma olishim mumkinmi?",
-          "content": "Ha, platformadagi litsenziyaga ega mutaxassislar kerak bo'lganda retsept yoki yo'llanma berishi mumkin."
+          "title": "Ilova orqali retsept yoki yo‘llanma olishim mumkinmi?",
+          "content": "Ha — agar shifokor maslahat davomida bu zarur deb hisoblasa, u raqamli retsept yoki mutaxassisga yo‘llanma bera oladi. Siz bu hujjatlarni Medvisit akkauntingizdan xavfsiz tarzda ko‘rishingiz yoki yuklab olishingiz mumkin."
         }
       ]
     },
