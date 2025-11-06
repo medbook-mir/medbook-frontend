@@ -13,6 +13,35 @@
       "search_placeholder": "Shifokor, klinika yoki xizmat qidiring",
       "location": "Joylashuv"
     },
+    "searchResults": {
+      "title": "Qidiruv natijalari:",
+      "resetFilter": "Filtrni tiklash",
+      "filters": {
+        "language": "Til",
+        "specialty": "Mutaxassislik",
+        "gender": "Jins",
+        "locationRadius": "Qidiruv radiusi"
+      },
+      "specialties": {
+        "gynecologist": "Ginekolog",
+        "pediatrician": "Pediatr",
+        "dentist": "Stomatolog",
+        "surgeon": "Jarroh",
+        "dermatologist": "Dermatolog"
+      },
+      "languages": {
+        "english": "Ingliz tili",
+        "russian": "Rus tili",
+        "uzbek": "O'zbek tili"
+      },
+      "genders": {
+        "male": "Erkak",
+        "female": "Ayol",
+        "any": "Har qanday"
+      },
+      "noResults": "Shifokorlar topilmadi",
+      "loading": "Shifokorlar yuklanmoqda..."
+    },
     "solutions": {
       "title": "Navbatdan davolanishgacha — Oddiy jarayon",
       "complaints": {

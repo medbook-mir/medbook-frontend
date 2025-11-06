@@ -13,6 +13,35 @@
       "search_placeholder": "Search for a doctor, clinic, or service",
       "location": "Location"
     },
+    "searchResults": {
+      "title": "Search result:",
+      "resetFilter": "Reset filter",
+      "filters": {
+        "language": "Language",
+        "specialty": "Specialty",
+        "gender": "Gender",
+        "locationRadius": "Location radius"
+      },
+      "specialties": {
+        "gynecologist": "Gynecologist",
+        "pediatrician": "Pediatrician",
+        "dentist": "Dentist",
+        "surgeon": "Surgeon",
+        "dermatologist": "Dermatologist"
+      },
+      "languages": {
+        "english": "English",
+        "russian": "Russian",
+        "uzbek": "Uzbek"
+      },
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "any": "Any"
+      },
+      "noResults": "No doctors found",
+      "loading": "Loading doctors..."
+    },
     "solutions": {
       "title": "From Booking to Care — The Simple Process",
       "complaints": {
@@ -46,11 +75,11 @@
     },
     "blog": {
       "title": "Blog",
-      "description": "Our blog is more than just news — it’s a space for learning and connection. Find out how Medvisit is making healthcare simpler, smarter, and more human."
+      "description": "Our blog is more than just news — it's a space for learning and connection. Find out how Medvisit is making healthcare simpler, smarter, and more human."
     },
     "faqsSection": {
       "title": "Frequently asked questions",
-      "description": "From using the platform to booking appointments, we’re here to guide you. Check out the answers to the most common questions from our community.",
+      "description": "From using the platform to booking appointments, we're here to guide you. Check out the answers to the most common questions from our community.",
       "items": [
         {
           "title": "How do I book, reschedule, or cancel an appointment?",
@@ -481,11 +510,11 @@
       },
       "section11": {
         "title": "11. TERMINATION",
-        "content": "We may terminate or suspend your account and access to our platform immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the platform will cease immediately. All provisions of the Terms which by their nature should survive termination shall survive termination, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability."
+        "content": "We may terminate or suspend your account and access to our platform immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the platform will cease immediately."
       },
       "section12": {
-        "title": "12. GOVERNING LAW AND DISPUTE RESOLUTION",
-        "content": "These Terms shall be interpreted and governed by the laws of the jurisdiction in which MedVisit operates, without regard to its conflict of law provisions. Any disputes arising from these Terms or your use of the platform shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association. You waive any right to a jury trial and agree to resolve disputes on an individual basis."
+        "title": "12. GOVERNING LAW",
+        "content": "These Terms shall be interpreted and governed by applicable laws. You waive any right to a jury trial and agree to resolve disputes on an individual basis."
       },
       "acceptanceText": "I confirm that I have read and accept the terms and conditions and privacy policy.",
       "cancelButton": "Cancel",

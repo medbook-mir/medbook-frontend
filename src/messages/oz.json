@@ -13,6 +13,35 @@
       "search_placeholder": "Шифокор, клиника ёки хизматни қидиринг",
       "location": "Жойлашув"
     },
+    "searchResults": {
+  "title": "Қидирув натижалари:",
+  "resetFilter": "Фильтрни тиклаш",
+  "filters": {
+    "language": "Тил",
+    "specialty": "Мутаҳассислик",
+    "gender": "Жинс",
+    "locationRadius": "Қидирув радиуси"
+  },
+  "specialties": {
+    "gynecologist": "Гинеколог",
+    "pediatrician": "Педиатр",
+    "dentist": "Стоматолог",
+    "surgeon": "Жарроҳ",
+    "dermatologist": "Дерматолог"
+  },
+  "languages": {
+    "english": "Инглиз тили",
+    "russian": "Рус тили",
+    "uzbek": "Ўзбек тили"
+  },
+  "genders": {
+    "male": "Эркак",
+    "female": "Аёл",
+    "any": "Ҳар қандай"
+  },
+  "noResults": "Шифокорлар топилмади",
+  "loading": "Шифокорлар юкланмоқда..."
+},
     "solutions": {
       "title": "Ёзилишдан парваришгача — оддий жараён",
       "complaints": {
