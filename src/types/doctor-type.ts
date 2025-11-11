@@ -34,6 +34,11 @@ export type DoctorType = {
   schedule?: DoctorSchedule[]
   reviews?: DoctorReview[]
   blog_posts?: DoctorBlogPost[]
+
+  online_consultation_fee?: string | number
+  consultation_fee?: string | number
+  average_consultation_time?: number
+  is_online_consultation_available?: boolean
 }
 
 export type DoctorLanguage = {
