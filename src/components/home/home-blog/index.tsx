@@ -19,15 +19,25 @@ const HomeBlog = () => {
         <div className="flex flex-wrap items-center justify-center gap-8">
           {cardData.map((item, index) => (
             <AnimatedInView direction="down" key={index} variant="slide" delay={index * 0.2}>
-              <div className="flex w-[384px] flex-col gap-8 rounded-[25px] border-[2px] border-[#B5B5B580] p-6">
-                <Image src={item.img} alt="Schedule" width={304} />
+              <div
+              key={item.id} className="flex w-[384px] flex-col 
+              gap-8 rounded-[25px] border-[2px] 
+              border-[#B5B5B580] p-6
+              hover:shadow-xl transition-shadow duration-300">
+                
+                <Link href={`/blogs/${item.id}`}>
+                <Image src={item.img} alt="Schedule" width={340} />
+                </Link>
+                
                 <div className="flex flex-col gap-5">
                   <div className="flex flex-col gap-3">
+                    <Link href={`/blogs/${item.id}`}>
                     <h3 className="text-[16px] leading-[26px] font-bold text-[#222]">{item.title}</h3>
-                    <p className="text-[12px] leading-4 font-medium text-[#555]">{item.description}</p>
+                    <p className="text-[12px] mt-4 leading-4 font-medium text-[#555]">{item.description}</p>
+                    </Link>
                   </div>
                   <div className="flex items-center justify-between">
-                    <Link href={item.link} className="flex cursor-pointer items-center gap-3">
+                    <Link href={`/blogs/${item.id}`} className="flex cursor-pointer items-center gap-3">
                       <span className="text-[14px] leading-6 font-medium underline">Learn more</span>
                       <RightRedIcon />
                     </Link>
