@@ -1,30 +1,8 @@
-import { AddressIcon, EmailIcon, ExperienceIcon, PhoneIcon } from '@/utils/icons/doctor-icons'
+import { AddressIcon, EmailIcon, ExperienceIcon, PhoneIcon, WebsiteIcon, SocialIcon } from '@/utils/icons/doctor-icons'
+import { DoctorType, DoctorSchedule, DoctorEducation } from '@/types/doctor-type'
 
-const mockProfile = {
-  description:
-    'Dear patients, I am pleased to welcome you to my practice in Solingen. I am available for regular gynecological checkups and to advise you on all matters relating to contraception. Schedule your appointment directly online! My team and I welcome you to our modern practice for gynecology and obstetrics. Through continuous training and human understanding, I aim to make your treatment in my facilities as pleasant as possible and contribute to maintaining your health with the help of innovative treatment methods.',
-  info: [
-    {
-      icon: <EmailIcon />,
-      title: 'Mail address',
-      value: 'Kathrin.first@example.com'
-    },
-    {
-      icon: <PhoneIcon />,
-      title: 'Phone number',
-      value: '+998 99 1234567'
-    },
-    {
-      icon: <AddressIcon />,
-      title: 'Country',
-      value: 'Tashkent, Uzbekistan'
-    },
-    {
-      icon: <ExperienceIcon />,
-      title: 'Years of experience',
-      value: '5 Years'
-    }
-  ]
+interface ProfileProps {
+  doctor: DoctorType
 }
 
 const InfoBlock = ({ icon, title, value }: { icon: React.ReactNode; title: string; value: string }) => {
@@ -39,13 +17,42 @@ const InfoBlock = ({ icon, title, value }: { icon: React.ReactNode; title: strin
   )
 }
 
-const Profile = () => {
+const Profile = ({ doctor }: ProfileProps) => {
+  const fullName = `${doctor.user.first_name} ${doctor.user.last_name}${doctor.user.middle_name ? ` ${doctor.user.middle_name}` : ''}`
+  const location = doctor.location ? `${doctor.location.city}, ${doctor.location.country}` : 'Location not specified'
+  const experience = doctor.user.experience_years ? `${doctor.user.experience_years} Years` : 'Experience not specified'
+
+  const info = [
+    {
+      icon: <EmailIcon />,
+      title: 'Mail address',
+      value: doctor.user.email
+    },
+    {
+      icon: <PhoneIcon />,
+      title: 'Phone number',
+      value: doctor.user.phone_number
+    },
+    {
+      icon: <AddressIcon />,
+      title: 'Country',
+      value: location
+    },
+    {
+      icon: <ExperienceIcon />,
+      title: 'Years of experience',
+      value: experience
+    }
+  ]
+
   return (
     <section className="border-b border-[#EBEBEB] pb-8">
       <h2 className="mb-4 text-[20px] leading-[100%] font-semibold">Profile</h2>
-      <p className="text-[16px] leading-[160%] text-[#515B6F]">{mockProfile.description}</p>
+      <p className="text-[16px] leading-[160%] text-[#515B6F]">
+        {doctor.user.bio || 'No bio available for this doctor.'}
+      </p>
       <div className="grid grid-cols-1 gap-6 pt-6 sm:grid-cols-2">
-        {mockProfile.info.map((data, index) => (
+        {info.map((data, index) => (
           <InfoBlock key={index} icon={data.icon} title={data.title} value={data.value} />
         ))}
       </div>

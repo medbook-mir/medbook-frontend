@@ -1,13 +1,13 @@
-import { FacebookIcon, InstagramIcon, TwitterIcon } from '@/utils/icons/social-medias'
+import { InstagramIcon, LinkedInIcon, TelegramIcon } from '@/utils/icons/social-medias'
 
 export const footerLinks = [
   {
     title: 'links.saved',
-    href: '#'
+    href: '//saved-blogs'
   },
   {
     title: 'links.wishList',
-    href: '#'
+    href: '/wishlist'
   },
   {
     title: 'links.specialOffers',
@@ -17,9 +17,9 @@ export const footerLinks = [
 
 export const footerSocials = [
   {
-    title: 'Facebook',
-    href: 'https://facebook.com',
-    icon: FacebookIcon
+    title: 'LinkedIn',
+    href: 'https://linkedin.com',
+    icon: LinkedInIcon
   },
   {
     title: 'Instagram',
@@ -27,8 +27,8 @@ export const footerSocials = [
     icon: InstagramIcon
   },
   {
-    title: 'Twitter',
-    href: 'https://twitter.com',
-    icon: TwitterIcon
+    title: 'Telegram',
+    href: 'https://telegram.com',
+    icon: TelegramIcon
   }
 ]

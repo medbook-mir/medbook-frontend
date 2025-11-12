@@ -1,7 +1,7 @@
 export const homePageNavItems = [
   {
     title: 'Blogs',
-    href: '#'
+    href: '/blogs'
   },
 ]
 
