@@ -1,9 +1,14 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Card, Button, Typography, Row, Col } from 'antd'
-import { LeftOutlined, RightOutlined, CalendarOutlined } from '@ant-design/icons'
-import { startOfWeek, addDays, subDays, isSameDay, format } from 'date-fns'
+import { Card, Button, Typography, Row, Col, DatePicker, Empty } from 'antd'
+import { LeftOutlined, RightOutlined, CalendarOutlined, CloseOutlined } from '@ant-design/icons'
+import { startOfWeek, addDays, subDays, isSameDay, format, startOfMonth } from 'date-fns'
+import dayjs from 'dayjs'
+import { UpDownIcon } from '@/utils/icons/UpDownIcon'
+import { useTranslations } from 'next-intl'
+import { XArrowCalendarIcon } from '@/utils/icons/XArroxCalendar'
+import ConsultationTypeModal from '@/modals/consultation-type-modal'
 
 const { Title, Text } = Typography
 
@@ -12,11 +17,14 @@ interface DateTimePickerProps {
 }
 
 const DateTimePicker: React.FC<DateTimePickerProps> = ({ timeSlotsByDate }) => {
+  const t = useTranslations('bookingPage')
   const [currentWeekStart, setCurrentWeekStart] = useState<Date>(
     startOfWeek(new Date(), { weekStartsOn: 1 }) // Monday as start of week
   )
   const [selectedDate, setSelectedDate] = useState<Date | null>(null)
   const [selectedTime, setSelectedTime] = useState<string | null>(null)
+  const [showMonthPicker, setShowMonthPicker] = useState<boolean>(false)
+  const [showConsultationModal, setShowConsultationModal] = useState<boolean>(false)
 
   const getWeekDates = (): Date[] => {
     return Array.from({ length: 7 }, (_, i) => addDays(currentWeekStart, i))
@@ -37,6 +45,42 @@ const DateTimePicker: React.FC<DateTimePickerProps> = ({ timeSlotsByDate }) => {
 
   const handleTimeClick = (time: string) => {
     setSelectedTime(time)
+  }
+
+  const handleMonthChange = (date: dayjs.Dayjs | null) => {
+    if (date) {
+      const newDate = date.toDate()
+      const newWeekStart = startOfWeek(startOfMonth(newDate), { weekStartsOn: 1 })
+      setCurrentWeekStart(newWeekStart)
+      setShowMonthPicker(false)
+      setSelectedDate(null)
+      setSelectedTime(null)
+    }
+  }
+
+  const toggleMonthPicker = () => {
+    setShowMonthPicker(!showMonthPicker)
+  }
+
+  const handleBookClick = () => {
+    setShowConsultationModal(true)
+  }
+
+  const handleConsultationConfirm = (consultationType: 'online' | 'in-person') => {
+    // Handle the booking logic here
+    console.log('Booking confirmed:', {
+      date: selectedDate,
+      time: selectedTime,
+      consultationType
+    })
+    // You can add your booking API call here
+    
+    // Navigate to confirmation page
+    window.location.href = window.location.pathname + '/confirmation'
+  }
+
+  const handleConsultationClose = () => {
+    setShowConsultationModal(false)
   }
 
   const formattedDate = selectedDate ? format(selectedDate, 'yyyy-MM-dd') : ''
@@ -60,11 +104,38 @@ const DateTimePicker: React.FC<DateTimePickerProps> = ({ timeSlotsByDate }) => {
         style={{ marginBottom: 20, paddingBottom: '20px', borderBottom: '1px solid #eee' }}
       >
         <Title level={4} style={{ color: '#046D5F', margin: 0 }}>
-          Choose date and time
+          {t('chooseDateAndTime')}
         </Title>
-        <Text>
-          <CalendarOutlined /> {format(currentWeekStart, 'MMMM yyyy')}
-        </Text>
+        <div style={{ position: 'relative' }}>
+          <Button
+            type="text"
+            onClick={toggleMonthPicker}
+            style={{ 
+              padding: '4px 8px',
+              height: 'auto',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              fontSize: '14px'
+            }}
+          >
+            <CalendarOutlined /> {format(currentWeekStart, 'MMMM yyyy')}
+            <UpDownIcon />
+          </Button>
+          {showMonthPicker && (
+            <DatePicker
+                picker="month"
+                value={dayjs(currentWeekStart)}
+                onChange={handleMonthChange}
+                open={true}
+                getPopupContainer={() => document.body}
+                style={{ visibility: 'hidden', position: 'absolute' }}
+                onOpenChange={(open) => {
+                  if (!open) setShowMonthPicker(false)
+                }}
+              />
+          )}
+        </div>
       </Row>
 
       <Row justify="space-between" align="middle" style={{ marginBottom: 28 }}>
@@ -84,22 +155,38 @@ const DateTimePicker: React.FC<DateTimePickerProps> = ({ timeSlotsByDate }) => {
       </Row>
 
       <Row gutter={[8, 8]} style={{ marginBottom: 50, gap: 23 }}>
-        {timeSlots.map((time) => (
-          <Col key={time}>
-            <Button
-              type={time === selectedTime ? 'primary' : 'default'}
-              onClick={() => handleTimeClick(time)}
-              style={{
-                padding: '9px 20px',
-                borderRadius: 20,
-                backgroundColor: time === selectedTime ? '#046D5F' : '#F5F5F5',
-                boxShadow: 'none'
-              }}
-            >
-              {time}
-            </Button>
+        {timeSlots.length > 0 ? (
+          timeSlots.map((time) => (
+            <Col key={time}>
+              <Button
+                type={time === selectedTime ? 'primary' : 'default'}
+                onClick={() => handleTimeClick(time)}
+                style={{
+                  padding: '9px 20px',
+                  borderRadius: 20,
+                  backgroundColor: time === selectedTime ? '#046D5F' : '#F5F5F5',
+                  boxShadow: 'none'
+                }}
+              >
+                {time}
+              </Button>
+            </Col>
+          ))
+        ) : selectedDate ? (
+          <Col span={24}>
+            <div style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              alignItems: 'center', 
+              padding: '30px 15px',
+            }}>
+              <XArrowCalendarIcon />
+              <Text style={{ fontSize: '16px', color: '#666', textAlign: 'center', lineHeight: '1.5' }}>
+                {t('noAvailableSlots', { date: format(selectedDate, 'd MMMM, yyyy') })}
+              </Text>
+            </div>
           </Col>
-        ))}
+        ) : null}
       </Row>
 
       {selectedDate && selectedTime && (
@@ -113,11 +200,24 @@ const DateTimePicker: React.FC<DateTimePickerProps> = ({ timeSlotsByDate }) => {
             <span style={{ marginLeft: 12, marginRight: 12 }}>|</span>
             <span style={{ fontWeight: 400 }}>{selectedTime}</span>
           </Text>
-          <Button type="primary" style={{ borderRadius: 200, width: 100, fontSize: 14, fontWeight: 400, height: 40 }}>
-            Book
+          <Button 
+            type="primary" 
+            onClick={handleBookClick}
+            style={{ borderRadius: 200, width: 100, fontSize: 14, fontWeight: 400, height: 40 }}
+          >
+            {t('book')}
           </Button>
         </Row>
       )}
+
+      <ConsultationTypeModal
+        isOpen={showConsultationModal}
+        onClose={handleConsultationClose}
+        onConfirm={handleConsultationConfirm}
+        doctorName="Dr. Kathrin Schenk-Losse"
+        appointmentDate={selectedDate ? format(selectedDate, 'd MMMM, yyyy') : undefined}
+        appointmentTime={selectedTime || undefined}
+      />
     </Card>
   )
 }

@@ -13,6 +13,35 @@
       "search_placeholder": "Search for a doctor, clinic, or service",
       "location": "Location"
     },
+    "searchResults": {
+      "title": "Search result:",
+      "resetFilter": "Reset filter",
+      "filters": {
+        "language": "Language",
+        "specialty": "Specialty",
+        "gender": "Gender",
+        "locationRadius": "Location radius"
+      },
+      "specialties": {
+        "gynecologist": "Gynecologist",
+        "pediatrician": "Pediatrician",
+        "dentist": "Dentist",
+        "surgeon": "Surgeon",
+        "dermatologist": "Dermatologist"
+      },
+      "languages": {
+        "english": "English",
+        "russian": "Russian",
+        "uzbek": "Uzbek"
+      },
+      "genders": {
+        "male": "Male",
+        "female": "Female",
+        "any": "Any"
+      },
+      "noResults": "No doctors found",
+      "loading": "Loading doctors..."
+    },
     "solutions": {
       "title": "From Booking to Care — The Simple Process",
       "complaints": {
@@ -40,36 +69,36 @@
       "title": "Make a schedule in advance with the available doctor",
       "description": "Lorem ipsum dolor sit amet consectetur. Orci malesuada mi et mi pellentesque tincidunt at mollis facilisis. Nisl eu blandit nunc parturient adipiscing commodo."
     },
-      "testimonialsSection": {
+    "testimonialsSection": {
       "title": "What Our Patients Are Saying",
       "description": "Our mission is to provide medical care, focusing on personalized treatment and  well-being of every patient"
     },
     "blog": {
       "title": "Blog",
-      "description": "Our blog is more than just news — it’s a space for learning and connection. Find out how Medvisit is making healthcare simpler, smarter, and more human."
+      "description": "Our blog is more than just news — it's a space for learning and connection. Find out how Medvisit is making healthcare simpler, smarter, and more human."
     },
     "faqsSection": {
-    "title": "Frequently asked questions",
-    "description": "From using the platform to booking appointments, we’re here to guide you. Check out the answers to the most common questions from our community.",
-    "items": [
-      {
-        "title": "How do I book, reschedule, or cancel an appointment?",
-        "content": "You can easily manage your appointments directly in the app—just choose a time slot that works for you, or go to your dashboard to reschedule or cancel. You'll receive automatic reminders to help you stay organized."
-      },
-      {
-        "title": "What happens if I need urgent medical attention?",
-        "content": "If you require urgent medical care, please call emergency services immediately. The app should not be used for emergencies."
-      },
-      {
-        "title": "Are my personal and medical details safe with Medvisit?",
-        "content": "Yes, all your information is encrypted and securely stored in compliance with healthcare data regulations."
-      },
-      {
-        "title": "Can I get a prescription or referral through the app?",
-        "content": "Yes, licensed professionals on the platform can provide prescriptions or referrals when appropriate."
-      }
-    ]
-  },
+      "title": "Frequently asked questions",
+      "description": "From using the platform to booking appointments, we're here to guide you. Check out the answers to the most common questions from our community.",
+      "items": [
+        {
+          "title": "How do I book, reschedule, or cancel an appointment?",
+          "content": "You can easily manage your appointments directly in the app—just choose a time slot that works for you, or go to your dashboard to reschedule or cancel. You'll receive automatic reminders to help you stay organized."
+        },
+        {
+          "title": "What happens if I need urgent medical attention?",
+          "content": "Medvisit is designed for standard care and connecting you with verified specialists. In case of an emergency, please contact your local emergency number immediately—our platform is not intended for urgent or emergency medical needs."
+        },
+        {
+          "title": "Are my personal and medical details safe with Medvisit?",
+          "content": "Absolutely. We use secure, encrypted methods to protect your sensitive data at all times. Your information is stored safely and shared only with the healthcare professionals you choose to consult."
+        },
+        {
+          "title": "Can I get a prescription or referral through the app?",
+          "content": "Yes — if your doctor determines it's necessary during your consultation, they can issue digital prescriptions or referrals to specialists. You can also securely access and download these documents directly from your Medvisit account."
+        }
+      ]
+    },
     "mobileApps": {
       "title": "Download App Now",
       "description": "Take control of your health anytime, anywhere. With the Medvisit app, quality care is just one tap away."
@@ -88,10 +117,59 @@
         "wishList": "Wishlist",
         "specialOffers": "Special Offers"
       },
-      "copyright": "Copyright @ 2024 DockBook, All rights reserved.",
+      "copyright": "Copyright @2025 MedVisit, All rights reserved.",
       "customerService": "Customer Service",
       "termsConditions": "Terms & Conditions",
       "privacyPolicy": "Privacy Policy"
+    }
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "description": "Send us a message and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Full Name",
+      "email": "Email",
+      "emailPlaceholder": "e.g. name@example.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this regarding?",
+      "message": "Your message",
+      "messagePlaceholder": "Tell us how we can help you",
+      "sendButton": "Send message",
+      "sending": "Sending...",
+      "errors": {
+        "nameRequired": "Name is required",
+        "nameMinLength": "Name must be at least 2 characters",
+        "nameMaxLength": "Name must not exceed 50 characters",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Please enter a valid email address",
+        "subjectRequired": "Subject is required",
+        "subjectMinLength": "Subject must be at least 5 characters",
+        "subjectMaxLength": "Subject must not exceed 100 characters",
+        "messageRequired": "Message is required",
+        "messageMinLength": "Message must be at least 10 characters",
+        "messageMaxLength": "Message must not exceed 1000 characters"
+      },
+      "notifications": {
+        "fixErrors": "Please fix the errors in the form",
+        "success": "Message sent successfully! We will get back to you soon.",
+        "error": "Failed to send message. Please try again."
+      }
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Our address",
+        "value": "S-5, Second Floor, Krishna Mall, Laxmi Mandir Tiraha, Tonk Phatak, Tonk Road, Jaipur - 302015"
+      },
+      "email": {
+        "title": "Email",
+        "value": "supportmdvisit@gmail.com"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "value": "+998 99 999 99 99"
+      }
     }
   },
   "loginPage": {
@@ -141,13 +219,54 @@
     "alreadyHaveAnAccount": "Already have an account?",
     "signInNow": "Sign in now"
   },
+  "bookingPage": {
+    "chooseDateAndTime": "Choose date and time",
+    "selectMonth": "Select Month",
+    "book": "Book",
+    "noAvailableSlots": "Oops! It seems like the doctor is not available on {date}. Please choose another date to book your appointment."
+  },
+  "consultationModal": {
+    "title": "Consultation Type",
+    "subtitle": "Please select how you'd like to book your appointment:",
+    "onlineConsultation": "Online consultation",
+    "onlineDescription": "Video call or phone chat - from the comfort of your home!",
+    "inPersonConsultation": "In-Person Consultation",
+    "inPersonDescription": "Meet the doctor in person for a face-to-face consultation.",
+    "appointmentDetails": "Appointment Details:",
+    "doctor": "Doctor",
+    "date": "Date",
+    "time": "Time",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "appointmentConfirmation": {
+    "title": "Appointment Booked successfully",
+    "subtitle": "You'll get a confirmation mail!",
+    "chatWithDoctor": "Chat with your doctor",
+    "chatWithDoctorContent": "Get quick medical advice, share reports - all in one",
+    "needHelp": "Need our Help?",
+    "needHelpContent": "Contact us if you face any problems with booking appointment",
+    "breadcrumb": {
+      "appointmentBooking": "Appointment Booking"
+    }
+  },
   "settingsLayout": {
     "settings": "Settings",
+    "personalDetail": "Personal detail",
     "myData": "My Data",
+    "myBookings": "My bookings",
+    "chat": "Chat",
+    "myRecords": "My records",
     "payment": "Payment",
-    "myBookings": "My Bookings",
-    "myRecords": "My Records",
-    "logout": "Logout",
+    "referrals": "Referrals",
+    "customerSupport": "Customer support",
+    "logout": "Log out",
+    "logoutModal": {
+      "title": "Ready to log out?",
+      "description": "You can log back in at any time",
+      "confirmButton": "Log out",
+      "cancelButton": "Cancel"
+    },
     "myDataPage": {
       "customer": "Customer",
       "editProfile": "Edit Profile",
@@ -157,8 +276,21 @@
       "gender": "Gender",
       "email": "Email"
     },
-    "paymentPage": {
-      "title": "Payment"
+    "myDataEditingPage": {
+      "title": "My Data",
+      "customer": "Customer",
+      "cancel": "Cancel",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter last name",
+      "birthday": "Date of Birth",
+      "birthdayPlaceholder": "Enter date of birth",
+      "phone": "Phone Number (Mobile)",
+      "phonePlaceholder": "Enter phone number",
+      "email": "Email",
+      "emailPlaceholder": "Enter email",
+      "save": "Save"
     },
     "myBookingsPage": {
       "active": "Active",
@@ -169,24 +301,224 @@
       "status": "Status",
       "doctor": "Doctor"
     },
+    "chatPage": {
+      "title": "Chat"
+    },
     "myRecordsPage": {
       "title": "My Records"
     },
-    "myDataEditingPage": {
-      "title": "My Data",
-      "customer": "Customer",
+    "paymentPage": {
+      "title": "Payment"
+    },
+    "referralsPage": {
+      "title": "Referrals",
+      "header": {
+        "title": "Care for Your Friends, Rewards For You",
+        "description": "Invite your friends to MedVisit and earn rewards when they book their first consultation."
+      },
+      "referralCode": {
+        "title": "Referral code",
+        "code": "ABC123",
+        "telegram": "Telegram",
+        "progress": "2/5 referrals completed to get a free consultation"
+      },
+      "howItWorks": {
+        "title": "How it works?",
+        "steps": {
+          "copy": {
+            "title": "Copy your referral code",
+            "description": "Share your unique code with friends"
+          },
+          "share": {
+            "title": "Share with friends",
+            "description": "Send via social media or messaging"
+          },
+          "signup": {
+            "title": "Your Friends Signs up",
+            "description": "They create an account using your code"
+          },
+          "book": {
+            "title": "Friends books first consultation",
+            "description": "They schedule their first appointment"
+          },
+          "earn": {
+            "title": "Earn your free consultation",
+            "description": "Get rewards for successful referrals"
+          }
+        }
+      },
+      "yourFriends": {
+        "title": "Your Friends"
+      }
+    },
+    "profileSettingsPage": {
+      "title": "Settings",
+      "loginSecurity": {
+        "title": "Login and security",
+        "password": "Password",
+        "loggedDevices": "Logged devices"
+      },
+      "dataPrivacy": {
+        "title": "Data privacy",
+        "privacyPolicies": "Privacy Policies",
+        "cookiesPolicy": "Cookies Policy"
+      },
+      "paymentSettings": {
+        "title": "Payment settings",
+        "creditCard": "Credit Card information",
+        "method": "Payment method"
+      },
+      "notifications": {
+        "title": "Notifications",
+        "push": "Push notifications"
+      },
+      "generalSettings": {
+        "title": "General settings",
+        "language": "Content language"
+      }
+    },
+    "customerSupportPage": {
+      "title": "Customer Support"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your Agreement",
+    "lastRevised": "Last Revised: December 16, 2013",
+    "breadcrumb": "Terms and Conditions",
+    "introduction": "Welcome to www.lorem-ipsum.info. This site is provided as a service to our visitors and may be used for informational purposes only. Because the Terms and Conditions contain legal obligations, please read them carefully.",
+    "sections": {
+      "agreement": {
+        "title": "1. YOUR AGREEMENT",
+        "content": "By using this Site, you agree to be bound by, and to comply with, these Terms and Conditions. If you do not agree to these Terms and Conditions, please do not use this site.",
+        "note": "PLEASE NOTE: We reserve the right, at our sole discretion, to change, modify or otherwise alter these Terms and Conditions at any time. Unless otherwise indicated, amendments will become effective immediately. Please review these Terms and Conditions periodically. Your continued use of the Site following the posting of changes and/or modifications will constitute your acceptance of the revised Terms and Conditions and the reasonableness of these standards for notice of changes. For your information, this page was last updated as of the date at the top of these terms and conditions."
+      },
+      "privacy": {
+        "title": "2. PRIVACY",
+        "content": "Please review our Privacy Policy, which also governs your visit to this Site, to understand our practices."
+      },
+      "linkedSites": {
+        "title": "3. LINKED SITES",
+        "content": "This Site may contain links to other independent third-party Web sites (\"Linked Sites\"). These Linked Sites are provided solely as a convenience to our visitors. Such Linked Sites are not under our control, and we are not responsible for and does not endorse the content of such Linked Sites, including any information or materials contained on such Linked Sites. You will need to make your own independent judgment regarding your interaction with these Linked Sites."
+      },
+      "forwardLooking": {
+        "title": "4. FORWARD LOOKING STATEMENTS",
+        "content": "All materials reproduced on this site speak as of the original date of publication or filing. The fact that a document is available on this site does not mean that the information contained in such document has not been modified or superseded by events or by a subsequent document or filing. We have no duty or policy to update any information or statements contained on this site and, therefore, such information or statements should not be relied upon as being current as of the date you access this site."
+      },
+      "disclaimer": {
+        "title": "5. DISCLAIMER OF WARRANTIES AND LIMITATION OF LIABILITY",
+        "sectionA": "A. THIS SITE MAY CONTAIN INACCURACIES AND TYPOGRAPHICAL ERRORS. WE DOES NOT WARRANT THE ACCURACY OR COMPLETENESS OF THE MATERIALS OR THE RELIABILITY OF ANY ADVICE, OPINION, STATEMENT OR OTHER INFORMATION DISPLAYED OR DISTRIBUTED THROUGH THE SITE. YOU EXPRESSLY UNDERSTAND AND AGREE THAT:",
+        "points": [
+          "YOUR USE OF THE SITE, INCLUDING ANY RELIANCE ON ANY SUCH OPINION, ADVICE, STATEMENT, MEMORANDUM, OR INFORMATION CONTAINED HEREIN, SHALL BE AT YOUR SOLE RISK",
+          "THE SITE IS PROVIDED ON AN \"AS IS\" AND \"AS AVAILABLE\" BASIS",
+          "EXCEPT AS EXPRESSLY PROVIDED HEREIN WE DISCLAIM ALL WARRANTIES OF ANY KIND, WHETHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, WORKMANLIKE EFFORT, TITLE AND NON-INFRINGEMENT",
+          "WE MAKE NO WARRANTY WITH RESPECT TO THE RESULTS THAT MAY BE OBTAINED FROM THIS SITE, THE PRODUCTS OR SERVICES ADVERTISED OR OFFERED OR MERCHANTS INVOLVED",
+          "ANY MATERIAL DOWNLOADED OR OTHERWISE OBTAINED THROUGH THE USE OF THE SITE IS DONE AT YOUR OWN DISCRETION AND RISK",
+          "YOU WILL BE SOLELY RESPONSIBLE FOR ANY DAMAGE TO YOUR COMPUTER SYSTEM OR FOR ANY LOSS OF DATA THAT RESULTS FROM THE DOWNLOAD OF ANY SUCH MATERIAL"
+        ],
+        "sectionB": "B. YOU UNDERSTAND AND AGREE THAT UNDER NO CIRCUMSTANCES, INCLUDING, BUT NOT LIMITED TO, NEGLIGENCE, SHALL WE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE OR CONSEQUENTIAL DAMAGES THAT RESULT FROM THE USE OF, OR THE INABILITY TO USE, ANY OF OUR SITES OR MATERIALS OR FUNCTIONS ON ANY SUCH SITE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. THE FOREGOING LIMITATIONS SHALL APPLY NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY."
+      },
+      "exclusions": {
+        "title": "6. EXCLUSIONS AND LIMITATIONS",
+        "content": "SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF CERTAIN WARRANTIES OR THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES. ACCORDINGLY, OUR LIABILITY IN SUCH JURISDICTION SHALL BE LIMITED TO THE MAXIMUM EXTENT PERMITTED BY LAW."
+      },
+      "proprietaryRights": {
+        "title": "7. OUR PROPRIETARY RIGHTS",
+        "content": "This Site and all its Contents are intended solely for personal, non-commercial use. Except as expressly provided, nothing within the Site shall be construed as conferring any license under our or any third party's intellectual property rights, whether by estoppel, implication, waiver, or otherwise. Without limiting the generality of the foregoing, you acknowledge and agree that all content available through and used to operate the Site and its services is protected by copyright, trademark, patent, or other proprietary rights. You agree not to:",
+        "points": [
+          "modify, alter, or deface any of the trademarks, service marks, trade dress (collectively \"Trademarks\") or other intellectual property made available by us in connection with the Site",
+          "hold yourself out as in any way sponsored by, affiliated with, or endorsed by us, or any of our affiliates or service providers",
+          "use any of the Trademarks or other content accessible through the Site for any purpose other than the purpose for which we have made it available to you",
+          "defame or disparage us, our Trademarks, or any aspect of the Site",
+          "adapt, translate, modify, decompile, disassemble, or reverse engineer the Site or any software or programs used in connection with it or its products and services"
+        ],
+        "additional": "The framing, mirroring, scraping or data mining of the Site or any of its content in any form and by any method is expressly prohibited."
+      },
+      "indemnity": {
+        "title": "8. INDEMNITY",
+        "content": "By using the Site web sites you agree to indemnify us and affiliated entities (collectively \"Indemnities\") and hold them harmless from any and all claims and expenses, including (without limitation) attorney's fees, arising from your use of the Site web sites, your use of the Products and Services, or your submission of ideas and/or related materials to us or from any person's use of any ID, membership or password you maintain with any portion of the Site, regardless of whether such use is authorized by you."
+      },
+      "copyright": {
+        "title": "9. COPYRIGHT AND TRADEMARK NOTICE",
+        "content": "Except our generated dummy copy, which is free to use for private and commercial use, all other text is copyrighted. generator.lorem-ipsum.info © 2013, all rights reserved"
+      },
+      "intellectualProperty": {
+        "title": "10. INTELLECTUAL PROPERTY INFRINGEMENT CLAIMS",
+        "content": "It is our policy to respond expeditiously to claims of intellectual property infringement. We will promptly process and investigate notices of alleged infringement and will take appropriate actions under the Digital Millennium Copyright Act (\"DMCA\") and other applicable intellectual property laws. Notices of claimed infringement should be directed to:",
+        "contact": "generator.lorem-ipsum.info\n126 Electricov St.\nKiev, Kiev 04176\nUkraine\ncontact@lorem-ipsum.info"
+      },
+      "placeOfPerformance": {
+        "title": "11. PLACE OF PERFORMANCE",
+        "content": "This Site is controlled, operated and administered by us from our office in Kiev, Ukraine. We make no representation that materials at this site are appropriate or available for use at other locations outside of the Ukraine and access to them from territories where their contents are illegal is prohibited. If you access this Site from a location outside of the Ukraine, you are responsible for compliance with all local laws."
+      },
+      "general": {
+        "title": "12. GENERAL",
+        "sectionA": "A. If any provision of these Terms and Conditions is held to be invalid or unenforceable, the provision shall be removed (or interpreted, if possible, in a manner as to be enforceable), and the remaining provisions shall be enforced. Headings are for reference purposes only and in no way define, limit, construe or describe the scope or extent of such section. Our failure to act with respect to a breach by you or others does not waive our right to act with respect to subsequent or similar breaches. These Terms and Conditions set forth the entire understanding and agreement between us with respect to the subject matter contained herein and supersede any other agreement, proposals and communications, written or oral, between our representatives and you with respect to the subject matter hereof, including any terms and conditions on any of customer's documents or purchase orders.",
+        "sectionB": "B. No Joint Venture, No Derogation of Rights. You agree that no joint venture, partnership, employment, or agency relationship exists between you and us as a result of these Terms and Conditions or your use of the Site. Our performance of these Terms and Conditions is subject to existing laws and legal process, and nothing contained herein is in derogation of our right to comply with governmental, court and law enforcement requests or requirements relating to your use of the Site or information provided to or gathered by us with respect to such use."
+      }
+    },
+    "actions": {
+      "checkbox": "I confirm that I have read and accept the terms and conditions and privacy policy.",
       "cancel": "Cancel",
-      "name": "Name",
-      "namePlaceholder": "Enter your name",
-      "birthday": "Birthday",
-      "birthdayPlaceholder": "Enter your birthday",
-      "phone": "Phone",
-      "phonePlaceholder": "Enter your phone number",
-      "login": "Login",
-      "usernamePlaceholder": "Enter your username",
-      "email": "Email",
-      "emailPlaceholder": "Enter your email",
-      "save": "Save"
+      "accept": "Accept"
+    },
+    "termsConditions": {
+      "title": "Terms and Conditions",
+      "subtitle": "Your Agreement with MedVisit",
+      "lastRevised": "Last Revised",
+      "lastRevisedDate": "January 1, 2024",
+      "introduction": "Welcome to MedVisit, your trusted medical booking platform. These Terms and Conditions govern your use of our services, including doctor appointments, medical consultations, and related healthcare services. Please read these terms carefully as they contain important information about your rights and obligations.",
+      "section1": {
+        "title": "1. ACCEPTANCE OF TERMS",
+        "content": "By accessing and using MedVisit, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service. We reserve the right to modify these terms at any time. We will notify users of any material changes via email or through our platform. Your continued use of the service after such modifications constitutes acceptance of the updated terms."
+      },
+      "section2": {
+        "title": "2. MEDICAL DISCLAIMER",
+        "content": "MedVisit is a platform that facilitates connections between patients and healthcare providers. We do not provide medical advice, diagnosis, or treatment. All medical information provided through our platform is for informational purposes only and should not be considered as medical advice. Always consult with qualified healthcare professionals for medical advice, diagnosis, or treatment. In case of medical emergencies, contact emergency services immediately."
+      },
+      "section3": {
+        "title": "3. USER ACCOUNTS AND REGISTRATION",
+        "content": "To access certain features of our platform, you must register for an account. You agree to provide accurate, current, and complete information during registration and to update such information to keep it accurate, current, and complete. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must notify us immediately of any unauthorized use of your account."
+      },
+      "section4": {
+        "title": "4. HEALTHCARE PROVIDER RELATIONSHIPS",
+        "content": "MedVisit acts as an intermediary platform connecting patients with healthcare providers. We do not employ healthcare providers directly. The relationship between you and healthcare providers is independent of MedVisit. We are not responsible for the quality of medical care provided by healthcare providers or for any medical decisions made by them. Healthcare providers are responsible for their own licensing, credentials, and professional conduct."
+      },
+      "section5": {
+        "title": "5. PRIVACY AND DATA PROTECTION",
+        "content": "Your privacy is important to us. We collect, use, and protect your personal and health information in accordance with our Privacy Policy and applicable laws, including HIPAA where applicable. We implement appropriate security measures to protect your data. By using our service, you consent to the collection and use of your information as described in our Privacy Policy. We may share your information with healthcare providers you choose to see through our platform."
+      },
+      "section6": {
+        "title": "6. PAYMENT AND BILLING",
+        "content": "Payment for medical services is typically handled directly between you and the healthcare provider. MedVisit may facilitate payment processing but is not responsible for billing disputes between patients and providers. All fees and charges are non-refundable unless otherwise specified. You are responsible for any applicable taxes. We reserve the right to change our fee structure at any time with reasonable notice."
+      },
+      "section7": {
+        "title": "7. CANCELLATION AND RESCHEDULING",
+        "content": "Appointment cancellations and rescheduling are subject to the policies of individual healthcare providers. Generally, cancellations must be made at least 24 hours in advance to avoid cancellation fees. No-show fees may apply for missed appointments. MedVisit is not responsible for provider-specific cancellation policies or fees. Please review individual provider policies before booking appointments."
+      },
+      "section8": {
+        "title": "8. LIMITATION OF LIABILITY",
+        "content": "To the maximum extent permitted by law, MedVisit shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages resulting from your use of the platform, including but not limited to medical malpractice, misdiagnosis, or any other medical issues. Our total liability to you for any claims arising from these terms or your use of the platform shall not exceed the amount you paid us in the 12 months preceding the claim."
+      },
+      "section9": {
+        "title": "9. INTELLECTUAL PROPERTY",
+        "content": "All content, features, and functionality of MedVisit, including but not limited to text, graphics, logos, button icons, images, audio clips, digital downloads, data compilations, and software, are owned by MedVisit or its licensors and are protected by international copyright, trademark, patent, trade secret, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works without our express written permission."
+      },
+      "section10": {
+        "title": "10. PROHIBITED USES",
+        "content": "You may not use our platform for any unlawful purpose or to solicit others to perform unlawful acts. You may not violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances. You may not transmit any worms, viruses, or any code of a destructive nature. You may not use the platform to harass, abuse, or harm others, or to impersonate any person or entity."
+      },
+      "section11": {
+        "title": "11. TERMINATION",
+        "content": "We may terminate or suspend your account and access to our platform immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms. Upon termination, your right to use the platform will cease immediately."
+      },
+      "section12": {
+        "title": "12. GOVERNING LAW",
+        "content": "These Terms shall be interpreted and governed by applicable laws. You waive any right to a jury trial and agree to resolve disputes on an individual basis."
+      },
+      "acceptanceText": "I confirm that I have read and accept the terms and conditions and privacy policy.",
+      "cancelButton": "Cancel",
+      "acceptButton": "Accept"
     }
   }
 }

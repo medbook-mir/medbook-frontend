@@ -11,6 +11,13 @@ const FAQSection = () => {
   const t = useTranslations('homePage.faqsSection')
   const faqItems = t.raw("items") as { title: string; content: string }[];
 
+  const handleMouseEnter = (idx: number) => {
+    setOpenIndex(idx);
+  };
+
+  const handleMouseLeave = () => {
+    setOpenIndex(null);
+  };
 
   return (
     <section className="py-[132px]">
@@ -21,7 +28,7 @@ const FAQSection = () => {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-8">
         
-        <div className="space-y-4 w-full">
+        <div className="space-y-6 w-full">
             {faqItems.map((faq, idx) => (
               <Dropdown
                 key={idx}
@@ -31,6 +38,8 @@ const FAQSection = () => {
                 onToggle={() =>
                   setOpenIndex((prev) => (prev === idx ? null : idx))
                 }
+                onMouseEnter={() => handleMouseEnter(idx)}
+                onMouseLeave={handleMouseLeave}
               />
             ))}
           </div>
@@ -40,4 +49,3 @@ const FAQSection = () => {
   )
 }
 export default FAQSection
-

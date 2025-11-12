@@ -2,6 +2,7 @@ import { images } from "@/assets";
 
 export const cardData = [
   {
+    id: 1,
     img: images.blog1,
     title:
       'On the topic of "The compliance system against corruption and monopoly, its ',
@@ -11,6 +12,7 @@ export const cardData = [
     link: "#",
   },
   {
+    id: 2,
     img: images.blog1,
     title:
       'On the topic of "The compliance system against corruption and monopoly, its ',
@@ -20,6 +22,7 @@ export const cardData = [
     link: "#",
   },
   {
+    id: 3,
     img: images.blog1,
     title:
       'On the topic of "The compliance system against corruption and monopoly, its ',

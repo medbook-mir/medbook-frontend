@@ -1,5 +1,6 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { MainLogoWhite } from '@/utils/icons/MainLogoWhite'
 import { LangSelect } from '../shared/lang-select'
 import { Link, usePathname, useRouter } from '@/i18n/navigation'
@@ -12,9 +13,19 @@ export default function Navbar() {
   const pathname = usePathname()
   const router = useRouter()
   const dispatch = useAppDispatch()
+  const [isScrolled, setIsScrolled] = useState(false)
 
   const isHomePage = pathname === '/'
   const navItems = isHomePage ? homePageNavItems : otherPagesNavItems
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const handleLogin = () => {
     if (pathname === '/') {
@@ -24,15 +35,17 @@ export default function Navbar() {
     }
   }
 
+  const headerBgClass = isHomePage && !isScrolled ? 'bg-transparent' : 'bg-[#046D5F] px-10 py-5 rounded-full'
+
   return (
-    <header className="bg-[#046D5F] py-8 text-white">
+    <header className={`fixed top-0 right-0 left-0 z-50 px-5 py-8 text-white transition-all duration-300`}>
       <Container>
-        <div className="flex items-center justify-between">
+        <div className={`flex items-center transition-all duration-300 ${headerBgClass}`}>
           <Link href="/">
             <MainLogoWhite />
           </Link>
 
-          <nav className="hidden gap-[60px] text-[18px] font-medium text-white md:flex">
+          <nav className="ml-auto hidden gap-[60px] text-[18px] font-medium text-white md:flex">
             {navItems.map((item, index) => (
               <Link href={item.href} key={index}>
                 <p className="text-white">{item.title}</p>
@@ -40,10 +53,10 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-4 md:flex">
+          <div className="ml-autohidden ml-5 items-center gap-4 md:flex">
             <LangSelect />
             <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800">
-              For doctors
+              I am a Doctor my doctor
             </button>
             <button
               onClick={handleLogin}

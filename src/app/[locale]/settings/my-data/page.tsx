@@ -29,18 +29,18 @@ const MyData = () => {
           ) : (
             <ProfileAvatarIcon />
           )}
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-2">
             <h1 className="text-[24px] leading-8 font-semibold">{mockMyData?.name}</h1>
             <p className="text-[16px] leading-[18px] font-normal text-[#797979]">{t('customer')}</p>
-          </div>
-        </div>
-        <FilledButton
-          icon={<EditIcon />}
-          className="!w-auto !rounded-2xl !bg-[#F4F6F9] !px-16 !py-6 !leading-[18px] font-normal !text-[#264796]"
+            <FilledButton
+          icon={<EditIcon colour='#046D5F' />}
+          className="!max-w-[146px] !rounded-2xl !bg-[#F4F6F9] !px-4 !py-6 !leading-[16px] font-normal !text-[#046D5F]"
           onClick={() => router.push('editing')}
         >
           {t('editProfile')}
         </FilledButton>
+          </div>
+        </div>
       </div>
       <div className="grid grid-cols-2 gap-x-16 gap-y-2 pt-6">
         <InfoBlock title={t('name')} value={mockMyData?.name} />

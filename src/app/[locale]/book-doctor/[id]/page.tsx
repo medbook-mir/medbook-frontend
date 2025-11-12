@@ -1,7 +1,7 @@
 import { Container } from '@/theme/container'
 import { CustomBreadcrumb } from '@/components/ui/breadcrumb'
-import ImportantThings from '@/components/doctor/important-things'
 import BookDoctorCalendar from '@/components/book-doctor/Calendar'
+import DoctorInfoCard from '@/components/doctor/doctor-info-card'
 
 const BookDoctor = async ({ params }: { params: Promise<{ id: string }> }) => {
   const { id } = await params
@@ -24,7 +24,7 @@ const BookDoctor = async ({ params }: { params: Promise<{ id: string }> }) => {
             <BookDoctorCalendar />
           </div>
           <div className="flex flex-col gap-4 py-2.5">
-            <ImportantThings />
+            <DoctorInfoCard />
           </div>
         </div>
       </Container>
