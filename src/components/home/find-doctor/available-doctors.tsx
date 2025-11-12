@@ -23,7 +23,11 @@ const doctors: Doctor[] = [
   }
 ];
 
-export const DoctorCardList = () => {
+type DoctorCardListProps = {
+  onFindDoctor: () => void;
+};
+
+export const DoctorCardList = ({ onFindDoctor }: DoctorCardListProps) => {
   return (
     <div className="w-[200px] bg-white rounded-[10px] shadow-[-4px_-10px_50px_0px_#1212121A] px-[30px] py-[18px] flex flex-col gap-4">
       <div>
@@ -51,7 +55,10 @@ export const DoctorCardList = () => {
         </div>
       ))}
 
-      <button className="w-full mt-2 bg-[#F1F5FF] text-[#046D5F] text-[14px] font-medium py-2 rounded-[10px] hover:bg-[#e0ebff] transition cursor-pointer">
+      <button
+        onClick={onFindDoctor}
+        className="w-full mt-2 bg-[#F1F5FF] text-[#046D5F] text-[14px] font-medium py-2 rounded-[10px] hover:bg-[#e0ebff] transition cursor-pointer"
+      >
         Find Doctor
       </button>
     </div>
