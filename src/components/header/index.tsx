@@ -8,12 +8,14 @@ import { Container } from '@/theme/container'
 import { useAppDispatch } from '@/redux/store'
 import { homePageNavItems, otherPagesNavItems } from './data'
 import { openModal } from '@/redux/reducers/modals'
+import { MenuOutlined, CloseOutlined } from '@ant-design/icons'
 
 export default function Navbar() {
   const pathname = usePathname()
   const router = useRouter()
   const dispatch = useAppDispatch()
   const [isScrolled, setIsScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const isHomePage = pathname === '/'
   const navItems = isHomePage ? homePageNavItems : otherPagesNavItems
@@ -35,37 +37,80 @@ export default function Navbar() {
     }
   }
 
-  const headerBgClass = isHomePage && !isScrolled ? 'bg-transparent' : 'bg-[#046D5F] px-10 py-5 rounded-full'
+  const headerBgClass = isHomePage && !isScrolled
+    ? 'bg-transparent'
+    : 'bg-[#046D5F] px-10 py-3 rounded-full'
 
   return (
-    <header className={`fixed top-0 right-0 left-0 z-50 px-5 py-8 text-white transition-all duration-300`}>
+    <header className="fixed left-0 right-0 top-0 z-50 py-3 text-white transition-all duration-300 px-5">
       <Container>
-        <div className={`flex items-center transition-all duration-300 ${headerBgClass}`}>
+        <div className={`flex items-center justify-between transition-all duration-300 ${headerBgClass}`}>
+          {/* Logo */}
           <Link href="/">
             <MainLogoWhite />
           </Link>
 
-          <nav className="ml-auto hidden gap-[60px] text-[18px] font-medium text-white md:flex">
-            {navItems.map((item, index) => (
-              <Link href={item.href} key={index}>
-                <p className="text-white">{item.title}</p>
-              </Link>
-            ))}
-          </nav>
+          {/* Desktop Nav*/}
+          <div className="hidden md:flex items-center gap-[60px]">
+            <nav className="flex gap-[60px] text-[18px] font-medium text-white">
+              {navItems.map((item, index) => (
+                <Link href={item.href} key={index}>
+                  <p className="text-white hover:opacity-80 transition-opacity">{item.title}</p>
+                </Link>
+              ))}
+            </nav>
 
-          <div className="ml-autohidden ml-5 items-center gap-4 md:flex">
-            <LangSelect />
-            <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800">
-              I am a Doctor my doctor
-            </button>
-            <button
-              onClick={handleLogin}
-              className="flex h-[40px] items-center rounded-full bg-white px-[16px] text-sm font-semibold text-teal-800 transition hover:bg-gray-200"
-            >
-              Login
-            </button>
+            <div className="flex items-center gap-4">
+              <LangSelect />
+              <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800 whitespace-nowrap">
+                I am a Doctor
+              </button>
+              <button
+                onClick={handleLogin}
+                className="flex h-[40px] items-center justify-center rounded-full bg-white px-[16px] text-sm font-semibold text-teal-800 transition hover:bg-gray-200 whitespace-nowrap"
+              >
+                Login
+              </button>
+            </div>
           </div>
+
+          {/* Mobile Hamburger */}
+          <button
+            className="md:hidden text-white text-xl"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <CloseOutlined /> : <MenuOutlined />}
+          </button>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden absolute left-0 right-0 top-full bg-[#046D5F] rounded-b-xl shadow-lg z-40 mt-3">
+            <nav className="flex flex-col gap-6 p-6 text-[18px] font-medium text-white">
+              {navItems.map((item, index) => (
+                <Link href={item.href} key={index} onClick={() => setMobileMenuOpen(false)}>
+                  <p className="text-white hover:opacity-80 transition-opacity">{item.title}</p>
+                </Link>
+              ))}
+              <div className="border-t border-white/20 pt-4 mt-2 flex flex-col gap-4">
+                <LangSelect />
+                <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800 w-full">
+                  I am a Doctor
+                </button>
+                <button
+                  onClick={() => {
+                    handleLogin()
+                    setMobileMenuOpen(false)
+                  }}
+                  className="flex h-[40px] items-center justify-center rounded-full bg-white px-[16px] text-sm font-semibold text-teal-800 transition hover:bg-gray-200 w-full"
+                >
+                  Login
+                </button>
+              </div>
+            </nav>
+          </div>
+        )}
       </Container>
     </header>
   )
