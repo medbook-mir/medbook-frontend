@@ -33,8 +33,20 @@ export interface LoginResponseType {
 }
 
 export interface ApiResponseWithContent<T> {
-  result: T
   success: boolean
+  code: number
+  message: string
+  data: T
+  pagination?: {
+    count: number
+    page: number
+    page_size: number
+    total_pages: number
+    next: string | null
+    previous: string | null
+    has_next: boolean
+    has_previous: boolean
+  }
 }
 
 // Yandex Maps API declarations

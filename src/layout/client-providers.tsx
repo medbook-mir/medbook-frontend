@@ -52,21 +52,22 @@ export function ClientProviders({ children, locale, messages }: ClientProvidersP
       <AntdProvider>
         <QueryClientProvider client={queryClient}>
           <Provider store={store}>
-            <NotificationProvider>
-              <ProtectedComponent>
-                <Header />
-              </ProtectedComponent>
-              <main>{children}</main>
-              <ProtectedComponent paths={['/settings']}>
-                <Footer />
-              </ProtectedComponent>
-              <ScrollToTop />
-              <BackToTop />
-              <LoginModal />
-              <RegisterModal />
-              <VerifyModal />
-            </NotificationProvider>
+              <NotificationProvider>
+                <ProtectedComponent>
+                  <Header />
+                </ProtectedComponent>
+                <main>{children}</main>
+                <ProtectedComponent paths={['/settings']}>
+                  <Footer />
+                </ProtectedComponent>
+                <ScrollToTop />
+                <BackToTop />
+                <LoginModal />
+                <RegisterModal />
+                <VerifyModal />
+              </NotificationProvider>
           </Provider>
+          {/* {process.env.NODE_ENV === 'development' && <ReactQueryDevtools initialIsOpen={false} />} */}
         </QueryClientProvider>
       </AntdProvider>
     </NextIntlClientProvider>
