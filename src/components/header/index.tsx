@@ -35,21 +35,17 @@ export default function Navbar() {
     }
   }
 
-  const headerBgClass = isHomePage && !isScrolled
-    ? 'bg-transparent'
-    : 'bg-[#046D5F] px-10 py-5 rounded-full'
+  const headerBgClass = isHomePage && !isScrolled ? 'bg-transparent' : 'bg-[#046D5F] px-10 py-5 rounded-full'
 
   return (
-    <header
-      className={`fixed left-0 right-0 top-0 z-50 py-8 text-white transition-all duration-300 px-5`}
-    >
+    <header className={`fixed top-0 right-0 left-0 z-50 px-5 py-8 text-white transition-all duration-300`}>
       <Container>
         <div className={`flex items-center transition-all duration-300 ${headerBgClass}`}>
           <Link href="/">
             <MainLogoWhite />
           </Link>
 
-          <nav className="hidden md:flex gap-[60px] text-[18px] font-medium text-white ml-auto">
+          <nav className="ml-auto hidden gap-[60px] text-[18px] font-medium text-white md:flex">
             {navItems.map((item, index) => (
               <Link href={item.href} key={index}>
                 <p className="text-white">{item.title}</p>
@@ -57,10 +53,10 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="ml-autohidden items-center gap-4 md:flex ml-5">
+          <div className="ml-autohidden ml-5 items-center gap-4 md:flex">
             <LangSelect />
             <button className="h-[40px] rounded-full border border-white px-[16px] text-[14px] transition hover:bg-white hover:text-teal-800">
-              I am a Doctor
+              I am a Doctor my doctor
             </button>
             <button
               onClick={handleLogin}
