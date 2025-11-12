@@ -138,9 +138,12 @@ export default function BlogsPage() {
             {currentBlogs.map((blog) => (
               <div
                 key={blog.id}
-                className="p-3 pb-0 rounded-[24px] overflow-hidden bg-white border-3 border-[#E5E7EB] hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+                className="p-3 pb-0 rounded-[24px] overflow-hidden
+                bg-white border-3 border-[#E5E7EB] 
+                hover:shadow-xl transition-shadow duration-300"
               >
                 {/* Image Section */}
+                <Link href={`/blogs/${blog.id}`}>
                 <div className="relative w-full h-[240px] rounded-xl overflow-hidden">
                   <Image
                     src={blog.image}
@@ -149,6 +152,7 @@ export default function BlogsPage() {
                     className="object-cover"
                   />
                 </div>
+                </Link>
 
                 {/* Content Section */}
                 <div className="p-6">
@@ -167,6 +171,7 @@ export default function BlogsPage() {
                   </div>
 
                   {/* Title */}
+                  <Link href={`/blogs/${blog.id}`}>
                   <h3 className="text-[20px] font-bold mb-3 text-[#1F2937] leading-[1.4] line-clamp-2 min-h-[56px]">
                     {blog.title}
                   </h3>
@@ -175,6 +180,7 @@ export default function BlogsPage() {
                   <p className="text-[#6B7280] text-[14px] leading-[1.6] mb-6 line-clamp-3 min-h-[67px]">
                     {blog.description}
                   </p>
+                  </Link>
 
                   {/* Actions Row */}
                   <div className="flex items-center justify-between">
