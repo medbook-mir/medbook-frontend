@@ -14,6 +14,7 @@ import { closeModal, openModal } from '@/redux/reducers/modals'
 import { useLogin } from '@/hooks/useLogin'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
+import { LeftGreenArrowIcon } from '@/utils/icons/LeftGreenArrowIcon'
 
 const LoginForm = () => {
   const t = useTranslations('loginPage')
@@ -50,6 +51,12 @@ const LoginForm = () => {
 
   return (
     <div className="flex flex-col gap-6">
+      <div>
+  <Link href={"/"} className="flex items-center gap-1">
+    <LeftGreenArrowIcon />
+    <span className="text-[#046D5F]">Back to Home</span>
+  </Link>
+</div>
       <h3 className="text-[32px] leading-[100%] font-semibold">{t('formTitle')}</h3>
       <Form layout="vertical" onFinish={handleSubmit(onSubmit)}>
         <div className="flex flex-col pb-5">
@@ -92,15 +99,15 @@ const LoginForm = () => {
             <FilledButton className="w-full !py-5" iconPosition="end" htmlType="submit" loading={isPendingLogin}>
               {t('signIn')}
             </FilledButton>
-
-            <div className="h-[0.5px] w-full bg-[#E5E5E5]" />
+            <div className='flex items-center'> <div className="h-[0.5px] w-full bg-[#E5E5E5]" /> <span className='mr-3 ml-3'> or </span> <div className="h-[0.5px] w-full bg-[#E5E5E5]" /> </div>
+            
 
             <FilledButton
-              className="w-full !py-5"
+              className="!py-5 w-full !text-[#212121] flex items-center"
               iconPosition="start"
               icon={<GoogleIcon />}
               htmlType="button"
-              bgColor="#0D0D0D"
+              bgColor="#F5F5F5"
             >
               {t('withGoogle')}
             </FilledButton>
@@ -109,7 +116,7 @@ const LoginForm = () => {
       </Form>
 
       <div className="flex flex-col gap-10">
-        <div className="flex items-center justify-center gap-3 text-[12px] leading-[20px]">
+        <div className="flex items-center justify-center gap-3 text-[16px] leading-[20px]">
           <p className="text-[#0D0D0D]">{t('dontHaveAccount')}</p>
           <button onClick={handleRegister} className="!text-[#046D5F]">
             {t('signUpNow')}

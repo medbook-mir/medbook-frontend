@@ -16,6 +16,8 @@ import { useRegister } from '@/hooks/useRegister'
 import { Controller, SubmitHandler, useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import dayjs from 'dayjs'
+import Link from 'next/link'
+import { LeftGreenArrowIcon } from '@/utils/icons/LeftGreenArrowIcon'
 
 const RegisterForm = () => {
   const t = useTranslations('registerPage')
@@ -55,6 +57,12 @@ const RegisterForm = () => {
 
   return (
     <div className="flex flex-col gap-4">
+      <div>
+  <Link href={"/"} className="flex items-center gap-1">
+    <LeftGreenArrowIcon />
+    <span className="text-[#046D5F]">Back to Home</span>
+  </Link>
+</div>
       <h3 className="text-[32px] leading-[100%] font-semibold">{t('formTitle')}</h3>
       <Form layout="vertical" onFinish={handleSubmit(onSubmit)}>
         <div className="flex flex-col">
@@ -131,17 +139,17 @@ const RegisterForm = () => {
             )}
           />
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
             <FilledButton className="!py-5" htmlType="submit" loading={isPendingRegister}>
               {t('signUp')}
             </FilledButton>
-            <div className="h-[0.5px] w-full bg-[#E5E5E5]" />
+            <div className='flex items-center'> <div className="h-[0.5px] w-full bg-[#E5E5E5]" /> <span className='mr-3 ml-3'> or </span> <div className="h-[0.5px] w-full bg-[#E5E5E5]" /> </div>
             <FilledButton
-              className="!py-5"
+              className="!py-5 w-full !text-[#212121] flex items-center"
               iconPosition="start"
               icon={<GoogleIcon />}
               htmlType="button"
-              bgColor="#0D0D0D"
+              bgColor="#F5F5F5"
             >
               {t('withGoogle')}
             </FilledButton>
@@ -149,14 +157,13 @@ const RegisterForm = () => {
         </div>
       </Form>
 
-      <div className="flex flex-col gap-5">
-        <div className="flex items-center justify-center gap-3 text-[12px] leading-[20px]">
+      <div className="flex flex-col gap-1">
+        <div className="flex items-center justify-center gap-1 text-[16px] leading-[20px]">
           <p className="text-[#0D0D0D]">{t('alreadyHaveAnAccount')}</p>
           <button onClick={handleLogin} className="!text-[#046D5F]">
             {t('signInNow')}
           </button>
         </div>
-        <p className="text-center text-[12px] leading-[16px] font-normal text-[#696969]">© Medvisit 2025</p>
       </div>
     </div>
   )
