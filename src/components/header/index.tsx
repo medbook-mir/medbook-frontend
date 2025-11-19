@@ -30,11 +30,7 @@ export default function Navbar() {
   }, [])
 
   const handleLogin = () => {
-    if (pathname === '/') {
-      router.push('/login')
-    } else {
-      dispatch(openModal('loginModal'))
-    }
+    dispatch(openModal('loginModal'))
   }
 
   const headerBgClass = isHomePage && !isScrolled

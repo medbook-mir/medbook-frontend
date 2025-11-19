@@ -209,16 +209,37 @@
     "signInNow": "Kiring"
   },
   "verifyPage": {
-    "title": "E-pochtangizni tasdiqlang",
-    "description": "Hisobingizni tasdiqlash uchun emailingizga yuborilgan kodni kiriting",
-    "formTitle": "Tasdiqlash",
-    "emailCode": "Email kodi",
-    "emailCodePlaceholder": "Kod kiriting",
-    "verify": "Tasdiqlash",
-    "resendCode": "Kodni qayta yuborish",
-    "alreadyHaveAnAccount": "Allaqachon hisobingiz bormi?",
-    "signInNow": "Kiring"
+  "title": "Ro‘yxatdan o‘ting va ishonchli tibbiy mutaxassislar bilan bog‘laning",
+  "description": "Hisobingizni yaratish sizga mutaxassis tibbiy xizmatlarga, 24/7 maslahat olish imkoniyatiga va sog‘lig‘ingizni istalgan joydan xavfsiz, qulay va ishonchli nazorat qilish erkinligiga ega bo‘lish imkonini beradi.",
+  "formTitle": "Emailingizni tekshirib kodni kiriting",
+  "formDescription": "Biz sizning emailingizga 4 xonali kod yubordik",
+  "resendQuestion": "Kod kelmadi?",
+  "resendCode": "Qayta yuborish uchun bosing",
+  "confirm": "Tasdiqlash"
+},
+  "forgotPasswordPage": {
+  "title": "Onlayn tibbiyot – Har doim yoningizda",
+  "description": "Shaxsiy raqamli klinikangizga xush kelibsiz. Atigi bir necha bosishda sertifikatlangan shifokorlarga ulaning, professional tibbiy maslahat oling va retseptlarni qo'lga kiriting – bularning barchasi uyingizdan chiqmagan holda. Tez, xavfsiz va 24/7 mavjud.",
+  "formTitle": "Parolni unutdingizmi",
+  "formDescription": "Telefon raqamingiz yoki Gmail hisobingizni kiriting. Parolni tiklash uchun sizga havola yuboramiz.",
+  "email": "Email yoki telefon raqami",
+  "emailPlaceholder": "Email yoki telefon raqami",
+  "continue": "Davom etish",
+  "login": "Kirishga qaytish"
+},
+  "resetPasswordPage": {
+    "title": "Hisobingizni himoyalang",
+    "description": "Hisobingizni himoya qilish uchun yangi kuchli parol yarating. Uni eslab qoladigan, lekin boshqalar oson topa olmaydigan qiling.",
+    "formTitle": "Parolni tiklash",
+    "formDescription": "Quyida yangi parolingizni kiriting. U bizning xavfsizlik talablarimizga javob berishiga ishonch hosil qiling.",
+    "newPassword": "Yangi parol",
+    "newPasswordPlaceholder": "Yangi parolingizni kiriting",
+    "confirmPassword": "Parolni tasdiqlang",
+    "confirmPasswordPlaceholder": "Yangi parolni qayta kiriting",
+    "resetPassword": "Parolni tiklash",
+    "backToLogin": "Kirishga qaytish"
   },
+
   "bookingPage": {
     "chooseDateAndTime": "Sana va vaqtni tanlang",
     "selectMonth": "Oyni tanlang",

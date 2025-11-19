@@ -209,15 +209,35 @@
     "signInNow": "Sign in now"
   },
   "verifyPage": {
-    "title": "Verify your email",
-    "description": "Enter the code sent to your email to verify your account",
-    "formTitle": "Verify",
-    "emailCode": "Email code",
-    "emailCodePlaceholder": "Enter the code",
-    "verify": "Verify",
-    "resendCode": "Resend code",
-    "alreadyHaveAnAccount": "Already have an account?",
-    "signInNow": "Sign in now"
+    "title": "Sign Up and Connect with Trusted Medical Experts",
+    "description": "Creating your account gives you access to a world of expert medical care, 24/7 consultations, and the freedom to take control of your health from anywhere – safely, securely, and conveniently.",
+    "formTitle": "Check your email for a code",
+    "formDescription": "We`ve sent a 4-digit code to your email ",
+    "resendQuestion": "Didn`t get the code?",
+    "resendCode": "Click to resend",
+    "confirm": "Confirm"
+  },
+  "forgotPasswordPage": {
+    "title": "Online healthcare – Always by your side",
+    "description": "Welcome to your personal digital clinic. With just a few clicks, you can connect to certified doctors, get professional medical advice, and receive prescriptions – all from the comfort of your home. Fast, secure, and available 24/7.\"",
+    "formTitle": "Forgot password",
+    "formDescription": "Enter your phone number or gmail account. We will send you a link to reset your password",
+    "email": "Email or Phone number",
+    "emailPlaceholder": "Email or phone number",
+    "continue": "Continue",
+    "login": "Back to Login"
+  },
+  "resetPasswordPage": {
+    "title": "Secure Your Account",
+    "description": "Create a strong new password to protect your account. Make sure it's something you'll remember but others can't easily guess.",
+    "formTitle": "Reset Password",
+    "formDescription": "Enter your new password below. Make sure it meets our security requirements.",
+    "newPassword": "New Password",
+    "newPasswordPlaceholder": "Enter your new password",
+    "confirmPassword": "Confirm Password",
+    "confirmPasswordPlaceholder": "Re-enter your new password",
+    "resetPassword": "Reset Password",
+    "backToLogin": "Back to Login"
   },
   "bookingPage": {
     "chooseDateAndTime": "Choose date and time",

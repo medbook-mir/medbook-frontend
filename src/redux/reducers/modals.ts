@@ -4,7 +4,9 @@ const modalsNames = {
   loginModal: 'loginModal',
   registerModal: 'registerModal',
   verifyModal: 'verifyModal',
-  sessionExpiredModal: 'sessionExpiredModal'
+  sessionExpiredModal: 'sessionExpiredModal',
+  forgotPasswordModal: 'forgotPasswordModal',
+  resetPasswordModal: 'resetPasswordModal'
 }
 
 type ModalsState = { modals: { [K in keyof typeof modalsNames]: boolean } }
@@ -14,7 +16,9 @@ const defaultState: ModalsState = {
     loginModal: false,
     registerModal: false,
     verifyModal: false,
-    sessionExpiredModal: false
+    sessionExpiredModal: false,
+    forgotPasswordModal: false,
+    resetPasswordModal: false
   }
 }
 
