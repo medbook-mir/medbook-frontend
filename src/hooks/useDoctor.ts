@@ -113,8 +113,8 @@ export const useDoctorServices = (id: string) => {
       return response.data.data
     },
     enabled: !!id,
-    staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 10 * 60 * 1000 // 10 minutes
+    staleTime: 5 * 60 * 1000,
+    gcTime: 10 * 60 * 1000
   })
 }
 
@@ -126,8 +126,8 @@ export const useDoctorLocation = (id: string) => {
       return response.data.data
     },
     enabled: !!id,
-    staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000 // 15 minutes
+    staleTime: 10 * 60 * 1000,
+    gcTime: 15 * 60 * 1000
   })
 }
 

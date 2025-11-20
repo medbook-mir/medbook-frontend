@@ -57,13 +57,13 @@ const slice = createSlice({
       .addCase(loginThunk.fulfilled, (state, action) => {
         state.isLoading = false
         state.auth.status = 'success'
-        state.auth.token = action.payload.result.accessToken
-        state.auth.refreshToken = action.payload.result.refreshToken
+        state.auth.token = action.payload.data.accessToken
+        state.auth.refreshToken = action.payload.data.refreshToken
         TokenService.setToken(
-          action.payload.result.accessToken,
-          action.payload.result.refreshToken,
-          action.payload.result.accessTokenExpiry,
-          action.payload.result.refreshTokenExpiry
+          action.payload.data.accessToken,
+          action.payload.data.refreshToken,
+          action.payload.data.accessTokenExpiry,
+          action.payload.data.refreshTokenExpiry
         )
       })
       .addCase(loginThunk.rejected, (state, action) => {
@@ -82,13 +82,13 @@ const slice = createSlice({
       .addCase(registerThunk.fulfilled, (state, action) => {
         state.isLoading = false
         state.auth.status = 'success'
-        state.auth.token = action.payload.result.accessToken
-        state.auth.refreshToken = action.payload.result.refreshToken
+        state.auth.token = action.payload.data.accessToken
+        state.auth.refreshToken = action.payload.data.refreshToken
         TokenService.setToken(
-          action.payload.result.accessToken,
-          action.payload.result.refreshToken,
-          action.payload.result.accessTokenExpiry,
-          action.payload.result.refreshTokenExpiry
+          action.payload.data.accessToken,
+          action.payload.data.refreshToken,
+          action.payload.data.accessTokenExpiry,
+          action.payload.data.refreshTokenExpiry
         )
       })
       .addCase(registerThunk.rejected, (state, action) => {
@@ -105,13 +105,13 @@ const slice = createSlice({
       })
       .addCase(verifyThunk.fulfilled, (state, action) => {
         state.isLoading = false
-        state.auth.token = action.payload.result.accessToken
-        state.auth.refreshToken = action.payload.result.refreshToken
+        state.auth.token = action.payload.data.accessToken
+        state.auth.refreshToken = action.payload.data.refreshToken
         TokenService.setToken(
-          action.payload.result.accessToken,
-          action.payload.result.refreshToken,
-          action.payload.result.accessTokenExpiry,
-          action.payload.result.refreshTokenExpiry
+          action.payload.data.accessToken,
+          action.payload.data.refreshToken,
+          action.payload.data.accessTokenExpiry,
+          action.payload.data.refreshTokenExpiry
         )
       })
       .addCase(verifyThunk.rejected, (state, action) => {
@@ -127,13 +127,13 @@ const slice = createSlice({
       })
       .addCase(refreshThunk.fulfilled, (state, action) => {
         state.isLoading = false
-        state.auth.token = action.payload.result.accessToken
-        state.auth.refreshToken = action.payload.result.refreshToken
+        state.auth.token = action.payload.data.accessToken
+        state.auth.refreshToken = action.payload.data.refreshToken
         TokenService.setToken(
-          action.payload.result.accessToken,
-          action.payload.result.refreshToken,
-          action.payload.result.accessTokenExpiry,
-          action.payload.result.refreshTokenExpiry
+          action.payload.data.accessToken,
+          action.payload.data.refreshToken,
+          action.payload.data.accessTokenExpiry,
+          action.payload.data.refreshTokenExpiry
         )
       })
       .addCase(refreshThunk.rejected, (state, action) => {
