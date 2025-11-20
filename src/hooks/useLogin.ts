@@ -25,13 +25,10 @@ export const useLogin = () => {
         err?.result?.message || err?.message || `${t('basic.errorsMsg.tryAgain')}`
       )
     },
-    onSuccess: (data) => {
-      TokenService.setToken(
-        data.result.accessToken,
-        data.result.refreshToken,
-        data.result.accessTokenExpiry,
-        data.result.refreshTokenExpiry
-      )
+    onSuccess: (response) => {
+      const data = response.data
+
+      TokenService.setToken(data.accessToken, data.refreshToken, data.accessTokenExpiry, data.refreshTokenExpiry)
       openNotification('success', 'Success', 'Login successful')
     }
   })

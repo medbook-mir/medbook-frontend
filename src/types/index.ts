@@ -1,6 +1,6 @@
 export type EditIconProps = {
-  colour?: string;
-};
+  colour?: string
+}
 
 export type LoginBodyType = {
   username: string
