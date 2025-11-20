@@ -37,9 +37,10 @@ const Wishlist = () => {
   }
 
   return (
+    <div className="pt-[80px]">
     <Container>
         {/* Breadcrumb */}
-        <div className="mb-6 mt-4">
+        <div className="mb-4 mt-6">
           <CustomBreadcrumb pages={breadcrumbPages} />
         </div>
 
@@ -48,6 +49,7 @@ const Wishlist = () => {
           Wishlist
         </h1>
 
+
         {/* Wishlist Content */}
         <div>
           {displayDoctors.map((doctor) => (
@@ -55,6 +57,7 @@ const Wishlist = () => {
           ))}
         </div>
       </Container>
+    </div>
   )
 }
 

@@ -42,7 +42,9 @@ export default function BlogsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="pt-21">
+      <Container>
+        <div className="min-h-screen bg-white">
       {/* Search and Sort Section */}
       <div className="bg-white py-6">
         <Container>
@@ -98,7 +100,7 @@ export default function BlogsPage() {
 
       {/* Main Content */}
       <Container>
-        <div className="py-8">
+        <div className="pb-6">
           {/* Featured Blog Card */}
           {filteredBlogs.length > 0 && (
             <Link href={`/blogs/${filteredBlogs[0].id}`}>
@@ -323,5 +325,8 @@ export default function BlogsPage() {
         )}
       </Container>
     </div>
+      </Container>
+      </div>
+    
   )
 }
