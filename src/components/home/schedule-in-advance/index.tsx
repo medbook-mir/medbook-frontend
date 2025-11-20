@@ -9,14 +9,14 @@ const DoctorPromoSection = () => {
   return (
     <section className="py-4 lg:py-24 bg-white ">
       <Container>
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 min-h-[500px] lg:min-h-[934px]">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 min-h-[500px] lg:min-h-[550px]">
           {/* Left Side - Doctor with Laptop */}
           <div className="relative lg:h-[500px] lg:w-[1080px]">
-            <Image 
-              src={images.portraitDoctor} 
-              alt="Confident male doctor in uniform" 
-              
-              className="object-center object-contain lg:ml-[-150px] lg:mt-[120px] "
+            <Image
+              src={images.portraitDoctor}
+              alt="Confident male doctor in uniform"
+
+              className="object-center object-contain lg:ml-[-150px] lg:mt-[-120px]"
               priority
             />
           </div>
@@ -49,41 +49,41 @@ const DoctorPromoSection = () => {
               <p className="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6 font-medium text-center">
                 {t('trustStatement')}
               </p>
-              
+
               {/* Partner Logos */}
               <div className="flex justify-center items-center gap-4 sm:gap-6 lg:gap-8">
                 {/* Partner 1 - AKFA MEDLINE */}
                 <div className="w-[100px]  h-auto">
-                  <Image 
-                    src={images.image198} 
-                    alt="AKFA MEDLINE" 
+                  <Image
+                    src={images.image198}
+                    alt="AKFA MEDLINE"
                     className="w-full h-auto object-contain"
                   />
                 </div>
 
                 {/* Partner 2 - HAYAT Medical Centre */}
                 <div className="w-[100px] h-auto">
-                  <Image 
-                    src={images.image203} 
-                    alt="HAYAT Medical Centre" 
+                  <Image
+                    src={images.image203}
+                    alt="HAYAT Medical Centre"
                     className="w-full h-auto object-contain"
                   />
                 </div>
 
                 {/* Partner 3 - DARMON SERVIS */}
                 <div className="w-[100px]  h-auto">
-                  <Image 
-                    src={images.image204} 
-                    alt="DARMON SERVIS" 
+                  <Image
+                    src={images.image204}
+                    alt="DARMON SERVIS"
                     className="w-full h-auto object-contain"
                   />
                 </div>
 
                 {/* Partner 4 - Hi Tech Lab */}
                 <div className="w-[100px] h-auto">
-                  <Image 
+                  <Image
                     src={images.image205}
-                    alt="Hi Tech Lab Diagnostic Centre" 
+                    alt="Hi Tech Lab Diagnostic Centre"
                     className="w-full h-auto object-contain"
                   />
                 </div>
