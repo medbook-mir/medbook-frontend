@@ -10,7 +10,7 @@ export const useDoctors = () => {
       return response.data.data
     },
     staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 10 * 60 * 1000, // 10 minutes
+    gcTime: 10 * 60 * 1000 // 10 minutes
   })
 }
 
@@ -23,7 +23,7 @@ export const useDoctor = (id: string) => {
     },
     enabled: !!id,
     staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 10 * 60 * 1000, // 10 minutes
+    gcTime: 10 * 60 * 1000 // 10 minutes
   })
 }
 
@@ -36,7 +36,7 @@ export const useCompleteDoctorData = (id: string) => {
     },
     enabled: !!id,
     staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 10 * 60 * 1000, // 10 minutes
+    gcTime: 10 * 60 * 1000 // 10 minutes
   })
 }
 
@@ -49,7 +49,7 @@ export const useDoctorLanguages = (id: string) => {
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
 
@@ -62,7 +62,7 @@ export const useDoctorSpecializations = (id: string) => {
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
 
@@ -75,7 +75,7 @@ export const useDoctorEducation = (id: string) => {
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
 
@@ -88,7 +88,7 @@ export const useDoctorExperience = (id: string) => {
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
 
@@ -101,7 +101,7 @@ export const useDoctorCertificates = (id: string) => {
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
 
@@ -114,7 +114,7 @@ export const useDoctorServices = (id: string) => {
     },
     enabled: !!id,
     staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 10 * 60 * 1000, // 10 minutes
+    gcTime: 10 * 60 * 1000 // 10 minutes
   })
 }
 
@@ -122,12 +122,12 @@ export const useDoctorLocation = (id: string) => {
   return useQuery({
     queryKey: ['doctor-location', id],
     queryFn: async () => {
-      const response = await doctorAPI.getDoctorLocation(id)
+      const response = await doctorAPI.getDoctorEducation(id)
       return response.data.data
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
 
@@ -140,7 +140,7 @@ export const useDoctorSchedule = (id: string) => {
     },
     enabled: !!id,
     staleTime: 2 * 60 * 1000, // 2 minutes (schedule changes frequently)
-    gcTime: 5 * 60 * 1000, // 5 minutes
+    gcTime: 5 * 60 * 1000 // 5 minutes
   })
 }
 
@@ -153,7 +153,7 @@ export const useDoctorReviews = (id: string) => {
     },
     enabled: !!id,
     staleTime: 5 * 60 * 1000, // 5 minutes
-    gcTime: 10 * 60 * 1000, // 10 minutes
+    gcTime: 10 * 60 * 1000 // 10 minutes
   })
 }
 
@@ -166,6 +166,6 @@ export const useDoctorBlogPosts = (id: string) => {
     },
     enabled: !!id,
     staleTime: 10 * 60 * 1000, // 10 minutes
-    gcTime: 15 * 60 * 1000, // 15 minutes
+    gcTime: 15 * 60 * 1000 // 15 minutes
   })
 }
