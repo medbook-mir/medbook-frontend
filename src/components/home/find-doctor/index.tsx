@@ -1,3 +1,5 @@
+'use client'
+
 import { images } from '@/assets'
 import { Container } from '@/theme/container'
 import { CheckIcon } from '@/utils/icons/CheckIcon'
@@ -6,6 +8,13 @@ import { DoctorCardList } from './available-doctors'
 import AnimatedInView from '@/components/shared/animated-in-view'
 
 export const FindDoctor = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <Container>
       <div className="relative w-full px-0 py-[32px] md:px-[50px] md:py-[80px]">
@@ -28,13 +37,16 @@ export const FindDoctor = () => {
               <p className='font-bold'>Available 900 doctors specialist</p>
             </div>
           </div>
-          <button className="mx-auto rounded-[10px] bg-[#046D5F] px-[36px] py-[16px] text-[16px] font-[500] text-white transition hover:bg-gray-200 md:mx-0">
+          <button
+            onClick={scrollToTop}
+            className="mx-auto rounded-[10px] bg-[#046D5F] px-[36px] py-[16px] text-[16px] font-[500] text-white transition hover:bg-[#035a4f] md:mx-0"
+          >
             Search the doctor
           </button>
         </div>
         <div className="absolute right-0 bottom-0 -mr-4 hidden h-full w-[50%] md:block">
           <div className="absolute top-[50px] left-[50px]">
-            <DoctorCardList />
+            <DoctorCardList onFindDoctor={scrollToTop} />
           </div>
           <Image
             src={images.searchDoctor}
