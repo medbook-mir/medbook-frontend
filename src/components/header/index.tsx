@@ -38,9 +38,9 @@ export default function Navbar() {
     : 'bg-[#046D5F] px-10 py-3 rounded-full'
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 py-3 text-white transition-all duration-300 px-5">
+    <header className="absolute left-0 right-0 top-0 z-50 py-3 text-white transition-all duration-300 px-5 bg-transparent">
       <Container>
-        <div className={`flex items-center justify-between transition-all duration-300 ${headerBgClass}`}>
+        <div className={`flex items-center justify-between transition-all duration-300 `}>
           {/* Logo */}
           <Link href="/">
             <MainLogoWhite />

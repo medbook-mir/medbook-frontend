@@ -86,6 +86,7 @@ button {
   display: none !important;
 }
 /* Custom scrollbar styles */
+
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: #046d5f #e0f2ef;
