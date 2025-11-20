@@ -1,6 +1,5 @@
 @import 'tailwindcss';
 
-/* Custom styles for Marquee-carousel */
 @layer utilities {
   @keyframes marquee {
     0% { transform: translateX(0%); }
@@ -16,8 +15,6 @@
   }
 }
 
-
-/* Global styles */
 button {
   cursor: pointer;
 }
