@@ -12,6 +12,9 @@ import { SavedIcon } from '@/utils/icons/SavedIcon'
 import { GreenArrowRightIcon } from '@/utils/icons/GreenArrowRightIcon'
 import { WhiteArrowRight } from '@/utils/icons/WhiteArrowRight'
 import { useSavedBlogs } from '@/hooks/useSavedBlogs'
+import { useLikes } from '@/hooks/useLikes'
+import { useShares } from '@/hooks/useShares'
+import { notification } from 'antd'
 
 
 export default function BlogsPage() {
@@ -20,6 +23,11 @@ export default function BlogsPage() {
   const [sortBy, setSortBy] = useState('last-added')
   const [currentPage, setCurrentPage] = useState(1)
   const blogsPerPage = 6
+
+
+  const { toggleLike, isBlogLiked } = useLikes()
+  const { incrementShare, getShareCount } = useShares()
+  const [api, contextHolder] = notification.useNotification()
 
   const filteredBlogs = blogsData.filter((blog) =>
     blog.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -196,9 +204,14 @@ export default function BlogsPage() {
 
                     {/* Action Icons */}
                     <div className="flex items-center gap-3">
-                      <button className="text-[#6B7280] hover:text-[#046D5F] transition-colors">
-                        <ThumbsUpIcon />
-                      </button>
+                      <button 
+                  onClick={() => toggleLike(blog.id)}
+                  className={`flex flex-col items-center justify-center gap-2 py-3 hover:bg-gray-50 transition-colors rounded-lg ${
+                    isBlogLiked(blog.id) ? 'text-[#000000]' : 'text-[#374151]'
+                  }`}
+                >
+                  <ThumbsUpIcon fill={isBlogLiked(blog.id) ? "#000000" : "none"} /> 
+                </button>
                       <button className="text-[#6B7280] hover:text-[#046D5F] transition-colors">
                         <CommentsIcon/>
                       </button>
@@ -214,7 +227,7 @@ export default function BlogsPage() {
                         }`}
                         aria-label={isBlogSaved(blog.id) ? 'Remove from saved' : 'Save blog'}
                       >
-                        <SavedIcon/>
+                        <SavedIcon fill={isBlogSaved(blog.id) ? "#000000" : "none"}/>
                       </button>
                     </div>
                   </div>

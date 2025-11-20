@@ -9,6 +9,9 @@ export interface BlogData {
   category: string
   author: string
   content?: string
+  likes?: number
+  comments?: number
+  shares?: number
 }
 
 export const blogsData: BlogData[] = [
@@ -20,6 +23,9 @@ export const blogsData: BlogData[] = [
     date: '2024-01-15',
     category: 'Preventive Care',
     author: 'Kathrin Schenk-Losse',
+    likes: 1200,
+    comments: 455,
+    shares: 88,
     content: `Preventive care is one of the most effective ways to maintain long-term health, yet many people only visit the doctor when they're already sick. Regular health screenings can detect potential issues early—when they're most treatable—saving lives, reducing healthcare costs, and improving quality of life.
 
 In this article, we'll explore:
@@ -54,7 +60,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: '2024-01-10',
     category: 'Heart Health',
-    author: 'Kathrin Schenk-Losse'
+    author: 'Kathrin Schenk-Losse',
+    likes: 850,
+    comments: 320,
+    shares: 65
   },
   {
     id: 3,
@@ -63,7 +72,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: '2024-01-05',
     category: 'Mental Health',
-    author: 'Dr. Michael Chen'
+    author: 'Dr. Michael Chen',
+    likes: 920,
+    comments: 380,
+    shares: 72
   },
   {
     id: 4,
@@ -72,17 +84,23 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: '2023-08-02',
     category: 'Healthcare Policy',
-    author: 'Kathrin Schenk-Losse'
+    author: 'Kathrin Schenk-Losse',
+    likes: 560,
+    comments: 210,
+    shares: 48
   },
   {
     id: 5,
-    title: "Digital Transformation in Healthcare: What’s Next?",
+    title: "Digital Transformation in Healthcare: What's Next?",
     description:
-      "From electronic health records to AI diagnosis, healthcare’s digital journey is just beginning.",
+      "From electronic health records to AI diagnosis, healthcare's digital journey is just beginning.",
     image: blog1,
     date: "2024-02-12",
     category: "Digital Health",
-    author: "Markus Feldmann"
+    author: "Markus Feldmann",
+    likes: 740,
+    comments: 290,
+    shares: 58
   },
   {
     id: 6,
@@ -92,7 +110,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-02-05",
     category: "Nutrition",
-    author: "Clara Weber"
+    author: "Clara Weber",
+    likes: 1100,
+    comments: 425,
+    shares: 82
   },
   {
     id: 7,
@@ -102,7 +123,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-03-01",
     category: "Public Health",
-    author: "Dr. Fabian Krause"
+    author: "Dr. Fabian Krause",
+    likes: 680,
+    comments: 250,
+    shares: 52
   },
   {
     id: 8,
@@ -112,7 +136,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-03-15",
     category: "Lifestyle & Wellness",
-    author: "Nina Schmidt"
+    author: "Nina Schmidt",
+    likes: 890,
+    comments: 340,
+    shares: 68
   },
   {
     id: 9,
@@ -122,7 +149,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-04-02",
     category: "Health Technology",
-    author: "Dr. Stefan Keller"
+    author: "Dr. Stefan Keller",
+    likes: 1350,
+    comments: 510,
+    shares: 98
   },
   {
     id: 10,
@@ -132,7 +162,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-04-20",
     category: "Health Policy",
-    author: "Elena Fischer"
+    author: "Elena Fischer",
+    likes: 620,
+    comments: 235,
+    shares: 45
   },
   {
     id: 11,
@@ -142,7 +175,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-05-10",
     category: "Wellbeing",
-    author: "Jonas Mayer"
+    author: "Jonas Mayer",
+    likes: 780,
+    comments: 295,
+    shares: 61
   },
   {
     id: 12,
@@ -152,7 +188,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-06-01",
     category: "Elderly Care",
-    author: "Prof. Laura Neumann"
+    author: "Prof. Laura Neumann",
+    likes: 950,
+    comments: 365,
+    shares: 74
   },
   {
     id: 13,
@@ -162,7 +201,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-06-25",
     category: "Environmental Health",
-    author: "Simon Berger"
+    author: "Simon Berger",
+    likes: 1050,
+    comments: 410,
+    shares: 85
   },
   {
     id: 14,
@@ -172,7 +214,10 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-07-12",
     category: "Digital Health",
-    author: "Mira Vogel"
+    author: "Mira Vogel",
+    likes: 810,
+    comments: 315,
+    shares: 63
   },
   {
     id: 15,
@@ -182,6 +227,9 @@ Many serious conditions (like high blood pressure, diabetes, and certain cancers
     image: blog1,
     date: "2024-08-05",
     category: "Education & Health",
-    author: "Dr. Natalie Braun"
+    author: "Dr. Natalie Braun",
+    likes: 720,
+    comments: 280,
+    shares: 56
   }
 ]

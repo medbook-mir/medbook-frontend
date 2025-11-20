@@ -6,13 +6,20 @@ import { blogsData } from '../data'
 import { ThumbsUpIcon } from '@/utils/icons/ThumbsUpIcon'
 import { CommentsIcon } from '@/utils/icons/CommentsIcon'
 import { SavedIcon } from '@/utils/icons/SavedIcon'
+import { ShareIcon } from '@/utils/icons/ShareIcon'
 import { useSavedBlogs } from '@/hooks/useSavedBlogs'
+import { useLikes } from '@/hooks/useLikes'
+import { useShares } from '@/hooks/useShares'
+import { notification } from 'antd'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { use } from 'react'
 
 export default function BlogArticlePage({ params }: { params: Promise<{ id: string }> }) {
   const { toggleSavedBlog, isBlogSaved } = useSavedBlogs()
+  const { toggleLike, isBlogLiked } = useLikes()
+  const { incrementShare, getShareCount } = useShares()
+  const [api, contextHolder] = notification.useNotification()
   
   // Unwrap params Promise
   const { id } = use(params)
@@ -30,6 +37,26 @@ export default function BlogArticlePage({ params }: { params: Promise<{ id: stri
     .filter((b) => b.id !== blog.id)
     .slice(0, 4)
 
+  // Handle share functionality
+  const handleShare = async () => {
+    try {
+      const url = window.location.href
+      await navigator.clipboard.writeText(url)
+      incrementShare(blog.id)
+      api.success({
+        message: 'Link copied!',
+        description: 'The blog link has been copied to your clipboard.',
+        duration: 3,
+      })
+    } catch (err) {
+      api.error({
+        message: 'Failed to copy',
+        description: 'Could not copy the link to clipboard.',
+        duration: 3,
+      })
+    }
+  }
+
   // Parse content into sections
   const contentSections = blog.content?.split('\n\n') || []
   const mainText = contentSections.slice(0, 1).join('\n\n')
@@ -38,6 +65,7 @@ export default function BlogArticlePage({ params }: { params: Promise<{ id: stri
 
   return (
     <div className="min-h-screen bg-white">
+      {contextHolder}
       <Container>
         {/* Breadcrumb */}
         <div className="py-6">
@@ -157,48 +185,65 @@ export default function BlogArticlePage({ params }: { params: Promise<{ id: stri
               })}
             </div>
 
-            {/* Engagement Stats */}
-            <div className="flex items-center gap-6 mt-8 pt-6 border-t border-[#E5E7EB]">
-              <div className="flex items-center gap-2">
-                <ThumbsUpIcon />
-                <span className="text-[#6B7280] text-[16px]">Likes</span>
+            {/* Engagement Card */}
+            <div className="mt-8 border border-[#E5E7EB] rounded-2xl p-6 bg-white shadow-sm">
+              {/* Stats Row */}
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center gap-2">
+                  <ThumbsUpIcon fill="#000000"/>
+                  <span className="text-[#000000] text-[16px] font-medium">
+                    {((blog.likes || 0) + (isBlogLiked(blog.id) ? 1 : 0)) >= 1000 
+                      ? `${(((blog.likes || 0) + (isBlogLiked(blog.id) ? 1 : 0)) / 1000).toFixed(1)}k` 
+                      : ((blog.likes || 0) + (isBlogLiked(blog.id) ? 1 : 0))} likes
+                  </span>
+                </div>
+                <div className="flex items-center gap-6">
+                  <span className="text-[#6B7280] text-[16px] font-normal">
+                    {blog.comments || 0} comments
+                  </span>
+                  <span className="text-[#6B7280] text-[16px] font-normal">
+                    {(blog.shares || 0) + getShareCount(blog.id)} shared
+                  </span>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <CommentsIcon />
-                <span className="text-[#6B7280] text-[16px]">Comments</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span className="text-[#6B7280] text-[16px]">Shared</span>
-              </div>
-            </div>
 
-            {/* Action Buttons */}
-            <div className="flex items-center gap-4 mt-6 pt-6 border-t border-[#E5E7EB]">
-              <button className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full border border-[#E5E7EB] hover:bg-gray-50 transition-colors">
-                <ThumbsUpIcon />
-                <span className="text-[#374151] font-semibold">Like</span>
-              </button>
-              <button className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full border border-[#E5E7EB] hover:bg-gray-50 transition-colors">
-                <CommentsIcon />
-                <span className="text-[#374151] font-semibold">Comment</span>
-              </button>
-              <button className="flex-1 flex items-center justify-center gap-2 py-3 rounded-full border border-[#E5E7EB] hover:bg-gray-50 transition-colors">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M16.667 8.333v-5h-5m4.166 1.667l-6.666 6.667m-1.667 5h-5v-5l10-10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-                <span className="text-[#374151] font-semibold">Share</span>
-              </button>
-              <button 
-                onClick={() => toggleSavedBlog(blog.id)}
-                className={`flex-1 flex items-center justify-center gap-2 py-3 rounded-full border border-[#E5E7EB] hover:bg-gray-50 transition-colors ${
-                  isBlogSaved(blog.id) ? 'bg-[#046D5F]/10' : ''
-                }`}
-              >
-                <SavedIcon />
-                <span className={`font-semibold ${isBlogSaved(blog.id) ? 'text-[#046D5F]' : 'text-[#374151]'}`}>
-                  {isBlogSaved(blog.id) ? 'Saved' : 'Save'}
-                </span>
-              </button>
+              {/* Divider */}
+              <div className="border-t border-[#E5E7EB] mb-6"></div>
+
+              {/* Action Buttons */}
+              <div className="grid grid-cols-4 gap-3">
+                <button 
+                  onClick={() => toggleLike(blog.id)}
+                  className={`flex flex-col items-center justify-center gap-2 py-3 hover:bg-gray-50 transition-colors rounded-lg ${
+                    isBlogLiked(blog.id) ? 'text-[#000000]' : 'text-[#374151]'
+                  }`}
+                >
+                  <ThumbsUpIcon fill={isBlogLiked(blog.id) ? "#000000" : "none"} /> 
+                  <span className="text-[14px] font-medium">Like</span>
+                </button>
+                <button className="flex flex-col items-center justify-center gap-2 py-3 hover:bg-gray-50 transition-colors rounded-lg text-[#374151]">
+                  <CommentsIcon />
+                  <span className="text-[14px] font-medium">Comment</span>
+                </button>
+                <button 
+                  onClick={handleShare}
+                  className="flex flex-col items-center justify-center gap-2 py-3 hover:bg-gray-50 transition-colors rounded-lg text-[#374151]"
+                >
+                  <ShareIcon />
+                  <span className="text-[14px] font-medium">Share</span>
+                </button>
+                <button 
+                  onClick={() => toggleSavedBlog(blog.id)}
+                  className={`flex flex-col items-center justify-center gap-2 py-3 hover:bg-gray-50 transition-colors rounded-lg ${
+                    isBlogSaved(blog.id) ? 'text-[#000000]' : 'text-[#374151]'
+                  }`}
+                >
+                  <SavedIcon fill={isBlogSaved(blog.id) ? "#000000" : "none"}/>
+                  <span className="text-[14px] font-medium">
+                    {isBlogSaved(blog.id) ? 'Saved' : 'Save'}
+                  </span>
+                </button>
+              </div>
             </div>
           </div>
 
