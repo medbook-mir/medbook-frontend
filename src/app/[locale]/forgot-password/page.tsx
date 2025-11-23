@@ -2,7 +2,6 @@
 import { MainLogoWhite } from '@/utils/icons/MainLogoWhite'
 import { Link } from '@/i18n/navigation'
 import { Container } from '@/theme/container'
-import VerifyForm from '@/forms/verify-form'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import imageInLogin_1 from "@/assets/images/imageInLogin_1.png"

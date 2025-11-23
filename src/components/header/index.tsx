@@ -12,33 +12,28 @@ import { MenuOutlined, CloseOutlined } from '@ant-design/icons'
 
 export default function Navbar() {
   const pathname = usePathname()
-  const router = useRouter()
+  
   const dispatch = useAppDispatch()
-  const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const isHomePage = pathname === '/'
+  
   const navItems = isHomePage ? homePageNavItems : otherPagesNavItems
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  
 
   const handleLogin = () => {
     dispatch(openModal('loginModal'))
   }
 
-  const headerBgClass = isHomePage && !isScrolled
-    ? 'bg-transparent'
-    : 'bg-[#046D5F] px-10 py-3 rounded-full'
+  const headerBgClass = isHomePage
+    ? 'absolute top-0 left-0 right-0 z-50 py-3 bg-transparent'
+    : 'relative z-50 py-3 bg-[#046D5F] mb-5 rounded-full px-10'
 
+  
   return (
-    <header className="absolute left-0 right-0 top-0 z-50 py-3 text-white transition-all duration-300 px-5 bg-transparent">
+<header className={`absolute left-0 right-0 top-0 z-50 px-10 py-3 text-white transition-all duration-300 ${headerBgClass}`}>
+
       <Container>
         <div className={`flex items-center justify-between transition-all duration-300 `}>
           {/* Logo */}

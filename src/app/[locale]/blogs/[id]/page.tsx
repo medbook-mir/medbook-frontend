@@ -64,11 +64,10 @@ export default function BlogArticlePage({ params }: { params: Promise<{ id: stri
   const remainingSections = contentSections.slice(1).filter((section) => !section.includes('✅'))
 
   return (
-    <div className="min-h-screen bg-white">
+    <Container>
       {contextHolder}
-      <Container>
         {/* Breadcrumb */}
-        <div className="py-6">
+        <div className="pb-6">
           <div className="flex items-center gap-2 text-sm">
             <Link href="/" className="text-[#6B7280] hover:text-[#046D5F]">
               Home
@@ -288,6 +287,5 @@ export default function BlogArticlePage({ params }: { params: Promise<{ id: stri
           </div>
         </div>
       </Container>
-    </div>
   )
 }

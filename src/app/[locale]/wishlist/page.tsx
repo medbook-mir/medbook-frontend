@@ -37,7 +37,6 @@ const Wishlist = () => {
   }
 
   return (
-    <div className="pt-[80px]">
     <Container>
         {/* Breadcrumb */}
         <div className="mb-4 mt-6">
@@ -57,7 +56,6 @@ const Wishlist = () => {
           ))}
         </div>
       </Container>
-    </div>
   )
 }
 

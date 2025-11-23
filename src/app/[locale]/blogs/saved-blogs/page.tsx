@@ -38,7 +38,6 @@ export default function SavedBlogsPage() {
     <div className="min-h-screen bg-white">
       <Container>
         {/* Breadcrumb */}
-        <div className="py-6">
           <div className="flex items-center gap-2 text-sm">
             <Link href="/" className="text-[#6B7280] hover:text-[#046D5F]">
               Home
@@ -50,7 +49,6 @@ export default function SavedBlogsPage() {
             <span className="text-[#6B7280]">/</span>
             <span className="text-[#263238] font-semibold">Saved</span>
           </div>
-        </div>
 
         {/* Page Title */}
         <div className="pb-8">

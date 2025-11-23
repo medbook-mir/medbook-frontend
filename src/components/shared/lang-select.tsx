@@ -42,11 +42,19 @@ const StyledLangSelect = styled(CustomSelect)`
     background-color: #f5f5f5 !important;
   }
   .ant-select-selector {
+    background-color: transparent !important;
     border: 1px solid #fff !important;
     border-radius: 62px !important;
-    background-color: transparent !important;
     display: flex !important;
     align-items: center !important;
+    box-shadow: none !important;
+  }
+
+  .ant-select-focused .ant-select-selector,
+  .ant-select-open .ant-select-selector {
+    background-color: transparent !important;
+    border-color: #fff !important;
+    box-shadow: none !important;
   }
 
   /* Selected item text color (button) */
@@ -57,6 +65,10 @@ const StyledLangSelect = styled(CustomSelect)`
     overflow: visible !important;
     padding-right: 0 !important;
     padding-left: 4px !important;
+  }
+
+  .ant-select-selection-placeholder {
+    color: #fff !important;
   }
 
   /* Arrow icon */

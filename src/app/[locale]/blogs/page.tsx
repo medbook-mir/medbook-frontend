@@ -50,7 +50,6 @@ export default function BlogsPage() {
   }
 
   return (
-    <div className="pt-21">
       <Container>
         <div className="min-h-screen bg-white">
       {/* Search and Sort Section */}
@@ -339,7 +338,6 @@ export default function BlogsPage() {
       </Container>
     </div>
       </Container>
-      </div>
     
   )
 }
