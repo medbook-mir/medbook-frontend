@@ -38,12 +38,34 @@ const DoctorPromoSection = () => {
             </p>
 
             {/* CTA Button */}
-            <div className="pt-2">
-              <button className="w-full bg-[#44A08D] hover:bg-[#3a8a7a] text-white font-medium py-3 sm:py-4 px-6 sm:px-8 rounded-lg text-base sm:text-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-                {t('ctaButton')}
-              </button>
-            </div>
+            
+              <div>
+  <button
+  className="
+    w-full
+    h-[56px]
+    bg-[#046D5F]
+    hover:bg-[#3a8a7a]
+    text-white
+    font-medium
+    rounded-lg
+    text-base sm:text-lg
+    shadow-md
+    hover:shadow-lg
+    transform
+    hover:scale-105
+    transition-all
+    duration-300
+    cursor-pointer
+    px-6 sm:px-8
+    flex items-center justify-center
+  "
+>
+  {t('ctaButton')}
+</button>
+</div>
 
+            
             {/* Trust Statement and Partner Logos */}
             <div className="pt-4 lg:pt-6">
               <p className="text-gray-700 text-sm sm:text-base mb-4 sm:mb-6 font-medium text-center">
