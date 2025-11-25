@@ -17,11 +17,13 @@ const DoctorSearchResult = ({ searchDoctor }: { searchDoctor: string }) => {
   const [specialty, setSpecialty] = useState<string | undefined>(undefined)
   const [gender, setGender] = useState<string | undefined>(undefined)
   const [locationRadius, setLocationRadius] = useState<string | undefined>(undefined)
+  const [visibleResults, setVisibleResults] = useState(3)
   const router = useRouter()
 
   useEffect(() => {
     if (!searchDoctor) {
       setResults([])
+      setVisibleResults(3)
       return
     }
 
@@ -30,6 +32,7 @@ const DoctorSearchResult = ({ searchDoctor }: { searchDoctor: string }) => {
       const filtered = mockDoctors.filter((doc) => doc.name.toLowerCase().includes(searchDoctor.toLowerCase()))
       setResults(filtered)
       setLoading(false)
+      setVisibleResults(3)
     }, 1000)
 
     return () => clearTimeout(timeout)
@@ -41,6 +44,13 @@ const DoctorSearchResult = ({ searchDoctor }: { searchDoctor: string }) => {
     setGender(undefined)
     setLocationRadius(undefined)
   }
+
+  const handleShowMore = () => {
+    setVisibleResults((prev) => prev + 3)
+  }
+
+  const displayedResults = results.slice(0, visibleResults)
+  const hasMoreResults = visibleResults < results.length
 
   const specialties = [
     { value: 'gynecologist', label: t('specialties.gynecologist') },
@@ -150,7 +160,21 @@ const DoctorSearchResult = ({ searchDoctor }: { searchDoctor: string }) => {
             <Spin size="large" tip={t('loading')} />
           </div>
         ) : results.length > 0 ? (
-          results.map((doctor) => <DoctorCard key={doctor.id} doctor={doctor} router={router} />)
+          <>
+            {displayedResults.map((doctor) => <DoctorCard key={doctor.id} doctor={doctor} router={router} />)}
+            
+            {/* Show More Button */}
+            {hasMoreResults && (
+              <div className="flex justify-center pt-6">
+                <button
+                  onClick={handleShowMore}
+                  className="rounded-full bg-[#008A7C] px-8 py-3 text-base font-medium text-white transition-all hover:bg-[#007067] focus:outline-none focus:ring-2 focus:ring-[#008A7C] focus:ring-offset-2"
+                >
+                  Show more
+                </button>
+              </div>
+            )}
+          </>
         ) : searchDoctor ? (
           <div className="py-12">
             <Empty description={t('noResults')} />
