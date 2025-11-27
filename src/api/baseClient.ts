@@ -33,6 +33,7 @@ export class BaseClient {
 
   private constructor() {
     // ✅ Use relative URL in browser to activate Next.js rewrites
+    
     this.baseUrl =
       typeof window !== 'undefined'
         ? '' // browser → let Next.js handle rewrites
@@ -41,6 +42,10 @@ export class BaseClient {
     this.axios = Axios.create({
       baseURL: this.baseUrl,
       withCredentials: false,
+      auth: {
+    username: "admin",
+    password: "super_secure_password",
+  },
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json'
