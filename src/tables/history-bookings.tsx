@@ -5,50 +5,46 @@ import { CustomTable } from '../components/ui/table'
 import { Link } from '@/i18n/navigation'
 import { Status } from '@/components/ui/status'
 import { useTranslations } from 'next-intl'
+import { useState, useEffect } from 'react'
+import { BookingType } from '@/types/booking-type'
+import bookingAPI from '@/api/v1/bookingAPI'
 
-const mockData = [
-  {
-    orderNumber: '1231235',
-    date: '20.02.2025',
-    appointmentType: 'Online',
-    status: 'canceled',
-    doctor: {
-      name: 'Kathrin Schenk-Losse',
-      id: '1',
-      orientation: 'Gynecologist'
-    }
-  },
-  {
-    orderNumber: '6589740',
-    date: '20.02.2025',
-    appointmentType: 'Offline',
-    status: 'canceled',
-    doctor: {
-      name: 'Kathrin Schenk-Losse',
-      id: '1',
-      orientation: 'Gynecologist'
-    }
-  },
-  {
-    orderNumber: '4569871',
-    date: '20.02.2025',
-    appointmentType: 'Online',
-    status: 'success',
-    doctor: {
-      name: 'Kathrin Schenk-Losse',
-      id: '1',
-      orientation: 'Gynecologist'
-    }
-  }
-]
 
 export const HisotryBookings = () => {
   const t = useTranslations('settingsLayout.myBookingsPage')
+  const [bookings, setBookings] = useState<BookingType[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchBookings = async () => {
+      try {
+        setLoading(true)
+        const response = await bookingAPI.getBookings()
+        if (response.data.success) {
+          // Filter for completed or cancelled bookings (history)
+          const historyBookings = response.data.data.filter(
+            (booking) =>
+              booking.status.toLowerCase() === 'completed' ||
+              booking.status.toLowerCase() === 'cancelled' ||
+              booking.status.toLowerCase() === 'canceled' ||
+              booking.cancelledAt !== null
+          )
+          setBookings(historyBookings)
+        }
+      } catch (error) {
+        console.error('Failed to fetch bookings:', error)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    fetchBookings()
+  }, [])
 
   const getColumns: TableProps<any>['columns'] = [
     {
-      key: 'orderNumber',
-      dataIndex: 'orderNumber',
+      key: 'appointmentNumber',
+      dataIndex: 'appointmentNumber',
       title: t('orderNumber'),
       width: 180,
       render: (value: string) => <p>#{value}</p>
@@ -58,11 +54,15 @@ export const HisotryBookings = () => {
       dataIndex: 'date',
       title: t('date'),
       width: 180,
-      render: (value: string) => <p>{value}</p>
+      render: (value: string, record: BookingType) => (
+        <p>
+          {value} {record.time}
+        </p>
+      )
     },
     {
-      key: 'appointmentType',
-      dataIndex: 'appointmentType',
+      key: 'type',
+      dataIndex: 'type',
       title: t('appointmentType'),
       width: 160,
       render: (value: string) => <p>{value}</p>
@@ -72,25 +72,37 @@ export const HisotryBookings = () => {
       dataIndex: 'status',
       title: t('status'),
       width: 180,
-      render: (value: 'canceled' | 'success') => <Status status={value} />
+      render: (value: string) => {
+        const statusLower = value.toLowerCase()
+        const mappedStatus =
+          statusLower === 'completed'
+            ? 'success'
+            : statusLower === 'cancelled' || statusLower === 'canceled'
+              ? 'canceled'
+              : 'canceled'
+        return <Status status={mappedStatus as 'canceled' | 'success'} />
+      }
     },
     {
       key: 'doctor',
       dataIndex: 'doctor',
       title: t('doctor'),
       width: 360,
-      render: ({ name, id, orientation }: { name: string; id: string; orientation: string }) => (
+      render: (doctor: BookingType['doctor']) => (
         <div>
-          <Link className="text-[#1F88E4] !underline underline-offset-2" href={`/doctors/${id}`}>
-            {name}
+          <Link
+            className="text-[#1F88E4] !underline underline-offset-2"
+            href={`/doctors/${doctor.id}`}
+          >
+            {doctor.fullName}
           </Link>
-          <p>{orientation}</p>
+           <p>{doctor.specialty}</p>
         </div>
       )
     }
   ]
 
-  const dataWithKey = mockData.map((item) => ({ ...item, key: item.orderNumber }))
+  const dataWithKey = bookings.map((item) => ({ ...item, key: item.id.toString() }))
 
-  return <CustomTable dataSource={dataWithKey} columns={getColumns} />
+  return <CustomTable dataSource={dataWithKey} columns={getColumns} loading={loading} />
 }
