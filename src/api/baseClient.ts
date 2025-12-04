@@ -39,9 +39,9 @@ export class BaseClient {
       baseURL: this.baseUrl,
       withCredentials: false,
       auth: {
-    username: "admin",
-    password: "super_secure_password",
-  },
+        username: process.env.NEXT_PUBLIC_MEDVISIT_API_USERNAME || 'admin',
+        password: process.env.NEXT_PUBLIC_MEDVISIT_API_PASSWORD || 'super_secure_password'
+      },
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json'
