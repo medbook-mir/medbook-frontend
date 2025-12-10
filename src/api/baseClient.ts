@@ -7,9 +7,9 @@ import Axios, {
 } from 'axios'
 import { buildParams } from './helpers'
 import { TokenService } from '@/utils/storage'
-import { env } from '@/utils/env'
 
-const API_URL = env.NEXT_API_URL || ''
+// Use NEXT_PUBLIC_API_URL for client-side access
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://www.api.medvisit.uz/api'
 
 declare module 'axios' {
   export interface AxiosRequestConfig {
@@ -32,15 +32,16 @@ export class BaseClient {
   private static instance: BaseClient | null = null
 
   private constructor() {
-    // ✅ Use relative URL in browser to activate Next.js rewrites
-    this.baseUrl =
-      typeof window !== 'undefined'
-        ? '' // browser → let Next.js handle rewrites
-        : API_URL // server → can directly call API if needed
+    // ✅ Use direct API URL for all requests
+    this.baseUrl = API_URL
 
     this.axios = Axios.create({
       baseURL: this.baseUrl,
       withCredentials: false,
+      auth: {
+        username: process.env.NEXT_PUBLIC_MEDVISIT_API_USERNAME || 'admin',
+        password: process.env.NEXT_PUBLIC_MEDVISIT_API_PASSWORD || 'super_secure_password'
+      },
       headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json'
